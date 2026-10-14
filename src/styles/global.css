@@ -1,1 +1,141 @@
 @import "tailwindcss";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+
+/* Tokens from docs/brand-brief.md and docs/design-system.md.
+   Tailwind's default spacing (4px steps) and md breakpoint (768px) already
+   match the design system, so only colour, type, radius and shadow are set. */
+@theme {
+  --color-brand-green: #1f6f3a;
+  --color-brand-green-hover: #175a2e;
+  --color-brand-blue: #3aa9e0;
+  --color-brand-blue-hover: #2691cb;
+  --color-accent-lime: #4cbd3a;
+  --color-text-primary: #2d3748;
+  --color-text-muted: #6b7280;
+  --color-surface: #f5f7f8;
+  --color-background: #ffffff;
+  --color-border: #e5e7eb;
+  /* Tints used by icon tiles and the lime chip */
+  --color-tint-green: #eaf4ec;
+  --color-lime-chip-bg: #eef9ec;
+  --color-lime-chip-text: #2e6b22;
+  --color-lime-chip-border: #d7f0d1;
+
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+
+  /* Mobile size / line height. The -lg tokens are the desktop (>=768px) sizes. */
+  --text-h1: 2rem;
+  --text-h1--line-height: 2.5rem;
+  --text-h1--font-weight: 700;
+  --text-h1-lg: 2.75rem;
+  --text-h1-lg--line-height: 3.25rem;
+  --text-h1-lg--font-weight: 700;
+  --text-h2: 1.5rem;
+  --text-h2--line-height: 2rem;
+  --text-h2--font-weight: 700;
+  --text-h2-lg: 2rem;
+  --text-h2-lg--line-height: 2.5rem;
+  --text-h2-lg--font-weight: 700;
+  --text-h3: 1.25rem;
+  --text-h3--line-height: 1.75rem;
+  --text-h3--font-weight: 600;
+  --text-h3-lg: 1.5rem;
+  --text-h3-lg--line-height: 2rem;
+  --text-h3-lg--font-weight: 600;
+  --text-h4: 1rem;
+  --text-h4--line-height: 1.5rem;
+  --text-h4--font-weight: 600;
+  --text-body-lg: 1.125rem;
+  --text-body-lg--line-height: 1.75rem;
+  --text-body: 1rem;
+  --text-body--line-height: 1.5rem;
+  --text-body-sm: 0.875rem;
+  --text-body-sm--line-height: 1.25rem;
+  --text-overline: 0.75rem;
+  --text-overline--line-height: 1rem;
+  --text-overline--letter-spacing: 0.08em;
+  --text-overline--font-weight: 600;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  /* The only elevation in the design system */
+  --shadow-card: 0 1px 2px rgb(16 24 40 / 0.04), 0 1px 3px rgb(16 24 40 / 0.06);
+}
+
+/* Names used in the docs (--brand-green etc.) so snippets from the brief work as written */
+:root {
+  --brand-green: var(--color-brand-green);
+  --brand-green-hover: var(--color-brand-green-hover);
+  --brand-blue: var(--color-brand-blue);
+  --brand-blue-hover: var(--color-brand-blue-hover);
+  --accent-lime: var(--color-accent-lime);
+  --text-primary: var(--color-text-primary);
+  --text-muted: var(--color-text-muted);
+  --surface: var(--color-surface);
+  --background: var(--color-background);
+  --border: var(--color-border);
+}
+
+@layer base {
+  body {
+    @apply bg-background font-sans text-body text-text-primary antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-brand-green);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* 1120px content column with 16px (mobile) / 24px side padding */
+  .container-content {
+    @apply mx-auto w-full max-w-[1120px] px-4 md:px-6;
+  }
+
+  /* Buttons: same base size everywhere, 8px radius, 16px / 600 */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border border-transparent px-6 py-3 text-body font-semibold no-underline transition-colors md:px-7 md:py-3.5;
+  }
+  .btn-lg {
+    @apply px-[26px] py-3.5 md:px-8 md:py-4;
+  }
+  .btn-xl {
+    @apply px-[30px] py-4 text-[17px];
+  }
+  .btn-whatsapp {
+    @apply bg-brand-blue text-white hover:bg-brand-blue-hover;
+  }
+  .btn-primary {
+    @apply bg-brand-green text-white hover:bg-brand-green-hover;
+  }
+  .btn-secondary {
+    @apply border-brand-green bg-white text-brand-green hover:bg-surface;
+  }
+  .btn-tertiary {
+    @apply px-1 py-2 text-brand-green underline underline-offset-[3px] hover:text-brand-green-hover md:px-1 md:py-2;
+  }
+
+  .card {
+    @apply overflow-hidden rounded-lg border border-border bg-white shadow-card transition-colors hover:border-brand-green;
+  }
+
+  /* Display-only chip on product cards */
+  .chip {
+    @apply inline-block rounded-full border border-border bg-surface px-[9px] py-[5px] text-[11px] text-text-muted;
+  }
+  .chip-lime {
+    @apply border-lime-chip-border bg-lime-chip-bg text-lime-chip-text;
+  }
+
+  /* Interactive filter chip; active state is set with aria-pressed="true" */
+  .filter-chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-border bg-white px-3.5 py-[7px] text-body-sm font-medium text-text-primary transition-colors hover:border-brand-green aria-pressed:border-brand-green aria-pressed:bg-brand-green aria-pressed:text-white;
+  }
+}
