@@ -1,0 +1,49 @@
+---
+import {
+  BuildingComplex,
+  Droplets,
+  Funnel,
+  GlassWater,
+  ShieldCheck,
+  Wrench,
+} from '@lucide/astro';
+
+interface Props {
+  /** Lucide name from taxonomy.ts */
+  name: string;
+  size?: number;
+  /** Wrap in the rounded icon tile used on category and trust cards */
+  tile?: boolean;
+  class?: string;
+}
+
+// taxonomy.md keeps the older Lucide names (building-2, filter); both were renamed upstream.
+const icons: Record<string, typeof GlassWater> = {
+  'glass-water': GlassWater,
+  droplets: Droplets,
+  'building-2': BuildingComplex,
+  'shield-check': ShieldCheck,
+  filter: Funnel,
+  wrench: Wrench,
+};
+
+const { name, size = 24, tile = false, class: className } = Astro.props;
+const Icon = icons[name];
+if (!Icon) throw new Error(`CategoryIcon: no icon mapped for "${name}"`);
+---
+
+{
+  tile ? (
+    <span
+      class:list={[
+        'inline-flex shrink-0 items-center justify-center rounded-[10px] bg-tint-green text-brand-green',
+        className,
+      ]}
+      style={`width:${Math.round(size * 1.8)}px;height:${Math.round(size * 1.8)}px`}
+    >
+      <Icon size={size} stroke-width={1.75} aria-hidden="true" />
+    </span>
+  ) : (
+    <Icon size={size} stroke-width={1.75} class:list={['text-brand-green', className]} aria-hidden="true" />
+  )
+}

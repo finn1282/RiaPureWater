@@ -1,0 +1,173 @@
+---
+import { getCollection } from 'astro:content';
+import { Menu, X, ChevronDown } from '@lucide/astro';
+import WhatsAppButton from './WhatsAppButton.astro';
+import CategoryIcon from './CategoryIcon.astro';
+import { WHATSAPP_LINES, telLink } from '../lib/whatsapp';
+
+const categories = (await getCollection('categories')).sort((a, b) => a.data.sort_order - b.data.sort_order);
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+
+const is = (href: string) => (href === '/' ? path === '/' : path === href || path.startsWith(`${href}/`));
+const productsActive = is('/products') || is('/category') || is('/product');
+const linkClass = (active: boolean) =>
+  `rounded-md px-3 py-2 text-body font-medium no-underline transition-colors hover:text-brand-green ${active ? 'font-semibold text-brand-green' : 'text-text-primary'}`;
+---
+
+<header class="sticky top-0 z-40 border-b border-border bg-white" data-site-header>
+  <div class="container-content flex items-center justify-between gap-4 py-[14px] md:py-4">
+    <a href="/" class="flex shrink-0 items-center" aria-label="RIA Pure Water home">
+      <img src="/logos/logo-primary-trimmed.svg" alt="RIA Pure Water" width="55" height="40" class="h-10 w-auto md:h-11" />
+    </a>
+
+    <nav class="hidden items-center gap-1 md:flex" aria-label="Main">
+      <a href="/" class={linkClass(is('/'))} aria-current={is('/') ? 'page' : undefined}>Home</a>
+
+      <div class="relative" data-dropdown>
+        <button
+          type="button"
+          class={`${linkClass(productsActive)} inline-flex items-center gap-1`}
+          aria-expanded="false"
+          aria-controls="products-menu"
+          data-dropdown-toggle
+        >
+          Products <ChevronDown size={16} aria-hidden="true" />
+        </button>
+        <div
+          id="products-menu"
+          hidden
+          class="absolute left-0 top-full mt-2 w-72 rounded-lg border border-border bg-white p-2 shadow-card"
+        >
+          <ul>
+            {categories.map((c) => (
+              <li>
+                <a
+                  href={`/category/${c.id}`}
+                  class="flex items-center gap-3 rounded-md px-3 py-2 text-body-sm font-medium text-text-primary no-underline hover:bg-surface"
+                >
+                  <CategoryIcon name={c.data.icon} size={18} />
+                  {c.data.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <a
+            href="/products"
+            class="mt-1 block border-t border-border px-3 pb-1 pt-3 text-body-sm font-semibold text-brand-green"
+          >
+            View all products
+          </a>
+        </div>
+      </div>
+
+      <a href="/about" class={linkClass(is('/about'))} aria-current={is('/about') ? 'page' : undefined}>About</a>
+      <a href="/contact" class={linkClass(is('/contact'))} aria-current={is('/contact') ? 'page' : undefined}>Contact</a>
+    </nav>
+
+    <div class="hidden md:block">
+      <WhatsAppButton context="RIA Pure Water" />
+    </div>
+
+    <div class="flex items-center gap-2 md:hidden">
+      <WhatsAppButton iconOnly context="RIA Pure Water" />
+      <button
+        type="button"
+        class="inline-flex h-10 w-10 items-center justify-center rounded-md text-text-primary hover:bg-surface"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        data-menu-toggle
+      >
+        <span data-menu-open><Menu size={24} aria-hidden="true" /></span>
+        <span data-menu-close hidden><X size={24} aria-hidden="true" /></span>
+      </button>
+    </div>
+  </div>
+
+  <nav
+    id="mobile-menu"
+    hidden
+    aria-label="Mobile"
+    class="absolute inset-x-0 top-full max-h-[calc(100dvh-4.5rem)] overflow-y-auto border-b border-border bg-white shadow-card md:hidden"
+  >
+    <div class="container-content py-4">
+      <ul class="space-y-1">
+        <li><a href="/" class="block rounded-md px-3 py-3 font-medium text-text-primary no-underline hover:bg-surface">Home</a></li>
+        <li>
+          <p class="px-3 pb-1 pt-3 text-overline uppercase text-text-muted">Products</p>
+          <ul>
+            {categories.map((c) => (
+              <li>
+                <a
+                  href={`/category/${c.id}`}
+                  class="flex items-center gap-3 rounded-md px-3 py-3 font-medium text-text-primary no-underline hover:bg-surface"
+                >
+                  <CategoryIcon name={c.data.icon} size={20} />
+                  {c.data.name}
+                </a>
+              </li>
+            ))}
+            <li>
+              <a href="/products" class="block rounded-md px-3 py-3 font-semibold text-brand-green hover:bg-surface">
+                View all products
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="/about" class="block rounded-md px-3 py-3 font-medium text-text-primary no-underline hover:bg-surface">About</a></li>
+        <li><a href="/contact" class="block rounded-md px-3 py-3 font-medium text-text-primary no-underline hover:bg-surface">Contact</a></li>
+      </ul>
+      <div class="mt-4 flex flex-col items-stretch gap-2 border-t border-border pt-4">
+        <WhatsAppButton context="RIA Pure Water" />
+        <a href={telLink()} class="btn btn-tertiary self-center">Or call {WHATSAPP_LINES.primary.display}</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const header = document.querySelector<HTMLElement>('[data-site-header]');
+  const menuToggle = header?.querySelector<HTMLButtonElement>('[data-menu-toggle]');
+  const menu = header?.querySelector<HTMLElement>('#mobile-menu');
+  const dropToggle = header?.querySelector<HTMLButtonElement>('[data-dropdown-toggle]');
+  const dropMenu = header?.querySelector<HTMLElement>('#products-menu');
+
+  function setMenu(open: boolean) {
+    if (!menuToggle || !menu) return;
+    menu.hidden = !open;
+    menuToggle.setAttribute('aria-expanded', String(open));
+    menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    menuToggle.querySelector<HTMLElement>('[data-menu-open]')!.hidden = open;
+    menuToggle.querySelector<HTMLElement>('[data-menu-close]')!.hidden = !open;
+  }
+
+  function setDropdown(open: boolean) {
+    if (!dropToggle || !dropMenu) return;
+    dropMenu.hidden = !open;
+    dropToggle.setAttribute('aria-expanded', String(open));
+  }
+
+  menuToggle?.addEventListener('click', () => setMenu(menu!.hidden));
+  dropToggle?.addEventListener('click', () => setDropdown(dropMenu!.hidden));
+
+  document.addEventListener('click', (e) => {
+    if (!header?.contains(e.target as Node)) {
+      setMenu(false);
+      setDropdown(false);
+    } else if (!dropToggle?.parentElement?.contains(e.target as Node)) {
+      setDropdown(false);
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    if (!menu?.hidden) {
+      setMenu(false);
+      menuToggle?.focus();
+    }
+    if (!dropMenu?.hidden) {
+      setDropdown(false);
+      dropToggle?.focus();
+    }
+  });
+</script>

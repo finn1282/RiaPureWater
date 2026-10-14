@@ -1,0 +1,101 @@
+---
+import { getCollection } from 'astro:content';
+import WhatsAppButton from './WhatsAppButton.astro';
+import WhatsAppIcon from './WhatsAppIcon.astro';
+import { WHATSAPP_LINES, telLink } from '../lib/whatsapp';
+
+interface Props {
+  /** "slim" is for Product Detail, which already carries three WhatsApp CTAs */
+  variant?: 'full' | 'slim';
+}
+
+const { variant = 'full' } = Astro.props;
+const categories = (await getCollection('categories')).sort((a, b) => a.data.sort_order - b.data.sort_order);
+
+const linkClass = 'text-white/90 no-underline hover:text-white hover:underline';
+const logo = '/logos/logo-primary-trimmed.svg';
+---
+
+{
+  variant === 'slim' ? (
+    <footer class="bg-brand-green text-white">
+      <div class="container-content flex flex-col gap-4 py-8 md:flex-row md:items-center md:justify-between">
+        <a href="/" class="inline-flex w-fit rounded-md bg-white p-1.5" aria-label="RIA Pure Water home">
+          <img src={logo} alt="RIA Pure Water" width="44" height="32" class="h-8 w-auto" />
+        </a>
+        <ul class="flex flex-wrap gap-x-6 gap-y-2 text-body-sm font-medium">
+          <li><a href="/products" class={linkClass}>All products</a></li>
+          <li><a href="/about" class={linkClass}>About</a></li>
+          <li><a href="/contact" class={linkClass}>Contact</a></li>
+          <li><a href={telLink()} class={linkClass}>{WHATSAPP_LINES.primary.display}</a></li>
+        </ul>
+      </div>
+    </footer>
+  ) : (
+    <footer class="bg-brand-green text-white">
+      <div class="container-content pb-6 pt-12">
+        <div class="grid gap-10 md:grid-cols-[1.3fr_1fr_1fr_1fr] md:gap-8">
+          <div>
+            <a href="/" class="inline-flex rounded-lg bg-white p-2" aria-label="RIA Pure Water home">
+              <img src={logo} alt="RIA Pure Water" width="55" height="40" class="h-10 w-auto" />
+            </a>
+            <p class="mt-4 max-w-xs text-body-sm text-white/90">
+              Water dispensers, undersink systems, and whole-house filtration. Serving all of Malaysia.
+            </p>
+          </div>
+
+          <nav aria-label="Shop">
+            <h2 class="mb-3 text-body-sm font-semibold uppercase text-white/70">Shop</h2>
+            <ul class="space-y-2 text-body-sm">
+              {categories.map((c) => (
+                <li><a href={`/category/${c.id}`} class={linkClass}>{c.data.name}</a></li>
+              ))}
+            </ul>
+          </nav>
+
+          <nav aria-label="Company">
+            <h2 class="mb-3 text-body-sm font-semibold uppercase text-white/70">Company</h2>
+            <ul class="space-y-2 text-body-sm">
+              <li><a href="/about" class={linkClass}>About</a></li>
+              <li><a href="/contact" class={linkClass}>Contact</a></li>
+              <li><a href="/products" class={linkClass}>All products</a></li>
+            </ul>
+          </nav>
+
+          <div>
+            <h2 class="mb-3 text-body-sm font-semibold uppercase text-white/70">Get in touch</h2>
+            <ul class="space-y-2 text-body-sm">
+              {(['primary', 'secondary'] as const).map((line) => (
+                <li>
+                  <a href={telLink(line)} class={`${linkClass} inline-flex items-center gap-2`}>
+                    <WhatsAppIcon size={16} />
+                    {WHATSAPP_LINES[line].display}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <div class="mt-4 flex items-center gap-3">
+              <img
+                src="/images/qr/wa_qr_013.png"
+                alt={`WhatsApp QR code for ${WHATSAPP_LINES.primary.display}`}
+                width="96"
+                height="96"
+                loading="lazy"
+                class="h-24 w-24 rounded-md bg-white p-1"
+              />
+              <p class="text-body-sm text-white/90">
+                <strong class="block font-semibold text-white">Scan to chat</strong>
+                {WHATSAPP_LINES.primary.display}
+              </p>
+            </div>
+            <WhatsAppButton context="RIA Pure Water" class="mt-4 w-full md:w-auto" />
+          </div>
+        </div>
+
+        <p class="mt-10 border-t border-white/15 pt-6 text-body-sm text-white/80">
+          © 2026 RIA Home Sdn Bhd. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  )
+}

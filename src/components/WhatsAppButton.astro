@@ -1,0 +1,49 @@
+---
+import { CTA_TEXT, whatsappLink, type WhatsAppLine } from '../lib/whatsapp';
+import WhatsAppIcon from './WhatsAppIcon.astro';
+
+interface Props {
+  /** Product pages: message becomes "Name (MODEL)" */
+  product?: { name: string; model: string };
+  /** Generic pages: what the visitor is asking about */
+  context?: string;
+  line?: WhatsAppLine;
+  size?: 'default' | 'lg' | 'xl';
+  /** Overrides the locked CTA text, e.g. "Enquire about JX-1S" on the mobile bar */
+  label?: string;
+  /** Round icon-only button for tight mobile headers */
+  iconOnly?: boolean;
+  class?: string;
+}
+
+const { product, context, line, size = 'default', label, iconOnly = false, class: className } = Astro.props;
+const href = whatsappLink({ product, context, line });
+const text = label ?? CTA_TEXT;
+---
+
+{
+  iconOnly ? (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener"
+      aria-label={text}
+      class:list={[
+        'inline-flex h-10 w-10 items-center justify-center rounded-md bg-brand-blue text-white transition-colors hover:bg-brand-blue-hover',
+        className,
+      ]}
+    >
+      <WhatsAppIcon size={20} />
+    </a>
+  ) : (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener"
+      class:list={['btn btn-whatsapp', size === 'lg' && 'btn-lg', size === 'xl' && 'btn-xl', className]}
+    >
+      <WhatsAppIcon />
+      {text}
+    </a>
+  )
+}

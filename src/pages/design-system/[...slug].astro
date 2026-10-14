@@ -1,5 +1,6 @@
 ---
 import '../../styles/global.css';
+import Footer from '../../components/Footer.astro';
 
 // Review-only page. It is built in `astro dev`, or in a deploy that sets
 // SHOW_DESIGN_SYSTEM=1, so the checkpoint can be reviewed on the Vercel URL.
@@ -159,5 +160,6 @@ const radii = [
         </div>
       </section>
     </main>
+    <Footer variant="slim" />
   </body>
 </html>

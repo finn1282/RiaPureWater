@@ -1,17 +1,35 @@
 ---
-import '../styles/global.css';
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import CategoryIcon from '../components/CategoryIcon.astro';
+
+// Placeholder until the Home page is built at Checkpoint 7.
+const categories = (await getCollection('categories')).sort((a, b) => a.data.sort_order - b.data.sort_order);
+const sample = (await getCollection('products')).find((p) => p.id === 'jx-1s')!;
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>RIA Pure Water</title>
-	</head>
-	<body>
-		<h1 class="p-4 text-3xl font-bold">Welcome to Astro</h1>
-	</body>
-</html>
+<Base title="RIA Pure Water">
+  <div class="container-content space-y-8 py-12">
+    <h1 class="text-h1 md:text-h1-lg text-brand-green">RIA Pure Water</h1>
+    <p class="text-body-lg text-text-muted">Home page coming at Checkpoint 7.</p>
+
+    <ul class="grid grid-cols-2 gap-4 md:grid-cols-3">
+      {categories.map((c) => (
+        <li>
+          <a href={`/category/${c.id}`} class="card flex h-full flex-col gap-3 p-6 no-underline">
+            <CategoryIcon name={c.data.icon} size={24} tile />
+            <span class="text-[18px] font-semibold text-text-primary">{c.data.name}</span>
+            <span class="text-body-sm text-text-muted">{c.data.product_count} products</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <div class="flex flex-wrap items-center gap-4">
+      <WhatsAppButton context="RIA Pure Water" />
+      <WhatsAppButton product={{ name: sample.data.name, model: sample.data.model }} label={`Enquire about ${sample.data.model}`} />
+      <WhatsAppButton line="secondary" size="lg" />
+    </div>
+  </div>
+</Base>
