@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RIA Pure Water — Product Detail mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --brand-green: #1F6F3A;
+  --brand-green-hover: #175A2E;
+  --brand-blue: #3AA9E0;
+  --brand-blue-hover: #2691CB;
+  --accent-lime: #4CBD3A;
+  --text-primary: #2D3748;
+  --text-muted: #6B7280;
+  --surface: #F5F7F8;
+  --background: #FFFFFF;
+  --border: #E5E7EB;
+  --shadow-card: 0 1px 2px rgba(16,24,40,.04), 0 1px 3px rgba(16,24,40,.06);
+  box-sizing: border-box;
+}
+*, *::before, *::after { box-sizing: inherit; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #EEF1F3;
+  color: var(--text-primary);
+  padding: 32px 16px 96px;
+}
+
+.doc-wrap { max-width: 1480px; margin: 0 auto; }
+.doc-head { padding: 8px 0 32px; }
+.doc-head h1 { font-size: 24px; margin: 0 0 6px; color: var(--brand-green); font-weight: 700; }
+.doc-head p { margin: 0; color: var(--text-muted); font-size: 14px; }
+.doc-head code { background: #fff; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+
+.frame-label {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 13px; font-weight: 600; color: var(--text-muted);
+  text-transform: uppercase; letter-spacing: 0.08em;
+  margin: 32px 0 12px;
+}
+.frame-label .pill { background: var(--brand-green); color: #fff; padding: 3px 10px; border-radius: 999px; letter-spacing: 0.04em; }
+
+.desktop-frame {
+  background: #fff; border-radius: 12px; overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,.08); border: 1px solid #d9dde0;
+}
+.desktop-chrome {
+  background: #e9edef; padding: 10px 14px;
+  display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #d0d5d9;
+}
+.desktop-chrome .dot { width: 11px; height: 11px; border-radius: 50%; background: #cfd3d6; }
+.desktop-chrome .url {
+  flex: 1; background: #fff; border-radius: 6px;
+  padding: 4px 10px; font-size: 12px; color: var(--text-muted);
+  margin-left: 12px; font-family: ui-monospace, monospace;
+}
+.desktop-scroll { overflow-x: auto; }
+.desktop-content { width: 1280px; }
+
+.mobile-wrap { max-width: 420px; margin: 0 auto; }
+.mobile-frame { background: #111; border-radius: 36px; padding: 10px; box-shadow: 0 20px 60px rgba(0,0,0,.18); }
+.mobile-screen {
+  background: #fff; border-radius: 28px; overflow: hidden;
+  width: 390px; max-height: 1500px; overflow-y: auto;
+  position: relative;
+}
+.mobile-notch { height: 24px; background: #111; display: flex; justify-content: center; align-items: flex-end; }
+.mobile-notch::after { content: ""; width: 120px; height: 18px; background: #111; border-radius: 0 0 14px 14px; }
+
+/* ========= SITE ========= */
+.site { font-family: 'Inter', sans-serif; color: var(--text-primary); background: #fff; }
+
+.site-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 24px; border-bottom: 1px solid var(--border); background: #fff;
+}
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--brand-green); }
+.logo-mark { width: 32px; height: 32px; background: var(--brand-green); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; }
+.logo-mark svg { width: 18px; height: 18px; fill: #fff; }
+.logo-text { font-size: 18px; font-weight: 700; }
+.nav { display: flex; align-items: center; gap: 24px; }
+.nav a { color: var(--text-primary); font-size: 15px; font-weight: 500; text-decoration: none; }
+.nav a:hover { color: var(--brand-green); }
+
+.btn {
+  font: inherit; font-weight: 600; cursor: pointer;
+  padding: 10px 18px; border-radius: 8px; border: 1px solid transparent;
+  display: inline-flex; align-items: center; gap: 8px; text-decoration: none;
+  white-space: nowrap; font-size: 15px;
+}
+.btn-wa { background: var(--brand-blue); color: #fff; }
+.btn-wa:hover { background: var(--brand-blue-hover); }
+.btn-primary { background: var(--brand-green); color: #fff; }
+.btn-primary:hover { background: var(--brand-green-hover); }
+.btn-outline { background: #fff; color: var(--brand-green); border-color: var(--brand-green); }
+.btn-outline:hover { background: var(--surface); }
+.btn-lg { padding: 14px 26px; font-size: 16px; }
+.btn-xl { padding: 16px 30px; font-size: 17px; }
+.wa-icon { width: 16px; height: 16px; fill: currentColor; }
+
+.hamburger { display: none; background: none; border: 0; padding: 4px; cursor: pointer; }
+.hamburger svg { width: 24px; height: 24px; stroke: var(--text-primary); fill: none; stroke-width: 2; }
+
+/* ========= PRODUCT PAGE ========= */
+.container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+
+.breadcrumbs {
+  padding: 20px 0; font-size: 13px; color: var(--text-muted);
+  display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+}
+.breadcrumbs a { color: var(--text-muted); text-decoration: none; }
+.breadcrumbs a:hover { color: var(--brand-green); }
+.breadcrumbs .sep { color: #c3c7cc; }
+.breadcrumbs .here { color: var(--text-primary); font-weight: 500; }
+
+/* Hero (gallery + details) */
+.product-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; padding: 16px 0 56px; }
+.gallery-main {
+  aspect-ratio: 1 / 1; background: var(--surface); border-radius: 16px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-muted); font-size: 14px;
+  position: relative; overflow: hidden;
+}
+.gallery-main::before {
+  content: ""; position: absolute; inset: 20%;
+  background: radial-gradient(circle at 50% 60%, #c7d9e0 0%, transparent 60%);
+  opacity: .35;
+}
+.gallery-main span { position: relative; }
+.gallery-thumbs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 12px; }
+.thumb {
+  aspect-ratio: 1 / 1; background: var(--surface); border-radius: 8px;
+  border: 1px solid var(--border); display: flex; align-items: center; justify-content: center;
+  font-size: 11px; color: var(--text-muted); cursor: pointer;
+}
+.thumb.active { border: 2px solid var(--brand-green); }
+
+.detail-overline {
+  font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600;
+}
+.detail-overline a { color: var(--brand-green); text-decoration: none; }
+.product-name {
+  font-size: 32px; line-height: 40px; font-weight: 700; margin: 8px 0 6px; color: var(--text-primary);
+}
+.product-model { font-size: 14px; color: var(--text-muted); margin: 0 0 20px; }
+.product-intro { font-size: 17px; line-height: 26px; color: var(--text-primary); margin: 0 0 20px; }
+
+.chip-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 24px; }
+.chip {
+  font-size: 12px; padding: 6px 10px; background: var(--surface);
+  color: var(--text-muted); border-radius: 999px; border: 1px solid var(--border);
+}
+.chip.best {
+  background: #EAF4EC; color: var(--brand-green); border-color: #CFE4D4; font-weight: 500;
+}
+
+.cta-stack { display: flex; flex-direction: column; gap: 10px; max-width: 360px; }
+.cta-row { display: flex; gap: 10px; }
+.cta-row .btn { flex: 1; justify-content: center; }
+.cta-reassure {
+  font-size: 13px; color: var(--text-muted); margin: 8px 0 0;
+  display: flex; align-items: center; gap: 6px;
+}
+.cta-reassure svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2; }
+
+/* Section */
+.section { padding: 48px 0; border-top: 1px solid var(--border); }
+.section:first-of-type { border-top: 0; }
+.section h2 { font-size: 24px; line-height: 32px; font-weight: 700; margin: 0 0 20px; }
+
+/* Highlights */
+.ksp-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 32px; }
+.ksp-list li {
+  display: flex; gap: 12px; align-items: flex-start;
+  font-size: 15px; line-height: 22px;
+}
+.ksp-list .ki {
+  width: 32px; height: 32px; flex-shrink: 0; border-radius: 8px;
+  background: #EAF4EC; color: var(--brand-green);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.ksp-list .ki svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2; }
+
+/* Specs table */
+.specs {
+  border: 1px solid var(--border); border-radius: 12px; overflow: hidden;
+}
+.spec-row {
+  display: grid; grid-template-columns: 220px 1fr;
+  padding: 14px 20px; border-bottom: 1px solid var(--border);
+  font-size: 15px;
+}
+.spec-row:last-child { border-bottom: 0; }
+.spec-row:nth-child(odd) { background: var(--surface); }
+.spec-label { color: var(--text-muted); font-weight: 500; }
+.spec-value { color: var(--text-primary); }
+
+/* Features */
+.features-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.features-list li {
+  display: flex; align-items: flex-start; gap: 10px;
+  font-size: 15px; line-height: 22px;
+}
+.features-list li::before {
+  content: ""; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--brand-green); margin-top: 9px; flex-shrink: 0;
+}
+
+/* Related */
+.related-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.product-card {
+  background: #fff; border: 1px solid var(--border); border-radius: 12px;
+  overflow: hidden; box-shadow: var(--shadow-card);
+  display: flex; flex-direction: column; text-decoration: none; color: var(--text-primary);
+}
+.product-card:hover { border-color: var(--brand-green); }
+.pc-photo {
+  aspect-ratio: 1 / 1; background: var(--surface);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-muted); font-size: 13px;
+}
+.pc-body { padding: 14px 16px 16px; }
+.pc-name { font-size: 15px; line-height: 22px; font-weight: 600; margin: 0 0 2px; }
+.pc-model { font-size: 13px; color: var(--text-muted); margin: 0 0 10px; }
+.pc-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+.pc-chips .chip { font-size: 11px; padding: 5px 9px; }
+.pc-view { font-size: 14px; color: var(--brand-green); font-weight: 600; }
+
+/* Bottom CTA strip */
+.bottom-cta {
+  background: var(--surface); padding: 48px 24px; text-align: center;
+}
+.bottom-cta h2 { font-size: 26px; margin: 0 0 10px; }
+.bottom-cta p { font-size: 16px; color: var(--text-muted); margin: 0 0 24px; max-width: 580px; margin-left: auto; margin-right: auto; }
+.bottom-cta .cta-row-c { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+/* Footer */
+.site-footer { background: var(--brand-green); color: #fff; padding: 32px 24px; }
+.footer-mini {
+  max-width: 1120px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;
+}
+.footer-mini .logo-text { color: #fff; font-size: 16px; }
+.footer-mini .logo-mark { background: #fff; }
+.footer-mini .logo-mark svg { fill: var(--brand-green); }
+.footer-mini .f-links { display: flex; gap: 18px; }
+.footer-mini .f-links a { color: #fff; font-size: 14px; text-decoration: none; opacity: .85; }
+.footer-mini .f-links a:hover { opacity: 1; text-decoration: underline; }
+
+/* ========= MOBILE OVERRIDES ========= */
+.mobile-screen .site-header { padding: 14px 16px; }
+.mobile-screen .nav { display: none; }
+.mobile-screen .site-header .btn-wa { display: none; }
+.mobile-screen .hamburger { display: inline-flex; }
+.mobile-screen .logo-text { font-size: 16px; }
+
+.mobile-screen .container { padding: 0 16px; }
+.mobile-screen .breadcrumbs { font-size: 12px; padding: 12px 0; }
+.mobile-screen .product-hero {
+  grid-template-columns: 1fr; gap: 20px; padding: 8px 0 24px;
+}
+.mobile-screen .gallery-thumbs { grid-template-columns: repeat(5, 1fr); }
+.mobile-screen .product-name { font-size: 24px; line-height: 32px; }
+.mobile-screen .product-intro { font-size: 16px; line-height: 24px; }
+.mobile-screen .cta-stack { max-width: none; }
+.mobile-screen .section { padding: 32px 0; }
+.mobile-screen .section h2 { font-size: 20px; line-height: 28px; margin-bottom: 16px; }
+.mobile-screen .ksp-list { grid-template-columns: 1fr; gap: 12px; }
+.mobile-screen .spec-row {
+  grid-template-columns: 1fr; padding: 12px 16px; gap: 2px;
+}
+.mobile-screen .spec-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; }
+.mobile-screen .related-grid {
+  grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 65%;
+  overflow-x: auto; padding-bottom: 8px; scroll-snap-type: x mandatory;
+}
+.mobile-screen .related-grid .product-card { scroll-snap-align: start; }
+.mobile-screen .bottom-cta { padding: 32px 16px; }
+.mobile-screen .bottom-cta h2 { font-size: 20px; }
+
+/* Sticky WhatsApp CTA on mobile */
+.sticky-wa {
+  display: none;
+  position: sticky; bottom: 0; left: 0; right: 0;
+  background: #fff; border-top: 1px solid var(--border);
+  padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px));
+  z-index: 10;
+}
+.sticky-wa .btn { width: 100%; justify-content: center; }
+.mobile-screen .sticky-wa { display: block; }
+.mobile-screen .site-footer { margin-bottom: 60px; } /* space for sticky bar */
+
+/* Side-by-side on wide screens */
+@media (min-width: 1540px) {
+  .frames { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: start; }
+  .mobile-wrap { position: sticky; top: 20px; }
+}
+</style>
+</head>
+<body>
+
+<div class="doc-wrap">
+
+<header class="doc-head">
+  <h1>Product Detail template mockup</h1>
+  <p>Sample product: <code>qk-4zi</code> — real text from <code>product-copy.md</code>. Photos are placeholders until you supply extracted catalogue shots.</p>
+</header>
+
+<div class="frames">
+
+<!-- ================= DESKTOP ================= -->
+<div>
+<div class="frame-label"><span class="pill">Desktop</span> 1280 × scroll</div>
+<div class="desktop-frame">
+  <div class="desktop-chrome">
+    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    <span class="url">riapurewater.com/product/qk-4zi</span>
+  </div>
+  <div class="desktop-scroll">
+  <div class="desktop-content">
+  <div class="site">
+
+    <header class="site-header">
+      <a class="logo" href="#">
+        <span class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2c-3.5 5-6 8.5-6 12a6 6 0 0 0 12 0c0-3.5-2.5-7-6-12z"/></svg></span>
+        <span class="logo-text">RIA Pure Water</span>
+      </a>
+      <nav class="nav">
+        <a href="#">Products</a>
+        <a href="#">Categories</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      <a class="btn btn-wa" href="#">
+        <svg class="wa-icon" viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.2L2.5 21.5l4.4-1.1a11 11 0 0 0 13.6-16.9zM12 20a8 8 0 0 1-4.1-1.1l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 1 1 12 20z"/></svg>
+        Enquire on WhatsApp
+      </a>
+    </header>
+
+    <div class="container">
+      <nav class="breadcrumbs">
+        <a href="#">Home</a>
+        <span class="sep">›</span>
+        <a href="#">Home Water Dispensers</a>
+        <span class="sep">›</span>
+        <span class="here">3-in-1 Portable Water Cooler Dispenser</span>
+      </nav>
+
+      <!-- HERO -->
+      <section class="product-hero">
+        <div>
+          <div class="gallery-main"><span>[ main product photo 1:1 ]</span></div>
+          <div class="gallery-thumbs">
+            <div class="thumb active">1</div>
+            <div class="thumb">2</div>
+            <div class="thumb">3</div>
+            <div class="thumb">4</div>
+          </div>
+        </div>
+        <div>
+          <div class="detail-overline"><a href="#">Home Water Dispensers</a></div>
+          <h1 class="product-name">3-in-1 Portable Water Cooler Dispenser with Built-in Ice Maker</h1>
+          <p class="product-model">Model: QK-4ZI</p>
+          <p class="product-intro">Compact countertop unit that makes ice, hot water, and cold water all from one 3L tank. Ice is ready in about 6 minutes; hot water in 3 seconds.</p>
+          <div class="chip-row">
+            <span class="chip best">Best for: Home &amp; office</span>
+            <span class="chip">Hot &amp; cold</span>
+            <span class="chip">Countertop</span>
+            <span class="chip">Bottle-fed</span>
+          </div>
+          <div class="cta-stack">
+            <a class="btn btn-wa btn-xl" href="#">
+              <svg class="wa-icon" viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.2L2.5 21.5l4.4-1.1a11 11 0 0 0 13.6-16.9zM12 20a8 8 0 0 1-4.1-1.1l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 1 1 12 20z"/></svg>
+              Enquire on WhatsApp
+            </a>
+            <a class="btn btn-outline btn-lg" href="#">Or call 013-368 1349</a>
+            <p class="cta-reassure">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              We reply on WhatsApp within business hours.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- HIGHLIGHTS -->
+      <section class="section">
+        <h2>Highlights</h2>
+        <ul class="ksp-list">
+          <li><span class="ki"><svg viewBox="0 0 24 24"><path d="M12 2L4 14h7l-1 8 8-12h-7z"/></svg></span><span>Ice, hot and cold water in one machine</span></li>
+          <li><span class="ki"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span>6-minute ice cycle, 48-piece ice storage box</span></li>
+          <li><span class="ki"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 8-12h-7z"/></svg></span><span>3-second instant heating, 5°C–100°C range</span></li>
+          <li><span class="ki"><svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="10" rx="2"/><path d="M8 11h8M8 13h5"/></svg></span><span>LED smart panel</span></li>
+          <li><span class="ki"><svg viewBox="0 0 24 24"><path d="M6 10l2-4h8l2 4v8H6z"/><path d="M9 14h6"/></svg></span><span>Compressor refrigeration</span></li>
+        </ul>
+      </section>
+
+      <!-- SPECS -->
+      <section class="section">
+        <h2>Specifications</h2>
+        <div class="specs">
+          <div class="spec-row"><div class="spec-label">Dimensions</div><div class="spec-value">368 × 228 × 397 mm</div></div>
+          <div class="spec-row"><div class="spec-label">Capacity</div><div class="spec-value">Water tank 3L · 48-piece ice storage</div></div>
+          <div class="spec-row"><div class="spec-label">Power</div><div class="spec-value">2200W</div></div>
+          <div class="spec-row"><div class="spec-label">Rated voltage</div><div class="spec-value">220V / 50Hz</div></div>
+          <div class="spec-row"><div class="spec-label">Power cord length</div><div class="spec-value">130 cm</div></div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section class="section">
+        <h2>Features</h2>
+        <ul class="features-list">
+          <li>Ice-making, hot and cold water in one unit</li>
+          <li>Produces ice in about 6 minutes</li>
+          <li>3-second instant heating</li>
+          <li>5°C–100°C temperature regulation</li>
+          <li>48-piece large-capacity ice storage, detachable and easy to clean</li>
+          <li>LED smart panel</li>
+          <li>Compressor refrigeration</li>
+        </ul>
+      </section>
+
+      <!-- (Good to know hidden — raw_notes is empty for this product) -->
+
+      <!-- RELATED -->
+      <section class="section">
+        <h2>You might also consider</h2>
+        <div class="related-grid">
+          <a class="product-card" href="#">
+            <div class="pc-photo">[ photo ]</div>
+            <div class="pc-body">
+              <h3 class="pc-name">Portable Instant H/C Dispenser</h3>
+              <p class="pc-model">Model: PK-INST</p>
+              <div class="pc-chips">
+                <span class="chip">Hot &amp; cold</span>
+                <span class="chip">Portable</span>
+              </div>
+              <span class="pc-view">View →</span>
+            </div>
+          </a>
+          <a class="product-card" href="#">
+            <div class="pc-photo">[ photo ]</div>
+            <div class="pc-body">
+              <h3 class="pc-name">Countertop Hot &amp; Cold Dispenser</h3>
+              <p class="pc-model">Model: RIA-CT100</p>
+              <div class="pc-chips">
+                <span class="chip">Hot &amp; cold</span>
+                <span class="chip">Countertop</span>
+              </div>
+              <span class="pc-view">View →</span>
+            </div>
+          </a>
+          <a class="product-card" href="#">
+            <div class="pc-photo">[ photo ]</div>
+            <div class="pc-body">
+              <h3 class="pc-name">Floor-Standing Dispenser</h3>
+              <p class="pc-model">Model: RIA-FS200</p>
+              <div class="pc-chips">
+                <span class="chip">Hot &amp; cold</span>
+                <span class="chip">Floor</span>
+              </div>
+              <span class="pc-view">View →</span>
+            </div>
+          </a>
+          <a class="product-card" href="#">
+            <div class="pc-photo">[ photo ]</div>
+            <div class="pc-body">
+              <h3 class="pc-name">Mini Bottle Dispenser</h3>
+              <p class="pc-model">Model: RIA-MN50</p>
+              <div class="pc-chips">
+                <span class="chip">Cold only</span>
+                <span class="chip">Countertop</span>
+              </div>
+              <span class="pc-view">View →</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- BOTTOM CTA -->
+    <section class="bottom-cta">
+      <h2>Ready to order the 3-in-1 Portable Dispenser?</h2>
+      <p>Message us on WhatsApp with your delivery location and we'll confirm stock, price, and installation.</p>
+      <div class="cta-row-c">
+        <a class="btn btn-wa btn-xl" href="#">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.2L2.5 21.5l4.4-1.1a11 11 0 0 0 13.6-16.9zM12 20a8 8 0 0 1-4.1-1.1l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 1 1 12 20z"/></svg>
+          Enquire on WhatsApp
+        </a>
+        <a class="btn btn-outline btn-lg" href="#">Or call 013-368 1349</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-mini">
+        <a class="logo" href="#">
+          <span class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2c-3.5 5-6 8.5-6 12a6 6 0 0 0 12 0c0-3.5-2.5-7-6-12z"/></svg></span>
+          <span class="logo-text">RIA Pure Water</span>
+        </a>
+        <div class="f-links">
+          <a href="#">All products</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+
+<!-- ================= MOBILE ================= -->
+<div class="mobile-wrap">
+<div class="frame-label"><span class="pill">Mobile</span> 390 × scroll</div>
+<div class="mobile-frame">
+  <div class="mobile-notch"></div>
+  <div class="mobile-screen">
+  <div class="site">
+
+    <header class="site-header">
+      <a class="logo" href="#">
+        <span class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2c-3.5 5-6 8.5-6 12a6 6 0 0 0 12 0c0-3.5-2.5-7-6-12z"/></svg></span>
+        <span class="logo-text">RIA Pure Water</span>
+      </a>
+      <button class="hamburger" aria-label="Menu">
+        <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round"/></svg>
+      </button>
+    </header>
+
+    <div class="container">
+      <nav class="breadcrumbs">
+        <a href="#">Home</a>
+        <span class="sep">›</span>
+        <a href="#">Dispensers</a>
+        <span class="sep">›</span>
+        <span class="here">3-in-1 Portable</span>
+      </nav>
+
+      <section class="product-hero">
+        <div>
+          <div class="gallery-main"><span>[ main photo ]</span></div>
+          <div class="gallery-thumbs">
+            <div class="thumb active">1</div>
+            <div class="thumb">2</div>
+            <div class="thumb">3</div>
+            <div class="thumb">4</div>
+          </div>
+        </div>
+        <div>
+          <div class="detail-overline"><a href="#">Home Water Dispensers</a></div>
+          <h1 class="product-name">3-in-1 Portable Water Cooler Dispenser with Built-in Ice Maker</h1>
+          <p class="product-model">Model: QK-4ZI</p>
+          <p class="product-intro">Compact countertop unit that makes ice, hot water, and cold water all from one 3L tank. Ice is ready in about 6 minutes; hot water in 3 seconds.</p>
+          <div class="chip-row">
+            <span class="chip best">Best for: Home &amp; office</span>
+            <span class="chip">Hot &amp; cold</span>
+            <span class="chip">Countertop</span>
+            <span class="chip">Bottle-fed</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="border-top:1px solid var(--border); padding-top:32px">
+        <h2>Highlights</h2>
+        <ul class="ksp-list">
+          <li><span class="ki"><svg viewBox="0 0 24 24"><path d="M12 2L4 14h7l-1 8 8-12h-7z"/></svg></span><span>Ice, hot and cold water in one machine</span></li>
+          <li><span class="ki"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span>6-minute ice cycle, 48-piece ice storage</span></li>
+          <li><span class="ki"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 8-12h-7z"/></svg></span><span>3-second instant heating, 5°C–100°C range</span></li>
+          <li><span class="ki"><svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="10" rx="2"/><path d="M8 11h8M8 13h5"/></svg></span><span>LED smart panel</span></li>
+          <li><span class="ki"><svg viewBox="0 0 24 24"><path d="M6 10l2-4h8l2 4v8H6z"/><path d="M9 14h6"/></svg></span><span>Compressor refrigeration</span></li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Specifications</h2>
+        <div class="specs">
+          <div class="spec-row"><div class="spec-label">Dimensions</div><div class="spec-value">368 × 228 × 397 mm</div></div>
+          <div class="spec-row"><div class="spec-label">Capacity</div><div class="spec-value">Water tank 3L · 48-piece ice storage</div></div>
+          <div class="spec-row"><div class="spec-label">Power</div><div class="spec-value">2200W</div></div>
+          <div class="spec-row"><div class="spec-label">Rated voltage</div><div class="spec-value">220V / 50Hz</div></div>
+          <div class="spec-row"><div class="spec-label">Power cord length</div><div class="spec-value">130 cm</div></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Features</h2>
+        <ul class="features-list">
+          <li>Ice-making, hot and cold water in one unit</li>
+          <li>Produces ice in about 6 minutes</li>
+          <li>3-second instant heating</li>
+          <li>5°C–100°C temperature regulation</li>
+          <li>48-piece ice storage, detachable and easy to clean</li>
+          <li>LED smart panel</li>
+          <li>Compressor refrigeration</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>You might also consider</h2>
+        <div class="related-grid">
+          <a class="product-card" href="#">
+            <div class="pc-photo">[ photo ]</div>
+            <div class="pc-body">
+              <h3 class="pc-name">Portable Instant H/C</h3>
+              <p class="pc-model">PK-INST</p>
+              <div class="pc-chips"><span class="chip">Hot &amp; cold</span></div>
+              <span class="pc-view">View →</span>
+            </div>
+          </a>
+          <a class="product-card" href="#">
+            <div class="pc-photo">[ photo ]</div>
+            <div class="pc-body">
+              <h3 class="pc-name">Countertop H/C</h3>
+              <p class="pc-model">RIA-CT100</p>
+              <div class="pc-chips"><span class="chip">Countertop</span></div>
+              <span class="pc-view">View →</span>
+            </div>
+          </a>
+          <a class="product-card" href="#">
+            <div class="pc-photo">[ photo ]</div>
+            <div class="pc-body">
+              <h3 class="pc-name">Floor-Standing</h3>
+              <p class="pc-model">RIA-FS200</p>
+              <div class="pc-chips"><span class="chip">Floor</span></div>
+              <span class="pc-view">View →</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <section class="bottom-cta">
+      <h2>Ready to order?</h2>
+      <p>Message us on WhatsApp with your delivery location and we'll confirm stock, price, and installation.</p>
+      <div class="cta-row-c">
+        <a class="btn btn-wa btn-lg" href="#">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.2L2.5 21.5l4.4-1.1a11 11 0 0 0 13.6-16.9zM12 20a8 8 0 0 1-4.1-1.1l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 1 1 12 20z"/></svg>
+          WhatsApp
+        </a>
+        <a class="btn btn-outline" href="#">Call 013-368 1349</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-mini">
+        <a class="logo" href="#">
+          <span class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2c-3.5 5-6 8.5-6 12a6 6 0 0 0 12 0c0-3.5-2.5-7-6-12z"/></svg></span>
+          <span class="logo-text">RIA Pure Water</span>
+        </a>
+        <div class="f-links">
+          <a href="#">All</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Sticky WhatsApp CTA (mobile only) -->
+    <div class="sticky-wa">
+      <a class="btn btn-wa btn-lg" href="#">
+        <svg class="wa-icon" viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.2L2.5 21.5l4.4-1.1a11 11 0 0 0 13.6-16.9zM12 20a8 8 0 0 1-4.1-1.1l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 1 1 12 20z"/></svg>
+        Enquire about QK-4ZI
+      </a>
+    </div>
+
+  </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+</div>
+</body>
+</html>

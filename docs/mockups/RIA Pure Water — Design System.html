@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RIA Pure Water — Design System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --brand-green: #1F6F3A;
+  --brand-green-hover: #175A2E;
+  --brand-blue: #3AA9E0;
+  --brand-blue-hover: #2691CB;
+  --accent-lime: #4CBD3A;
+  --text-primary: #2D3748;
+  --text-muted: #6B7280;
+  --surface: #F5F7F8;
+  --background: #FFFFFF;
+  --border: #E5E7EB;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  --shadow-card: 0 1px 2px rgba(16,24,40,.04), 0 1px 3px rgba(16,24,40,.06);
+
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+*, *::before, *::after { box-sizing: inherit; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--text-primary);
+  background: var(--background);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page { max-width: 960px; margin: 0 auto; padding: 32px 20px 96px; }
+
+/* Header */
+.doc-head {
+  padding: 24px 0 32px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 48px;
+}
+.doc-head h1 {
+  font-size: 32px; line-height: 40px; font-weight: 700;
+  color: var(--brand-green); margin: 0 0 8px;
+}
+.doc-head p { margin: 0; color: var(--text-muted); font-size: 16px; }
+
+/* Section */
+.section { margin-bottom: 64px; }
+.section-title {
+  font-size: 12px; line-height: 16px; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--brand-green); margin: 0 0 8px;
+}
+.section h2 {
+  font-size: 24px; line-height: 32px; font-weight: 700;
+  margin: 0 0 24px; color: var(--text-primary);
+}
+.section-note {
+  font-size: 14px; color: var(--text-muted);
+  margin: -16px 0 24px;
+}
+
+/* Swatches */
+.swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.swatch {
+  border: 1px solid var(--border); border-radius: var(--radius-md);
+  overflow: hidden; background: var(--background);
+}
+.swatch-color { height: 72px; }
+.swatch-meta { padding: 12px 14px; }
+.swatch-name {
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 13px; color: var(--text-primary); font-weight: 600;
+}
+.swatch-hex { font-size: 13px; color: var(--text-muted); margin-top: 2px; font-family: ui-monospace, monospace; }
+.swatch-use { font-size: 13px; color: var(--text-muted); margin-top: 8px; line-height: 1.4; }
+
+/* Type scale */
+.type-row {
+  display: grid; grid-template-columns: 180px 1fr; gap: 24px;
+  padding: 16px 0; border-bottom: 1px dashed var(--border); align-items: baseline;
+}
+.type-meta { font-family: ui-monospace, monospace; font-size: 12px; color: var(--text-muted); }
+.type-meta strong { display: block; color: var(--text-primary); font-size: 13px; font-weight: 600; margin-bottom: 4px; font-family: 'Inter', sans-serif; }
+.type-sample { color: var(--text-primary); }
+.ts-h1 { font-size: 32px; line-height: 40px; font-weight: 700; }
+.ts-h2 { font-size: 24px; line-height: 32px; font-weight: 700; }
+.ts-h3 { font-size: 20px; line-height: 28px; font-weight: 600; }
+.ts-h4 { font-size: 16px; line-height: 24px; font-weight: 600; }
+.ts-bodylg { font-size: 18px; line-height: 28px; font-weight: 400; }
+.ts-body { font-size: 16px; line-height: 24px; font-weight: 400; }
+.ts-bodysm { font-size: 14px; line-height: 20px; font-weight: 400; }
+.ts-button { font-size: 16px; line-height: 24px; font-weight: 600; }
+.ts-overline { font-size: 12px; line-height: 16px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); }
+
+/* Spacing */
+.spacing-grid { display: flex; flex-direction: column; gap: 10px; }
+.spacing-row { display: grid; grid-template-columns: 100px 1fr; align-items: center; gap: 16px; }
+.spacing-label { font-family: ui-monospace, monospace; font-size: 13px; color: var(--text-muted); }
+.spacing-label strong { color: var(--text-primary); display: block; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 13px; }
+.spacing-bar { height: 20px; background: var(--brand-green); border-radius: 2px; }
+
+/* Radius */
+.radius-grid { display: flex; gap: 20px; flex-wrap: wrap; }
+.radius-tile {
+  width: 96px; height: 96px; background: var(--surface);
+  border: 1px solid var(--border); display: flex; align-items: center; justify-content: center;
+  font-family: ui-monospace, monospace; font-size: 12px; color: var(--text-muted);
+}
+
+/* Buttons */
+.btn-group { display: flex; flex-wrap: wrap; gap: 16px 20px; align-items: center; }
+.btn-cell { display: flex; flex-direction: column; gap: 6px; }
+.btn-cell .cap { font-size: 12px; color: var(--text-muted); font-family: ui-monospace, monospace; }
+
+.btn {
+  font-family: inherit; font-size: 16px; line-height: 24px; font-weight: 600;
+  padding: 12px 24px; border-radius: 8px; border: 1px solid transparent;
+  cursor: pointer; display: inline-flex; align-items: center; gap: 8px;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .btn { padding: 14px 28px; }
+}
+.btn-whatsapp { background: var(--brand-blue); color: #fff; }
+.btn-whatsapp:hover { background: var(--brand-blue-hover); }
+.btn-primary { background: var(--brand-green); color: #fff; }
+.btn-primary:hover { background: var(--brand-green-hover); }
+.btn-secondary { background: #fff; color: var(--brand-green); border-color: var(--brand-green); }
+.btn-secondary:hover { background: var(--surface); }
+.btn-tertiary {
+  background: transparent; color: var(--brand-green); padding: 8px 4px;
+  border-radius: 4px; text-decoration: underline; text-underline-offset: 3px;
+}
+.btn-tertiary:hover { color: var(--brand-green-hover); }
+
+.wa-icon { width: 18px; height: 18px; fill: currentColor; }
+
+/* Product card */
+.card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+.product-card {
+  background: var(--background); border: 1px solid var(--border);
+  border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-card);
+  display: flex; flex-direction: column;
+}
+.product-card:hover { border-color: var(--brand-green); }
+.pc-photo {
+  aspect-ratio: 1 / 1; background: var(--surface);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-muted); font-size: 13px;
+}
+.pc-body { padding: 14px 16px 18px; }
+.pc-name { font-size: 16px; line-height: 24px; font-weight: 600; color: var(--text-primary); margin: 0 0 2px; }
+.pc-model { font-size: 13px; color: var(--text-muted); margin: 0 0 10px; }
+.pc-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+.chip {
+  font-size: 12px; line-height: 1; padding: 6px 10px;
+  background: var(--surface); color: var(--text-muted);
+  border-radius: 999px; border: 1px solid var(--border);
+}
+.chip.lime { background: #EEF9EC; color: #2E6B22; border-color: #D7F0D1; }
+.pc-view { font-size: 14px; color: var(--brand-green); font-weight: 600; }
+
+/* Inputs */
+.input-group { display: flex; flex-direction: column; gap: 20px; max-width: 420px; }
+.input-field { display: flex; flex-direction: column; gap: 6px; }
+.input-label { font-size: 14px; font-weight: 600; color: var(--text-primary); }
+.input-hint { font-size: 13px; color: var(--text-muted); }
+.text-input {
+  font: inherit; padding: 10px 12px; border: 1px solid var(--border);
+  border-radius: 8px; background: #fff; color: var(--text-primary);
+}
+.text-input:focus { outline: 2px solid var(--brand-green); outline-offset: 1px; border-color: var(--brand-green); }
+textarea.text-input { min-height: 96px; resize: vertical; font-family: inherit; }
+
+/* Filter chips */
+.filter-chip-group { display: flex; flex-wrap: wrap; gap: 8px; }
+.fchip {
+  font-size: 14px; font-weight: 500;
+  padding: 8px 14px; border-radius: 999px;
+  border: 1px solid var(--border); background: #fff;
+  color: var(--text-primary); cursor: pointer;
+}
+.fchip:hover { border-color: var(--brand-green); }
+.fchip.active {
+  background: var(--brand-green); color: #fff; border-color: var(--brand-green);
+}
+
+/* Shadow preview */
+.shadow-tile {
+  background: #fff; border-radius: var(--radius-lg);
+  padding: 20px; border: 1px solid var(--border);
+  box-shadow: var(--shadow-card); max-width: 320px;
+  font-size: 14px; color: var(--text-muted);
+}
+
+/* Footer note */
+.footer-note {
+  margin-top: 48px; padding: 16px; background: var(--surface);
+  border-radius: 8px; font-size: 14px; color: var(--text-muted);
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="doc-head">
+  <h1>RIA Pure Water — Design System</h1>
+  <p>Visual language reference. Approve this before we move to page mockups.</p>
+</header>
+
+<!-- COLOUR -->
+<section class="section">
+  <div class="section-title">01 — Colour</div>
+  <h2>Tokens &amp; usage</h2>
+  <p class="section-note">Green for identity + primary action. Blue for the WhatsApp CTA (the one action we most want). Lime used sparingly as a highlight.</p>
+  <div class="swatches">
+    <div class="swatch">
+      <div class="swatch-color" style="background:#1F6F3A"></div>
+      <div class="swatch-meta">
+        <div class="swatch-name">--brand-green</div>
+        <div class="swatch-hex">#1F6F3A</div>
+        <div class="swatch-use">Primary buttons, active nav, H1/H2 headings, links, footer background.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#175A2E"></div>
+      <div class="swatch-meta">
+        <div class="swatch-name">--brand-green-hover</div>
+        <div class="swatch-hex">#175A2E</div>
+        <div class="swatch-use">Button + link hover state.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#3AA9E0"></div>
+      <div class="swatch-meta">
+        <div class="swatch-name">--brand-blue</div>
+        <div class="swatch-hex">#3AA9E0</div>
+        <div class="swatch-use">WhatsApp CTA, water-related icons, info callouts.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#2691CB"></div>
+      <div class="swatch-meta">
+        <div class="swatch-name">--brand-blue-hover</div>
+        <div class="swatch-hex">#2691CB</div>
+        <div class="swatch-use">WhatsApp button hover.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#4CBD3A"></div>
+      <div class="swatch-meta">
+        <div class="swatch-name">--accent-lime</div>
+        <div class="swatch-hex">#4CBD3A</div>
+        <div class="swatch-use">Small badges only — "New", "Popular". One per screen max.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#2D3748"></div>
+      <div class="swatch-meta">
+        <div class="swatch-name">--text-primary</div>
+        <div class="swatch-hex">#2D3748</div>
+        <div class="swatch-use">Body copy, product descriptions.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#6B7280"></div>
+      <div class="swatch-meta">
+        <div class="swatch-name">--text-muted</div>
+        <div class="swatch-hex">#6B7280</div>
+        <div class="swatch-use">Captions, meta info, labels, form hints.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#F5F7F8;border-bottom:1px solid #E5E7EB"></div>
+      <div class="swatch-meta">
+        <div class="swatch-name">--surface</div>
+        <div class="swatch-hex">#F5F7F8</div>
+        <div class="swatch-use">Alt section backgrounds, card backgrounds on white pages.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#FFFFFF;border-bottom:1px solid #E5E7EB"></div>
+      <div class="swatch-meta">
+        <div class="swatch-name">--background</div>
+        <div class="swatch-hex">#FFFFFF</div>
+        <div class="swatch-use">Default page background.</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#E5E7EB"></div>
+      <div class="swatch-meta">
+        <div class="swatch-name">--border</div>
+        <div class="swatch-hex">#E5E7EB</div>
+        <div class="swatch-use">Card borders, dividers, input borders.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TYPE -->
+<section class="section">
+  <div class="section-title">02 — Typography</div>
+  <h2>Inter — one family, 400 / 500 / 600 / 700</h2>
+  <p class="section-note">Mobile sizes shown. Desktop scales: H1 → 44, H2 → 32, H3 → 24; body stays 16.</p>
+
+  <div class="type-row">
+    <div class="type-meta"><strong>H1</strong>32 / 40 · 700</div>
+    <div class="type-sample ts-h1">Clean water for every home</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>H2</strong>24 / 32 · 700</div>
+    <div class="type-sample ts-h2">Find what fits your space</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>H3</strong>20 / 28 · 600</div>
+    <div class="type-sample ts-h3">Floor-standing dispensers</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>H4</strong>16 / 24 · 600</div>
+    <div class="type-sample ts-h4">Capacity</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>Body-lg</strong>18 / 28 · 400</div>
+    <div class="type-sample ts-bodylg">Water dispensers, undersink systems, and whole-house filtration — delivered across Malaysia.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>Body</strong>16 / 24 · 400</div>
+    <div class="type-sample ts-body">Hot and cold water on demand. Fits standard 5-gallon bottles. Uses about 90W in normal home use.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>Body-sm</strong>14 / 20 · 400</div>
+    <div class="type-sample ts-bodysm">We reply on WhatsApp within business hours.</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>Button</strong>16 / 24 · 600</div>
+    <div class="type-sample ts-button">Enquire on WhatsApp</div>
+  </div>
+  <div class="type-row">
+    <div class="type-meta"><strong>Overline</strong>12 / 16 · 600 · +0.08em</div>
+    <div class="type-sample ts-overline">Shop by category</div>
+  </div>
+</section>
+
+<!-- SPACING -->
+<section class="section">
+  <div class="section-title">03 — Spacing</div>
+  <h2>8-point scale with a 4-step half</h2>
+  <p class="section-note">Use these increments for padding, margin, and gaps. 4 is for tight icon spacing only; most layout uses 16 / 24 / 32.</p>
+  <div class="spacing-grid">
+    <div class="spacing-row"><div class="spacing-label"><strong>space-1</strong>4px</div><div class="spacing-bar" style="width:4px"></div></div>
+    <div class="spacing-row"><div class="spacing-label"><strong>space-2</strong>8px</div><div class="spacing-bar" style="width:8px"></div></div>
+    <div class="spacing-row"><div class="spacing-label"><strong>space-3</strong>12px</div><div class="spacing-bar" style="width:12px"></div></div>
+    <div class="spacing-row"><div class="spacing-label"><strong>space-4</strong>16px</div><div class="spacing-bar" style="width:16px"></div></div>
+    <div class="spacing-row"><div class="spacing-label"><strong>space-6</strong>24px</div><div class="spacing-bar" style="width:24px"></div></div>
+    <div class="spacing-row"><div class="spacing-label"><strong>space-8</strong>32px</div><div class="spacing-bar" style="width:32px"></div></div>
+    <div class="spacing-row"><div class="spacing-label"><strong>space-12</strong>48px</div><div class="spacing-bar" style="width:48px"></div></div>
+    <div class="spacing-row"><div class="spacing-label"><strong>space-16</strong>64px</div><div class="spacing-bar" style="width:64px"></div></div>
+  </div>
+</section>
+
+<!-- RADIUS + SHADOW -->
+<section class="section">
+  <div class="section-title">04 — Radius &amp; shadow</div>
+  <h2>Soft corners, subtle lift</h2>
+  <div class="radius-grid" style="margin-bottom: 32px">
+    <div class="radius-tile" style="border-radius:4px">4px<br>sm</div>
+    <div class="radius-tile" style="border-radius:8px">8px<br>md · buttons, inputs</div>
+    <div class="radius-tile" style="border-radius:12px">12px<br>lg · cards</div>
+    <div class="radius-tile" style="border-radius:16px">16px<br>xl · hero</div>
+  </div>
+  <div class="shadow-tile">
+    Elevation — one shadow, used on product cards and raised panels.<br>
+    <code style="font-size:12px">0 1px 2px rgba(16,24,40,.04), 0 1px 3px rgba(16,24,40,.06)</code>
+  </div>
+</section>
+
+<!-- BUTTONS -->
+<section class="section">
+  <div class="section-title">05 — Buttons</div>
+  <h2>Four variants, one size</h2>
+  <p class="section-note">Button size and padding stay consistent across the site. Hover darkens one shade.</p>
+  <div class="btn-group">
+    <div class="btn-cell">
+      <span class="cap">WhatsApp CTA (primary action)</span>
+      <a class="btn btn-whatsapp" href="#">
+        <svg class="wa-icon" viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.2L2.5 21.5l4.4-1.1a11 11 0 0 0 13.6-16.9zM12 20a8 8 0 0 1-4.1-1.1l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 1 1 12 20zm4.6-5.9c-.3-.1-1.5-.8-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.1-.5 0a6.6 6.6 0 0 1-3.3-2.9c-.2-.4 0-.6.2-.8l.4-.4a1.4 1.4 0 0 0 .3-.5.5.5 0 0 0 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.1 5 5 0 0 0 1.1 2.7 11.5 11.5 0 0 0 4.4 3.9c.6.3 1.1.5 1.5.6a3.6 3.6 0 0 0 1.6.1 2.7 2.7 0 0 0 1.7-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3z"/></svg>
+        Enquire on WhatsApp
+      </a>
+    </div>
+    <div class="btn-cell">
+      <span class="cap">Primary (brand)</span>
+      <a class="btn btn-primary" href="#">Browse products</a>
+    </div>
+    <div class="btn-cell">
+      <span class="cap">Secondary (outlined)</span>
+      <a class="btn btn-secondary" href="#">View category</a>
+    </div>
+    <div class="btn-cell">
+      <span class="cap">Tertiary (text link)</span>
+      <a class="btn btn-tertiary" href="#">Or call 013-368 1349</a>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT CARD -->
+<section class="section">
+  <div class="section-title">06 — Product card</div>
+  <h2>One tile, used everywhere</h2>
+  <p class="section-note">Square photo, name, model, up to three filter chips. Whole card is clickable. Used on Home popular picks, Category grid, All products, and Related products.</p>
+  <div class="card-grid">
+    <a class="product-card" href="#">
+      <div class="pc-photo">[ product photo 1:1 ]</div>
+      <div class="pc-body">
+        <h3 class="pc-name">RIA Floor-Standing Dispenser</h3>
+        <p class="pc-model">Model: RIA-FS200</p>
+        <div class="pc-chips">
+          <span class="chip">Hot &amp; cold</span>
+          <span class="chip">Floor-standing</span>
+          <span class="chip">Home</span>
+        </div>
+        <span class="pc-view">View →</span>
+      </div>
+    </a>
+    <a class="product-card" href="#">
+      <div class="pc-photo">[ product photo 1:1 ]</div>
+      <div class="pc-body">
+        <h3 class="pc-name">Undersink Alkaline System</h3>
+        <p class="pc-model">Model: RIA-US500</p>
+        <div class="pc-chips">
+          <span class="chip">Alkaline</span>
+          <span class="chip">Undersink</span>
+          <span class="chip lime">Popular</span>
+        </div>
+        <span class="pc-view">View →</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- INPUTS -->
+<section class="section">
+  <div class="section-title">07 — Inputs</div>
+  <h2>Filter chips &amp; form fields</h2>
+
+  <h3 class="ts-h3" style="margin-bottom:12px">Filter chips (Category page)</h3>
+  <p class="section-note" style="margin-top:0">Multi-select within group, tap to toggle. Active chip = brand green.</p>
+  <div class="filter-chip-group" style="margin-bottom:40px">
+    <button class="fchip">Hot &amp; cold</button>
+    <button class="fchip active">Cold only</button>
+    <button class="fchip">Alkaline</button>
+    <button class="fchip active">RO</button>
+    <button class="fchip">Ambient</button>
+  </div>
+
+  <h3 class="ts-h3" style="margin-bottom:12px">Form fields (Contact page, if needed later)</h3>
+  <div class="input-group">
+    <div class="input-field">
+      <label class="input-label" for="demo-name">Your name</label>
+      <input class="text-input" id="demo-name" type="text" placeholder="e.g. Siti">
+    </div>
+    <div class="input-field">
+      <label class="input-label" for="demo-msg">Message</label>
+      <textarea class="text-input" id="demo-msg" placeholder="Tell us your setup and water needs…"></textarea>
+      <span class="input-hint">We reply on WhatsApp within business hours.</span>
+    </div>
+  </div>
+</section>
+
+<div class="footer-note">
+  <strong>Launch spec reminder:</strong> English only, mobile-first, every path leads to WhatsApp within 2 clicks.
+  Once you approve this sheet, I'll apply the same tokens to the Home page mockup (Checkpoint 2).
+</div>
+
+</div>
+</body>
+</html>

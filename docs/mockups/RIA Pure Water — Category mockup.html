@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RIA Pure Water — Category mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --brand-green: #1F6F3A;
+  --brand-green-hover: #175A2E;
+  --brand-blue: #3AA9E0;
+  --brand-blue-hover: #2691CB;
+  --accent-lime: #4CBD3A;
+  --text-primary: #2D3748;
+  --text-muted: #6B7280;
+  --surface: #F5F7F8;
+  --background: #FFFFFF;
+  --border: #E5E7EB;
+  --shadow-card: 0 1px 2px rgba(16,24,40,.04), 0 1px 3px rgba(16,24,40,.06);
+  box-sizing: border-box;
+}
+*, *::before, *::after { box-sizing: inherit; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #EEF1F3;
+  color: var(--text-primary);
+  padding: 32px 16px 96px;
+}
+
+.doc-wrap { max-width: 1480px; margin: 0 auto; }
+.doc-head { padding: 8px 0 32px; }
+.doc-head h1 { font-size: 24px; margin: 0 0 6px; color: var(--brand-green); font-weight: 700; }
+.doc-head p { margin: 0; color: var(--text-muted); font-size: 14px; }
+.doc-head code { background: #fff; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+
+.frame-label {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 13px; font-weight: 600; color: var(--text-muted);
+  text-transform: uppercase; letter-spacing: 0.08em;
+  margin: 32px 0 12px;
+}
+.frame-label .pill { background: var(--brand-green); color: #fff; padding: 3px 10px; border-radius: 999px; letter-spacing: 0.04em; }
+.frame-label.alt .pill { background: #946a1a; }
+
+.desktop-frame { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,.08); border: 1px solid #d9dde0; }
+.desktop-chrome { background: #e9edef; padding: 10px 14px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #d0d5d9; }
+.desktop-chrome .dot { width: 11px; height: 11px; border-radius: 50%; background: #cfd3d6; }
+.desktop-chrome .url { flex: 1; background: #fff; border-radius: 6px; padding: 4px 10px; font-size: 12px; color: var(--text-muted); margin-left: 12px; font-family: ui-monospace, monospace; }
+.desktop-scroll { overflow-x: auto; }
+.desktop-content { width: 1280px; }
+
+.mobile-wrap { max-width: 420px; margin: 0 auto; }
+.mobile-frame { background: #111; border-radius: 36px; padding: 10px; box-shadow: 0 20px 60px rgba(0,0,0,.18); }
+.mobile-screen { background: #fff; border-radius: 28px; overflow: hidden; width: 390px; max-height: 1500px; overflow-y: auto; position: relative; }
+.mobile-notch { height: 24px; background: #111; display: flex; justify-content: center; align-items: flex-end; }
+.mobile-notch::after { content: ""; width: 120px; height: 18px; background: #111; border-radius: 0 0 14px 14px; }
+
+/* ========= SITE ========= */
+.site { font-family: 'Inter', sans-serif; color: var(--text-primary); background: #fff; }
+
+.site-header { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; border-bottom: 1px solid var(--border); background: #fff; }
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--brand-green); }
+.logo-mark { width: 32px; height: 32px; background: var(--brand-green); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; }
+.logo-mark svg { width: 18px; height: 18px; fill: #fff; }
+.logo-text { font-size: 18px; font-weight: 700; }
+.nav { display: flex; align-items: center; gap: 24px; }
+.nav a { color: var(--text-primary); font-size: 15px; font-weight: 500; text-decoration: none; }
+.nav a:hover { color: var(--brand-green); }
+.nav a.current { color: var(--brand-green); font-weight: 600; }
+
+.btn { font: inherit; font-weight: 600; cursor: pointer; padding: 10px 18px; border-radius: 8px; border: 1px solid transparent; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; white-space: nowrap; font-size: 15px; }
+.btn-wa { background: var(--brand-blue); color: #fff; }
+.btn-wa:hover { background: var(--brand-blue-hover); }
+.btn-primary { background: var(--brand-green); color: #fff; }
+.btn-outline { background: #fff; color: var(--brand-green); border-color: var(--brand-green); }
+.btn-outline:hover { background: var(--surface); }
+.btn-lg { padding: 14px 26px; font-size: 16px; }
+.wa-icon { width: 16px; height: 16px; fill: currentColor; }
+
+.hamburger { display: none; background: none; border: 0; padding: 4px; cursor: pointer; }
+.hamburger svg { width: 24px; height: 24px; stroke: var(--text-primary); fill: none; stroke-width: 2; }
+
+/* ========= CATEGORY PAGE ========= */
+.container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+
+.breadcrumbs { padding: 20px 0; font-size: 13px; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.breadcrumbs a { color: var(--text-muted); text-decoration: none; }
+.breadcrumbs a:hover { color: var(--brand-green); }
+.breadcrumbs .sep { color: #c3c7cc; }
+.breadcrumbs .here { color: var(--text-primary); font-weight: 500; }
+
+.cat-header { padding: 8px 0 32px; }
+.cat-overline { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--brand-green); margin: 0 0 8px; }
+.cat-title { font-size: 36px; line-height: 44px; font-weight: 700; margin: 0 0 10px; }
+.cat-desc { font-size: 17px; line-height: 26px; color: var(--text-muted); margin: 0 0 10px; max-width: 760px; }
+.cat-meta { font-size: 14px; color: var(--text-muted); font-weight: 500; }
+
+/* Filter bar — desktop horizontal */
+.filter-bar {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  padding: 20px 24px; margin-bottom: 24px;
+}
+.filter-row { display: grid; grid-template-columns: 140px 1fr; gap: 20px; padding: 10px 0; align-items: flex-start; border-bottom: 1px dashed var(--border); }
+.filter-row:last-child { border-bottom: 0; }
+.filter-group-label { font-size: 13px; font-weight: 600; color: var(--text-primary); padding-top: 6px; }
+.filter-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.fchip {
+  font: inherit; font-size: 14px; font-weight: 500;
+  padding: 7px 14px; border-radius: 999px;
+  border: 1px solid var(--border); background: #fff;
+  color: var(--text-primary); cursor: pointer;
+}
+.fchip:hover { border-color: var(--brand-green); }
+.fchip.active {
+  background: var(--brand-green); color: #fff; border-color: var(--brand-green);
+}
+.fchip.active::before {
+  content: "✓"; margin-right: 6px; font-weight: 700;
+}
+
+/* Applied filters row */
+.applied-row {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 8px;
+  margin-bottom: 20px; font-size: 14px;
+}
+.applied-row .lbl { color: var(--text-muted); margin-right: 4px; }
+.applied-tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--brand-green); color: #fff;
+  padding: 5px 10px; border-radius: 999px; font-size: 13px; font-weight: 500;
+}
+.applied-tag button { background: none; border: 0; color: #fff; cursor: pointer; padding: 0; font-size: 15px; line-height: 1; }
+.clear-all {
+  color: var(--brand-green); font-size: 13px; font-weight: 600;
+  background: none; border: 0; cursor: pointer; text-decoration: underline; margin-left: 8px;
+}
+
+/* Mobile filter trigger + sort row */
+.filter-trigger-row { display: none; align-items: center; justify-content: space-between; padding: 12px 0 16px; }
+.filter-trigger {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 16px; border: 1px solid var(--border); border-radius: 8px;
+  background: #fff; font-size: 14px; font-weight: 600; cursor: pointer;
+}
+.filter-trigger svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; }
+.filter-trigger .count {
+  background: var(--brand-green); color: #fff; font-size: 11px;
+  min-width: 18px; height: 18px; border-radius: 999px;
+  display: inline-flex; align-items: center; justify-content: center; padding: 0 5px;
+}
+
+/* Product grid */
+.grid-head { display: flex; align-items: center; justify-content: space-between; margin: 8px 0 16px; }
+.result-count { font-size: 14px; color: var(--text-muted); }
+.product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+
+.product-card {
+  background: #fff; border: 1px solid var(--border); border-radius: 12px;
+  overflow: hidden; box-shadow: var(--shadow-card);
+  display: flex; flex-direction: column; text-decoration: none; color: var(--text-primary);
+}
+.product-card:hover { border-color: var(--brand-green); }
+.pc-photo { aspect-ratio: 1 / 1; background: var(--surface); display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 13px; }
+.pc-body { padding: 14px 16px 16px; }
+.pc-name { font-size: 15px; line-height: 22px; font-weight: 600; margin: 0 0 2px; }
+.pc-model { font-size: 13px; color: var(--text-muted); margin: 0 0 10px; }
+.pc-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+.chip { font-size: 11px; padding: 5px 9px; background: var(--surface); color: var(--text-muted); border-radius: 999px; border: 1px solid var(--border); }
+.pc-view { font-size: 14px; color: var(--brand-green); font-weight: 600; }
+
+.cat-contact-strip {
+  background: var(--surface); padding: 48px 24px; text-align: center; margin-top: 48px;
+}
+.cat-contact-strip h2 { font-size: 26px; margin: 0 0 10px; }
+.cat-contact-strip p { font-size: 16px; color: var(--text-muted); margin: 0 0 24px; max-width: 580px; margin-left: auto; margin-right: auto; }
+.cta-row-c { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+.site-footer { background: var(--brand-green); color: #fff; padding: 32px 24px; }
+.footer-mini { max-width: 1120px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
+.footer-mini .logo-text { color: #fff; font-size: 16px; }
+.footer-mini .logo-mark { background: #fff; }
+.footer-mini .logo-mark svg { fill: var(--brand-green); }
+.footer-mini .f-links { display: flex; gap: 18px; }
+.footer-mini .f-links a { color: #fff; font-size: 14px; text-decoration: none; opacity: .85; }
+.footer-mini .f-links a:hover { opacity: 1; text-decoration: underline; }
+
+/* ========= EMPTY STATE (variant) ========= */
+.empty-state {
+  padding: 48px 24px; text-align: center;
+  border: 1px dashed var(--border); border-radius: 12px; background: var(--surface);
+}
+.empty-state h3 { font-size: 20px; margin: 0 0 8px; }
+.empty-state p { font-size: 15px; color: var(--text-muted); margin: 0 0 20px; max-width: 420px; margin-left: auto; margin-right: auto; }
+.empty-state .btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+/* ========= MOBILE OVERRIDES ========= */
+.mobile-screen .site-header { padding: 14px 16px; }
+.mobile-screen .nav { display: none; }
+.mobile-screen .site-header .btn-wa { display: none; }
+.mobile-screen .hamburger { display: inline-flex; }
+.mobile-screen .logo-text { font-size: 16px; }
+.mobile-screen .container { padding: 0 16px; }
+.mobile-screen .breadcrumbs { font-size: 12px; padding: 12px 0; }
+.mobile-screen .cat-title { font-size: 24px; line-height: 32px; }
+.mobile-screen .cat-desc { font-size: 15px; line-height: 22px; }
+
+.mobile-screen .filter-bar { display: none; }  /* hidden — mobile uses sheet */
+.mobile-screen .filter-trigger-row { display: flex; }
+
+.mobile-screen .applied-row { padding-bottom: 8px; }
+
+.mobile-screen .product-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.mobile-screen .pc-body { padding: 10px 12px 12px; }
+.mobile-screen .pc-name { font-size: 14px; line-height: 20px; }
+.mobile-screen .pc-model { font-size: 12px; margin-bottom: 8px; }
+.mobile-screen .pc-chips { gap: 4px; margin-bottom: 8px; }
+.mobile-screen .chip { font-size: 10px; padding: 4px 7px; }
+.mobile-screen .cat-contact-strip { padding: 32px 16px; margin-top: 32px; }
+.mobile-screen .cat-contact-strip h2 { font-size: 20px; }
+
+/* ========= MOBILE BOTTOM SHEET (second mobile frame) ========= */
+.sheet-overlay {
+  position: absolute; inset: 0; background: rgba(0,0,0,.4);
+  display: flex; align-items: flex-end;
+}
+.sheet {
+  background: #fff; width: 100%;
+  border-radius: 20px 20px 0 0;
+  max-height: 85%; overflow-y: auto;
+  display: flex; flex-direction: column;
+}
+.sheet-handle {
+  display: flex; justify-content: center; padding: 10px 0 4px;
+}
+.sheet-handle::after {
+  content: ""; width: 44px; height: 4px; background: #d0d5d9; border-radius: 999px;
+}
+.sheet-header {
+  padding: 10px 20px 14px; display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+}
+.sheet-header h3 { margin: 0; font-size: 18px; font-weight: 700; }
+.sheet-close { background: none; border: 0; font-size: 24px; line-height: 1; color: var(--text-muted); cursor: pointer; padding: 4px 8px; }
+.sheet-body { padding: 16px 20px 20px; display: flex; flex-direction: column; gap: 20px; }
+.sheet-group { }
+.sheet-group h4 { font-size: 13px; margin: 0 0 10px; font-weight: 600; color: var(--text-primary); text-transform: uppercase; letter-spacing: 0.04em; }
+.sheet-group .filter-chips { }
+.sheet-footer {
+  padding: 14px 20px calc(14px + env(safe-area-inset-bottom, 0px));
+  border-top: 1px solid var(--border); background: #fff;
+  display: flex; gap: 10px;
+}
+.sheet-footer .btn { flex: 1; justify-content: center; }
+.sheet-footer .btn-ghost {
+  background: none; color: var(--text-muted); border: 1px solid var(--border);
+}
+
+@media (min-width: 1540px) {
+  .frames { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: start; }
+  .mobile-wrap { position: sticky; top: 20px; }
+}
+</style>
+</head>
+<body>
+
+<div class="doc-wrap">
+
+<header class="doc-head">
+  <h1>Category page template mockup</h1>
+  <p>Sample category: <code>Home Water Dispensers</code>. Three frames: desktop (filtered state), mobile (filtered state), mobile (filter bottom sheet open) + a variant showing the empty-state block.</p>
+</header>
+
+<div class="frames">
+
+<!-- ================= DESKTOP ================= -->
+<div>
+<div class="frame-label"><span class="pill">Desktop</span> 1280 × scroll — filtered</div>
+<div class="desktop-frame">
+  <div class="desktop-chrome">
+    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    <span class="url">riapurewater.com/category/home-water-dispensers</span>
+  </div>
+  <div class="desktop-scroll">
+  <div class="desktop-content">
+  <div class="site">
+
+    <header class="site-header">
+      <a class="logo" href="#">
+        <span class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2c-3.5 5-6 8.5-6 12a6 6 0 0 0 12 0c0-3.5-2.5-7-6-12z"/></svg></span>
+        <span class="logo-text">RIA Pure Water</span>
+      </a>
+      <nav class="nav">
+        <a href="#" class="current">Products</a>
+        <a href="#">Categories</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      <a class="btn btn-wa" href="#">
+        <svg class="wa-icon" viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.2L2.5 21.5l4.4-1.1a11 11 0 0 0 13.6-16.9zM12 20a8 8 0 0 1-4.1-1.1l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 1 1 12 20z"/></svg>
+        Enquire on WhatsApp
+      </a>
+    </header>
+
+    <div class="container">
+      <nav class="breadcrumbs">
+        <a href="#">Home</a>
+        <span class="sep">›</span>
+        <span class="here">Home Water Dispensers</span>
+      </nav>
+
+      <header class="cat-header">
+        <div class="cat-overline">Category</div>
+        <h1 class="cat-title">Home Water Dispensers</h1>
+        <p class="cat-desc">Countertop, floor-standing, bottle-type, and portable dispensers for home and office use.</p>
+        <div class="cat-meta">21 products</div>
+      </header>
+
+      <!-- Filter bar (desktop) -->
+      <div class="filter-bar">
+        <div class="filter-row">
+          <div class="filter-group-label">Water Type</div>
+          <div class="filter-chips">
+            <button class="fchip active">Hot &amp; Cold</button>
+            <button class="fchip">Hot, Normal &amp; Cold</button>
+            <button class="fchip">Hot &amp; Normal</button>
+          </div>
+        </div>
+        <div class="filter-row">
+          <div class="filter-group-label">Install Type</div>
+          <div class="filter-chips">
+            <button class="fchip">Countertop</button>
+            <button class="fchip active">Floor-Standing</button>
+            <button class="fchip">Bottle-Type</button>
+          </div>
+        </div>
+        <div class="filter-row">
+          <div class="filter-group-label">Best For</div>
+          <div class="filter-chips">
+            <button class="fchip">Household</button>
+            <button class="fchip">Office</button>
+            <button class="fchip">Commercial</button>
+          </div>
+        </div>
+        <div class="filter-row">
+          <div class="filter-group-label">Water Source</div>
+          <div class="filter-chips">
+            <button class="fchip">Pipe-In</button>
+            <button class="fchip">Bottle-Loading</button>
+            <button class="fchip">Portable</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Applied filters -->
+      <div class="applied-row">
+        <span class="lbl">Showing:</span>
+        <span class="applied-tag">Hot &amp; Cold <button aria-label="Remove">×</button></span>
+        <span class="applied-tag">Floor-Standing <button aria-label="Remove">×</button></span>
+        <button class="clear-all">Clear all</button>
+      </div>
+
+      <div class="grid-head">
+        <div class="result-count">4 of 21 products</div>
+      </div>
+
+      <!-- Grid -->
+      <div class="product-grid">
+        <a class="product-card" href="#">
+          <div class="pc-photo">[ photo ]</div>
+          <div class="pc-body">
+            <h3 class="pc-name">Floor-Standing Hot &amp; Cold Dispenser</h3>
+            <p class="pc-model">Model: K-2200</p>
+            <div class="pc-chips">
+              <span class="chip">Hot &amp; cold</span>
+              <span class="chip">Floor-standing</span>
+              <span class="chip">Household · Office</span>
+            </div>
+          </div>
+        </a>
+        <a class="product-card" href="#">
+          <div class="pc-photo">[ photo ]</div>
+          <div class="pc-body">
+            <h3 class="pc-name">Floor-Standing Dispenser</h3>
+            <p class="pc-model">Model: FYK-333F</p>
+            <div class="pc-chips">
+              <span class="chip">Hot &amp; cold</span>
+              <span class="chip">Floor-standing</span>
+              <span class="chip">Household</span>
+            </div>
+          </div>
+        </a>
+        <a class="product-card" href="#">
+          <div class="pc-photo">[ photo ]</div>
+          <div class="pc-body">
+            <h3 class="pc-name">Floor-Standing Dispenser</h3>
+            <p class="pc-model">Model: FYK-335F</p>
+            <div class="pc-chips">
+              <span class="chip">Hot &amp; cold</span>
+              <span class="chip">Floor-standing</span>
+              <span class="chip">Office</span>
+            </div>
+          </div>
+        </a>
+        <a class="product-card" href="#">
+          <div class="pc-photo">[ photo ]</div>
+          <div class="pc-body">
+            <h3 class="pc-name">Pipe-In Floor Dispenser</h3>
+            <p class="pc-model">Model: OHF-500U</p>
+            <div class="pc-chips">
+              <span class="chip">Hot &amp; cold</span>
+              <span class="chip">Floor-standing</span>
+              <span class="chip">Pipe-In</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <section class="cat-contact-strip">
+        <h2>Not sure which dispenser fits your space?</h2>
+        <p>Tell us your setup and daily water needs. We'll recommend the right one and quote installation.</p>
+        <div class="cta-row-c">
+          <a class="btn btn-wa btn-lg" href="#">
+            <svg class="wa-icon" viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.2L2.5 21.5l4.4-1.1a11 11 0 0 0 13.6-16.9zM12 20a8 8 0 0 1-4.1-1.1l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 1 1 12 20z"/></svg>
+            Enquire on WhatsApp
+          </a>
+          <a class="btn btn-outline btn-lg" href="#">Or call 013-368 1349</a>
+        </div>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-mini">
+        <a class="logo" href="#">
+          <span class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2c-3.5 5-6 8.5-6 12a6 6 0 0 0 12 0c0-3.5-2.5-7-6-12z"/></svg></span>
+          <span class="logo-text">RIA Pure Water</span>
+        </a>
+        <div class="f-links">
+          <a href="#">All products</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  </div>
+  </div>
+</div>
+
+<!-- Desktop empty-state preview -->
+<div class="frame-label alt"><span class="pill">Variant</span> Empty-state block (shown when filters return 0)</div>
+<div class="desktop-frame">
+  <div class="desktop-chrome">
+    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    <span class="url">riapurewater.com/category/home-water-dispensers?water-type=hot-only&amp;install=bottle-type</span>
+  </div>
+  <div class="desktop-scroll"><div class="desktop-content"><div class="site">
+    <div class="container" style="padding-top: 24px; padding-bottom: 48px">
+      <div class="empty-state">
+        <h3>No products match those filters</h3>
+        <p>Try removing a filter, or ask us on WhatsApp — we can recommend one for your setup.</p>
+        <div class="btns">
+          <a class="btn btn-wa" href="#">
+            <svg class="wa-icon" viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.2L2.5 21.5l4.4-1.1a11 11 0 0 0 13.6-16.9zM12 20a8 8 0 0 1-4.1-1.1l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 1 1 12 20z"/></svg>
+            Enquire on WhatsApp
+          </a>
+          <a class="btn btn-outline" href="#">Clear filters</a>
+        </div>
+      </div>
+    </div>
+  </div></div></div>
+</div>
+
+</div>
+
+<!-- ================= MOBILE — FILTERED STATE ================= -->
+<div class="mobile-wrap">
+<div class="frame-label"><span class="pill">Mobile</span> Filtered state</div>
+<div class="mobile-frame">
+  <div class="mobile-notch"></div>
+  <div class="mobile-screen">
+  <div class="site">
+
+    <header class="site-header">
+      <a class="logo" href="#">
+        <span class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2c-3.5 5-6 8.5-6 12a6 6 0 0 0 12 0c0-3.5-2.5-7-6-12z"/></svg></span>
+        <span class="logo-text">RIA Pure Water</span>
+      </a>
+      <button class="hamburger" aria-label="Menu">
+        <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round"/></svg>
+      </button>
+    </header>
+
+    <div class="container">
+      <nav class="breadcrumbs">
+        <a href="#">Home</a>
+        <span class="sep">›</span>
+        <span class="here">Home Dispensers</span>
+      </nav>
+
+      <header class="cat-header">
+        <div class="cat-overline">Category</div>
+        <h1 class="cat-title">Home Water Dispensers</h1>
+        <p class="cat-desc">Countertop, floor-standing, bottle-type, and portable dispensers for home and office use.</p>
+        <div class="cat-meta">21 products</div>
+      </header>
+
+      <!-- Filter trigger (mobile) -->
+      <div class="filter-trigger-row">
+        <button class="filter-trigger">
+          <svg viewBox="0 0 24 24"><path d="M3 6h18M6 12h12M10 18h4"/></svg>
+          Filters
+          <span class="count">2</span>
+        </button>
+        <span class="result-count">4 of 21</span>
+      </div>
+
+      <div class="applied-row">
+        <span class="applied-tag">Hot &amp; Cold <button aria-label="Remove">×</button></span>
+        <span class="applied-tag">Floor-Standing <button aria-label="Remove">×</button></span>
+        <button class="clear-all">Clear all</button>
+      </div>
+
+      <div class="product-grid">
+        <a class="product-card" href="#">
+          <div class="pc-photo">[ photo ]</div>
+          <div class="pc-body">
+            <h3 class="pc-name">Floor-Standing H/C</h3>
+            <p class="pc-model">K-2200</p>
+            <div class="pc-chips"><span class="chip">Hot &amp; cold</span><span class="chip">Office</span></div>
+          </div>
+        </a>
+        <a class="product-card" href="#">
+          <div class="pc-photo">[ photo ]</div>
+          <div class="pc-body">
+            <h3 class="pc-name">FYK Floor Dispenser</h3>
+            <p class="pc-model">FYK-333F</p>
+            <div class="pc-chips"><span class="chip">Hot &amp; cold</span><span class="chip">Household</span></div>
+          </div>
+        </a>
+        <a class="product-card" href="#">
+          <div class="pc-photo">[ photo ]</div>
+          <div class="pc-body">
+            <h3 class="pc-name">FYK-335F</h3>
+            <p class="pc-model">FYK-335F</p>
+            <div class="pc-chips"><span class="chip">Hot &amp; cold</span><span class="chip">Office</span></div>
+          </div>
+        </a>
+        <a class="product-card" href="#">
+          <div class="pc-photo">[ photo ]</div>
+          <div class="pc-body">
+            <h3 class="pc-name">Pipe-In Floor</h3>
+            <p class="pc-model">OHF-500U</p>
+            <div class="pc-chips"><span class="chip">Pipe-In</span><span class="chip">Floor</span></div>
+          </div>
+        </a>
+      </div>
+
+      <section class="cat-contact-strip">
+        <h2>Not sure which dispenser fits?</h2>
+        <p>Tell us your setup and daily water needs. We'll recommend the right one.</p>
+        <div class="cta-row-c">
+          <a class="btn btn-wa btn-lg" href="#">
+            <svg class="wa-icon" viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.2L2.5 21.5l4.4-1.1a11 11 0 0 0 13.6-16.9zM12 20a8 8 0 0 1-4.1-1.1l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 1 1 12 20z"/></svg>
+            WhatsApp
+          </a>
+          <a class="btn btn-outline" href="#">Call</a>
+        </div>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-mini">
+        <a class="logo" href="#">
+          <span class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2c-3.5 5-6 8.5-6 12a6 6 0 0 0 12 0c0-3.5-2.5-7-6-12z"/></svg></span>
+          <span class="logo-text">RIA Pure Water</span>
+        </a>
+      </div>
+    </footer>
+
+  </div>
+  </div>
+</div>
+
+<!-- MOBILE — bottom sheet open -->
+<div class="frame-label alt"><span class="pill">Mobile</span> Filter bottom sheet (tap "Filters")</div>
+<div class="mobile-frame">
+  <div class="mobile-notch"></div>
+  <div class="mobile-screen" style="background: #fafbfc">
+
+    <!-- Faded page behind the sheet -->
+    <div style="opacity: 0.5; pointer-events: none">
+      <header class="site-header" style="padding: 14px 16px">
+        <a class="logo" href="#">
+          <span class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2c-3.5 5-6 8.5-6 12a6 6 0 0 0 12 0c0-3.5-2.5-7-6-12z"/></svg></span>
+          <span class="logo-text" style="font-size:16px">RIA Pure Water</span>
+        </a>
+      </header>
+      <div style="padding: 20px 16px">
+        <div class="cat-overline">Category</div>
+        <h1 class="cat-title" style="font-size:24px;line-height:32px">Home Water Dispensers</h1>
+      </div>
+    </div>
+
+    <!-- Overlay + sheet -->
+    <div class="sheet-overlay">
+      <div class="sheet">
+        <div class="sheet-handle"></div>
+        <div class="sheet-header">
+          <h3>Filters</h3>
+          <button class="sheet-close" aria-label="Close">×</button>
+        </div>
+        <div class="sheet-body">
+          <div class="sheet-group">
+            <h4>Water Type</h4>
+            <div class="filter-chips">
+              <button class="fchip active">Hot &amp; Cold</button>
+              <button class="fchip">Hot, Normal &amp; Cold</button>
+              <button class="fchip">Hot &amp; Normal</button>
+            </div>
+          </div>
+          <div class="sheet-group">
+            <h4>Install Type</h4>
+            <div class="filter-chips">
+              <button class="fchip">Countertop</button>
+              <button class="fchip active">Floor-Standing</button>
+              <button class="fchip">Bottle-Type</button>
+            </div>
+          </div>
+          <div class="sheet-group">
+            <h4>Best For</h4>
+            <div class="filter-chips">
+              <button class="fchip">Household</button>
+              <button class="fchip">Office</button>
+              <button class="fchip">Commercial</button>
+            </div>
+          </div>
+          <div class="sheet-group">
+            <h4>Water Source</h4>
+            <div class="filter-chips">
+              <button class="fchip">Pipe-In</button>
+              <button class="fchip">Bottle-Loading</button>
+              <button class="fchip">Portable</button>
+            </div>
+          </div>
+        </div>
+        <div class="sheet-footer">
+          <button class="btn btn-ghost">Clear</button>
+          <button class="btn btn-primary">Show 4 results</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+</div>
+
+</div>
+</body>
+</html>

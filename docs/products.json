@@ -1,0 +1,3885 @@
+[
+  {
+    "id": "b2-hot-towel-machine",
+    "name": "Commercial Hot Towel Machine",
+    "model": "B2",
+    "category_candidate": "Other Commercial Appliances",
+    "specs": {
+      "dimensions": "W254mm x D323mm x H254mm",
+      "capacity": "Water tank 1L, dispenses 20–25 towels per cycle",
+      "features": [
+        "Makes up to 10 compression towels at once",
+        "Each towel ready in about 5 seconds",
+        "Temperature adjustable: Room / Medium / High",
+        "Humidity adjustable: Less / Medium / More",
+        "Water shortage warning",
+        "Low compression towel prompt",
+        "Suitable for restaurants, KTV, spa, hotels, convention centres"
+      ],
+      "power": "800W",
+      "other": {
+        "rated_voltage": "AC 220V / 50Hz",
+        "compatible_towel_cartridges": [
+          "4008S — 8mm thickness, 100g/m², 22cm x 28cm, 10pcs/group",
+          "4006S — 6mm thickness, 100g/m², 22cm x 28cm, 10pcs/group",
+          "4006CS — 5mm thickness, 80g/m², 22cm x 28cm, 10pcs/group"
+        ],
+        "towel_material": "100% regenerated cellulose fibre (wood)"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 1,
+        "position": "hero (right half)"
+      }
+    ],
+    "raw_notes": "Not a water product. Included per project decision to keep the full catalogue on-site under 'Other Commercial Appliances'."
+  },
+  {
+    "id": "qk-4zi",
+    "name": "3-in-1 Portable Water Cooler Dispenser with Built-in Ice Maker",
+    "model": "QK-4ZI",
+    "category_candidate": "Water Dispensers — Portable / Multi-function",
+    "specs": {
+      "dimensions": "368 x 228 x 397mm",
+      "capacity": "Water tank 3L, 48-piece ice storage box",
+      "features": [
+        "Ice-making, hot and cold water in one unit",
+        "Produces ice in about 6 minutes",
+        "3-second instant heating",
+        "5°C–100°C temperature regulation",
+        "48-piece large-capacity ice storage, detachable and easy to clean",
+        "LED smart panel",
+        "Compressor refrigeration"
+      ],
+      "power": "2200W",
+      "other": {
+        "rated_voltage": "220V / 50Hz",
+        "power_cord_length": "130cm"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 2,
+        "position": "hero (top half, main unit)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "lk-17",
+    "name": "Portable Instant Heating & Cooling Water Dispenser",
+    "model": "LK-17",
+    "category_candidate": "Water Dispensers — Portable / Multi-function",
+    "specs": {
+      "dimensions": "190 x 300 x 390mm (carton: 500 x 440 x 380mm)",
+      "capacity": "Hot / Normal / Cold",
+      "features": [
+        "Instant heating and cooling",
+        "12 temperature settings",
+        "8-speed water volume preset",
+        "Compressor refrigeration ice chamber",
+        "3-second rapid heating via rare-earth thick-film tech",
+        "444 stainless steel heating plate",
+        "ABS plastic body",
+        "Soft-light indicator",
+        "Removable drain tray"
+      ],
+      "power": "2000W",
+      "other": {
+        "rated_voltage": "220V–240V",
+        "cooling_temperature": "≥15°C",
+        "filter_stages": [
+          "Step 1: 8.5\" Sediment (Slim)",
+          "Step 2: 8.5\" Pre Carbon (Slim)",
+          "Step 3: 8.5\" Silver Carbon (Slim)",
+          "Step 4: 8.5\" Post Carbon (Slim)"
+        ],
+        "country_of_origin": "Korea"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 3,
+        "position": "hero (top right)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "jx-1s",
+    "name": "Smart Touch Display Faucet — Instant Hot & Cold",
+    "model": "JX-1S",
+    "category_candidate": "Smart Faucets (Undersink)",
+    "specs": {
+      "dimensions": "W435mm x D160mm x H420mm (packing box)",
+      "capacity": "Hot 25L/H, Cold 1.2L/H",
+      "features": [
+        "Undersink unit with countertop touch faucet",
+        "Pipe-in system, 4-way filtration",
+        "Instant hot on demand",
+        "5 temperature presets: 99°C boiling, 85°C coffee, 45°C milk, 6.5°C cold, room temp",
+        "150° swivel spout, 65mm faucet reach",
+        "Child safety lock",
+        "Touch panel display"
+      ],
+      "power": "220–240V / 50Hz",
+      "other": {
+        "water_temperature": {
+          "hot": "45–95°C",
+          "normal": "25–45°C",
+          "cold": "6.5–10°C"
+        },
+        "tap_drilling_hole": "23–28mm",
+        "filter_stages": [
+          "Step 1: 10\" PP + CTO Filter",
+          "Step 2: 10\" UF Membrane",
+          "Step 3: 10\" CTO Filter",
+          "Step 4: Micro pre Filter"
+        ],
+        "alternative_filter_set": [
+          "Step 1: 9\" Sediment",
+          "Step 2: 9\" Pre Carbon",
+          "Step 3: 9\" Silver Carbon",
+          "Step 4: 9\" Post Carbon",
+          "Optional Alka Bio or Hydrogen 8\" upgrade"
+        ],
+        "country_of_origin": "Korea"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 5,
+        "position": "hero (right half)"
+      }
+    ],
+    "raw_notes": "JX-1S also appears on cat1 page 4 with an alternate filter set (Sediment/Pre/Silver/Post Carbon with optional Alka Bio or Hydrogen upgrade). Both filter loadouts captured — page 5 is canonical."
+  },
+  {
+    "id": "os-l002",
+    "name": "Smart Touch Display Faucet with UV-C Sterilization",
+    "model": "OS-L002",
+    "category_candidate": "Smart Faucets (Undersink)",
+    "specs": {
+      "dimensions": "W345mm x D195mm x H405mm (packing box)",
+      "capacity": "Hot 25L/H",
+      "features": [
+        "Undersink unit with countertop touch faucet",
+        "Pipe-in system, 4-way filtration",
+        "5 temperature presets: 90°C boiling, 85°C coffee, 65°C honey, 45°C milk, room temp",
+        "150° swivel spout, 3.5\" faucet reach",
+        "UV-C sterilization removes over 99.9% of bacteria without residue",
+        "Child safety lock",
+        "Touch panel display",
+        "Two filter cartridge options: quick-change or U-type"
+      ],
+      "power": "220–240V / 50Hz",
+      "other": {
+        "water_temperature": {
+          "hot": "45–95°C",
+          "normal": "25–45°C"
+        },
+        "tap_drilling_hole": "23–28mm",
+        "filter_stages": [
+          "Step 1: 9\" Sediment",
+          "Step 2: 9\" Pre Carbon",
+          "Step 3: 9\" Silver Carbon",
+          "Step 4: 9\" Post Carbon",
+          "Optional Alka Bio or Hydrogen 8\" upgrade"
+        ],
+        "country_of_origin": "Korea"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 6,
+        "position": "hero (top half)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "nf-5100",
+    "name": "Magico Intelligent Digital Display Touch Faucet",
+    "model": "NF-5100",
+    "category_candidate": "Smart Faucets (Undersink)",
+    "specs": {
+      "dimensions": "W402mm x D227mm x H361mm (packing box)",
+      "capacity": "Hot 25L/H",
+      "features": [
+        "Undersink unit with countertop touch faucet",
+        "Pipe-in system, 4-way filtration",
+        "5 temperature presets: 100°C tea, 85°C coffee, 65°C honey, 45°C milk, 25°C ambient",
+        "Wet-hand adjustable and responsive touch panel",
+        "Child safety lock",
+        "Magico branded",
+        "Two filter cartridge options: quick-change or U-type"
+      ],
+      "power": "220–240V / 50Hz",
+      "other": {
+        "water_temperature": {
+          "hot": "45–95°C",
+          "normal": "25–45°C"
+        },
+        "tap_drilling_hole": "23–28mm",
+        "filter_stages": [
+          "Step 1: 9\" Sediment",
+          "Step 2: 9\" Pre Carbon",
+          "Step 3: 9\" Silver Carbon",
+          "Step 4: 9\" Post Carbon",
+          "Optional Alka Bio or Hydrogen 8\" upgrade"
+        ],
+        "country_of_origin": "Korea"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 7,
+        "position": "hero (centre-right)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "jx-l006",
+    "name": "Smart Touch Display Faucet with UV-C Sterilization (Slim)",
+    "model": "JX-L006",
+    "category_candidate": "Smart Faucets (Undersink)",
+    "specs": {
+      "dimensions": "W345mm x D195mm x H405mm (packing box)",
+      "capacity": "Hot 25L/H",
+      "features": [
+        "Undersink unit with countertop touch faucet",
+        "Pipe-in system, 4-way filtration",
+        "5 temperature presets: 95°C boiling, 85°C coffee, 65°C honey, 45°C milk, room temp",
+        "150° swivel spout, 3.5\" faucet reach",
+        "UV-C sterilization removes over 99.9% of bacteria without residue",
+        "Child safety lock",
+        "Touch panel display"
+      ],
+      "power": "220–240V / 50Hz",
+      "other": {
+        "water_temperature": {
+          "hot": "45–95°C",
+          "normal": "25–45°C"
+        },
+        "tap_drilling_hole": "23–28mm",
+        "filter_stages": [
+          "Step 1: 9\" Sediment",
+          "Step 2: 9\" Pre Carbon",
+          "Step 3: 9\" Silver Carbon",
+          "Step 4: 9\" Post Carbon",
+          "Optional Alka Bio or Hydrogen 8\" upgrade"
+        ],
+        "country_of_origin": "Korea"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 8,
+        "position": "hero (top half)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "nf-5300",
+    "name": "Magico Smart Faucet with New Touch-to-Stop Design",
+    "model": "NF-5300",
+    "category_candidate": "Smart Faucets (Undersink)",
+    "specs": {
+      "dimensions": "W300mm x D230mm x H415mm (packing box)",
+      "capacity": "Hot 25L/H",
+      "features": [
+        "Undersink unit with countertop touch faucet",
+        "Pipe-in system, 4-way filtration",
+        "5 temperature presets: 95°C boiled, 85°C coffee, 65°C honey, 55°C milk, 25°C ambient",
+        "New 'one touch to stop water' design",
+        "90° swivel spout, 3.5\" faucet reach",
+        "Volume and lock controls",
+        "Wet-hand adjustable and responsive touch panel",
+        "Magico branded"
+      ],
+      "power": "220–240V / 50Hz",
+      "other": {
+        "water_temperature": {
+          "hot": "45–95°C",
+          "normal": "25–45°C"
+        },
+        "tap_drilling_hole": "23–28mm",
+        "filter_stages": [
+          "Step 1: 9\" Sediment",
+          "Step 2: 9\" Pre Carbon",
+          "Step 3: 9\" Silver Carbon",
+          "Step 4: 9\" Post Carbon",
+          "Optional Alka Bio or Hydrogen 8\" upgrade"
+        ],
+        "country_of_origin": "Korea"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 9,
+        "position": "hero (right half)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "jx-q2",
+    "name": "Second Generation Instant Hot Smart Faucet",
+    "model": "JX-Q2",
+    "category_candidate": "Smart Faucets (Undersink)",
+    "specs": {
+      "dimensions": "W402mm x D227mm x H361mm (packing box)",
+      "capacity": "Hot 40L/H",
+      "features": [
+        "Faucet body heating — no water tank, bacteria-free",
+        "Four water volume levels and four temperature adjustment modes",
+        "2500W large flow",
+        "3-second quick heating",
+        "Temperature modes: ~100°C tea, ~85°C coffee, ~45°C milk powder, ambient",
+        "Intelligent anti-dry burning",
+        "Safe child lock",
+        "Water shortage protection",
+        "Can be paired with a full-flux water purifier",
+        "Two filter cartridge options: quick-change or U-type",
+        "3.5\" faucet reach"
+      ],
+      "power": "2500W",
+      "other": {
+        "rated_voltage": "220–240V / 50Hz",
+        "water_temperature": {
+          "hot": "45–95°C",
+          "normal": "25–45°C"
+        },
+        "tap_drilling_hole": "23–28mm",
+        "filter_stages": [
+          "Step 1: 9\" Sediment",
+          "Step 2: 9\" Pre Carbon",
+          "Step 3: 9\" Silver Carbon",
+          "Step 4: 9\" Post Carbon",
+          "Optional Alka Bio or Hydrogen 8\" upgrade"
+        ],
+        "country_of_origin": "Korea"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 10,
+        "position": "hero (right half)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "nf-5200",
+    "name": "Smart Faucet Water Purifier with Digital Display",
+    "model": "NF-5200",
+    "category_candidate": "Smart Faucets (Undersink)",
+    "specs": {
+      "dimensions": "W470mm x D260mm x H350mm (packing box)",
+      "capacity": "Hot 25L/H",
+      "features": [
+        "Undersink unit with countertop touch faucet",
+        "Pipe-in system, 4-way filtration",
+        "Digital touch screen showing volume (mL) and temperature (°C)",
+        "Volume select: 150ml / 300ml / 500ml / 999 (infinity)",
+        "Working status indicator: 45°C / 65°C / 85°C / 100°C",
+        "UV and filter status indicators",
+        "Pull-out filter design for easy replacement",
+        "3.5\" faucet reach"
+      ],
+      "power": "220–240V / 50Hz",
+      "other": {
+        "water_temperature": {
+          "hot": "45–95°C",
+          "normal": "25–45°C"
+        },
+        "tap_drilling_hole": "23–28mm",
+        "filter_stages": [
+          "5-Layer Filter: Sediment, Pre Carbon, Ultra + Positive, Mineral Filter, Post Carbon"
+        ],
+        "country_of_origin": "Korea"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 11,
+        "position": "hero (right, spout unit)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "nf-5800",
+    "name": "Just Tap Instant-Heating Pipeline Water Dispenser",
+    "model": "NF-5800",
+    "category_candidate": "Smart Faucets (Undersink)",
+    "specs": {
+      "dimensions": "W248mm x D122mm x H259mm (packing box)",
+      "capacity": "Hot 25L/H",
+      "features": [
+        "All-metal body faucet",
+        "Smart rotating LCD screen",
+        "Concealed installation structure",
+        "5 levels of water temperature: 25° / 45° / 65° / 85° / 100°",
+        "Intelligent water temperature and volume selection",
+        "3.5\" faucet reach"
+      ],
+      "power": "220–240V / 50Hz",
+      "other": {
+        "water_temperature": {
+          "hot": "45–95°C",
+          "normal": "25–45°C"
+        },
+        "tap_drilling_hole": "23–28mm",
+        "filter_stages": [
+          "Step 1: 9\" Sediment",
+          "Step 2: 9\" Pre Carbon",
+          "Step 3: 9\" Silver Carbon",
+          "Step 4: 9\" Post Carbon",
+          "Optional Alka Bio or Hydrogen 8\" upgrade"
+        ],
+        "country_of_origin": "Korea"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 12,
+        "position": "hero (right half, black faucet)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "mao-16-ab",
+    "name": "3rd Generation Under Sink Filter System & Smart Faucet (Non-Filter Version)",
+    "model": "MAO-16 (AB)",
+    "category_candidate": "Smart Faucets (Undersink)",
+    "specs": {
+      "dimensions": "W485mm x D195mm x H335mm (packing box)",
+      "capacity": "Hot 25L/H",
+      "features": [
+        "Full aluminium alloy body",
+        "Smart rotating water-proof LCD screen",
+        "Concealed installation structure",
+        "Intelligent selection of water temperature and volume",
+        "Rotating handle design",
+        "5 temperature settings: 25°C / 45°C / 65°C / 85°C / 99°C",
+        "4 volume selections: 150ml / 200ml / 300ml / 500ml",
+        "90° swivel spout, 3.5\" faucet reach"
+      ],
+      "power": "220–240V / 50Hz",
+      "other": {
+        "water_temperature": {
+          "hot": "45–95°C",
+          "normal": "25–45°C"
+        },
+        "tap_drilling_hole": "23–28mm",
+        "filter_stages": [
+          "Step 1: 8\" PAC",
+          "Step 2: 8\" UF",
+          "Step 3: 8\" CTO"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 13,
+        "position": "hero (centre)"
+      }
+    ],
+    "raw_notes": "Same faucet as MAO-16 (AE) on cat1 p14, but with 3-stage PAC/UF/CTO filter instead of 4-stage Purisys set. Kept as separate SKU per the different filter loadout."
+  },
+  {
+    "id": "mao-16-ae",
+    "name": "3rd Generation Under Sink Filter System & Smart Faucet",
+    "model": "MAO-16 (AE)",
+    "category_candidate": "Smart Faucets (Undersink)",
+    "specs": {
+      "dimensions": "W485mm x D195mm x H335mm (packing box)",
+      "capacity": "Hot 25L/H",
+      "features": [
+        "Full aluminium alloy body",
+        "Smart rotating water-proof LCD screen",
+        "Concealed installation structure",
+        "Intelligent selection of water temperature and volume",
+        "Rotating handle design",
+        "5 temperature settings: 25°C / 45°C / 65°C / 85°C / 99°C",
+        "4 volume selections: 150ml / 200ml / 300ml / 500ml",
+        "Non-electric filter appliances — save on electricity",
+        "Tankless — fresher, more hygienic water",
+        "Backwashable, quick-change D.I.Y. maintenance system",
+        "Food-grade material tubing and stainless steel faucet",
+        "90° swivel spout, 3.5\" faucet reach"
+      ],
+      "power": "220–240V / 50Hz",
+      "other": {
+        "water_temperature": {
+          "hot": "45–95°C",
+          "normal": "25–45°C"
+        },
+        "tap_drilling_hole": "23–28mm",
+        "filter_stages": [
+          "Step 1: 8.5\" Sediment",
+          "Step 2: 8.5\" Pre Carbon",
+          "Step 3: 8.5\" Silver Carbon",
+          "Step 4: 8.5\" Post Carbon"
+        ],
+        "country_of_origin": "Korea"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 14,
+        "position": "hero (centre)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "mao-12-ae",
+    "name": "Under Sink Filter System & Smart Faucet",
+    "model": "MAO-12 (AE)",
+    "category_candidate": "Smart Faucets (Undersink)",
+    "specs": {
+      "dimensions": "W485mm x D195mm x H335mm (packing box)",
+      "capacity": "Hot 25L/H",
+      "features": [
+        "Full aluminium alloy body",
+        "Smart rotating water-proof LCD screen",
+        "Concealed installation structure",
+        "Intelligent selection of water temperature and volume",
+        "Rotating handle design",
+        "5 temperature indicators: 100°C tea, 85°C coffee, 65°C honey, 45°C milk, room temp",
+        "Non-electric filter appliances",
+        "Tankless design",
+        "Backwashable, quick-change D.I.Y. maintenance system",
+        "Food-grade material tubing and stainless steel faucet",
+        "90° swivel spout, 3.5\" faucet reach"
+      ],
+      "power": "220–240V / 50Hz",
+      "other": {
+        "water_temperature": {
+          "hot": "45–95°C",
+          "normal": "25–45°C"
+        },
+        "tap_drilling_hole": "23–28mm",
+        "filter_stages": [
+          "Step 1: 8.5\" Sediment",
+          "Step 2: 8.5\" Pre Carbon",
+          "Step 3: 8.5\" Silver Carbon",
+          "Step 4: 8.5\" Post Carbon"
+        ],
+        "country_of_origin": "Korea"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 15,
+        "position": "hero (right half, spout unit)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "whp-2300",
+    "name": "Direct Heating & Chilling Water Purifier",
+    "model": "WHP-2300",
+    "category_candidate": "Water Dispensers — Tabletop",
+    "specs": {
+      "dimensions": "W180mm x D514mm x H407mm",
+      "capacity": "Cold approx. 0.9L (direct heating)",
+      "features": [
+        "Direct heating system — instantly heats hot water, saves electricity",
+        "Airless direct chilling system for more hygienic water",
+        "Self-sterilisation by UV LED (99%+ bacteria, colon bacillus, staph aureus)",
+        "3 stage hot temperature: 40°C / 70°C / 80°C",
+        "3 stage discharge volume: 120ml / 550ml / 1500ml",
+        "Smart adjustable-length nozzle",
+        "ECO light sensor",
+        "Lock button",
+        "Filter check alarm"
+      ],
+      "power": "Hot 2500W, Cold 100W",
+      "other": {
+        "water_temperature": {
+          "hot": "40 / 70 / 80°C",
+          "cold": "6–10°C"
+        },
+        "cooling_method": "Direct cooling system",
+        "filter_stages": [
+          "Step 1: Micro Carbon Filter (Carbon Block) — 4 month",
+          "Step 2: NANOFACT Plus Filter (Cellulose + Compressed Carbon Block)"
+        ],
+        "country_of_origin": "Korea",
+        "installation": "Pipe-in system, 2-way filtration, compressor cooling"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 16,
+        "position": "hero (right half)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "whp-2000s",
+    "name": "Hot & Cold Countertop Water Purifier",
+    "model": "WHP-2000S",
+    "category_candidate": "Water Dispensers — Tabletop",
+    "specs": {
+      "dimensions": "W260mm x D360mm x H495mm",
+      "capacity": "Hot 1.8L, Cold 1.8L",
+      "features": [
+        "Eco Mode: automatically powers off heating at night via photo detector",
+        "Hidden-type replaceable hygiene guard — protects faucet from bacterial growth",
+        "Hot water safety device to prevent scalding",
+        "Built-in LG cooling compressor"
+      ],
+      "power": "Hot 430W, Cold 90W",
+      "other": {
+        "water_temperature": {
+          "hot": "70–90°C",
+          "cold": "4–12°C"
+        },
+        "net_weight": "19.5kg",
+        "filter_stages": [
+          "Step 1: 9\" Sediment",
+          "Step 2: 9\" Pre Carbon",
+          "Step 3: 9\" Silver Carbon",
+          "Step 4: 9\" Post Carbon"
+        ],
+        "country_of_origin": "Korea",
+        "installation": "Pipe-in system, compressor cooling, 4-way filtration"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 17,
+        "position": "hero (centre)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "k-1800s",
+    "name": "Hot & Cold Countertop Water Purifier (Compact)",
+    "model": "K-1800S",
+    "category_candidate": "Water Dispensers — Tabletop",
+    "specs": {
+      "dimensions": "W260mm x D480mm x H495mm",
+      "capacity": "Hot 2L, Cold 4.2L",
+      "features": [
+        "Eco Mode: automatically powers off heating at night via photo detector",
+        "Hidden-type replaceable hygiene guard",
+        "Hot water safety device",
+        "Built-in LG cooling compressor"
+      ],
+      "power": "Hot 430W, Cold 90W",
+      "other": {
+        "water_temperature": {
+          "hot": "70–90°C",
+          "cold": "4–12°C"
+        },
+        "filter_stages": [
+          "Step 1: 9\" Sediment",
+          "Step 2: 9\" Pre Carbon",
+          "Step 3: 9\" Silver Carbon",
+          "Step 4: 9\" Post Carbon"
+        ],
+        "country_of_origin": "Korea",
+        "installation": "Pipe-in system, compressor cooling, 4-way filtration"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 18,
+        "position": "hero (centre, black unit)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "k-850s",
+    "name": "Hot & Cold Countertop Water Purifier (Slim)",
+    "model": "K-850S",
+    "category_candidate": "Water Dispensers — Tabletop",
+    "specs": {
+      "dimensions": "W260mm x D460mm x H495mm",
+      "capacity": "Hot 1.5L, Cold 4.2L",
+      "features": [
+        "Eco Mode with light sensor",
+        "Hidden-type replaceable hygiene guard",
+        "Hot water safety device",
+        "Built-in LG cooling compressor"
+      ],
+      "power": "Hot 300W, Cold 90W",
+      "other": {
+        "water_temperature": {
+          "hot": "70–90°C",
+          "cold": "4–12°C"
+        },
+        "net_weight": "19kg",
+        "colours": [
+          "White",
+          "Black"
+        ],
+        "filter_stages": [
+          "Step 1: 10\" Sediment",
+          "Step 2: 10\" Pre Carbon",
+          "Step 3: 10\" Silver Carbon",
+          "Step 4: 10\" Post Carbon"
+        ],
+        "country_of_origin": "Korea",
+        "installation": "Pipe-in system, compressor cooling, 4-way filtration"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 19,
+        "position": "hero (both colours, side by side)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "k-2200",
+    "name": "Hot & Cold Floor-Standing Water Purifier",
+    "model": "K-2200",
+    "category_candidate": "Water Dispensers — Floor Standing",
+    "specs": {
+      "dimensions": "W380mm x D430mm x H1205mm",
+      "capacity": "Hot 3.0L, Cold 4.3L",
+      "features": [
+        "Hot & Cold (2-way) dispenser",
+        "High-capacity cold and hot tanks",
+        "Hygiene guard on tap to prevent bacterial contamination",
+        "Hot water safety device",
+        "23cm dispensing area — fits sports bottles and tall glasses",
+        "2L big drip tray",
+        "Thermostatically controlled 4°C–12°C",
+        "R-134a refrigerant (CFC-free)",
+        "LG cooling compressor built in"
+      ],
+      "power": "Hot 600W, Cold 120W",
+      "other": {
+        "water_temperature": {
+          "hot": "55 / 70 / 80°C",
+          "cold": "6–10°C"
+        },
+        "net_weight": "30kg",
+        "colours": [
+          "White",
+          "Black"
+        ],
+        "filter_stages": [
+          "Step 1: 10\" Sediment",
+          "Step 2: 10\" Pre Carbon",
+          "Step 3: 10\" Silver Carbon",
+          "Step 4: 10\" Post Carbon"
+        ],
+        "country_of_origin": "Korea",
+        "installation": "Pipe-in system, compressor cooling, 4-way filtration"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 20,
+        "position": "hero (top half, both colours shown)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "fyk-333f",
+    "name": "Hot & Cold Floor-Standing Water Purifier (Slim)",
+    "model": "FYK-333F",
+    "category_candidate": "Water Dispensers — Floor Standing",
+    "specs": {
+      "dimensions": "W230mm x D419mm x H1200mm",
+      "capacity": "Hot 1.8L, Cold 2.7L",
+      "features": [
+        "Hidden-type replaceable hygiene guard to protect faucet from bacterial growth",
+        "Dial control for convenient use of purified / cold water",
+        "Fully stainless steel water tank (SUS304 food grade)",
+        "Hot water tank heating system",
+        "Reform recond-products certified",
+        "Built-in LG cooling compressor"
+      ],
+      "power": "Hot 350W, Cold 90W",
+      "other": {
+        "water_temperature": {
+          "hot": "80–90°C",
+          "cold": "4–12°C"
+        },
+        "filter_stages": [
+          "Step 1: 10\" Sediment",
+          "Step 2: 10\" Pre Carbon",
+          "Step 3: 10\" Silver Carbon",
+          "Step 4: 10\" Post Carbon"
+        ],
+        "country_of_origin": "Korea",
+        "installation": "Pipe-in system, compressor cooling, 4-way filtration"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 21,
+        "position": "hero (top right, white unit in kitchen)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "fyk-335c",
+    "name": "Hot, Normal & Cold Countertop Water Purifier",
+    "model": "FYK-335C",
+    "category_candidate": "Water Dispensers — Tabletop",
+    "specs": {
+      "dimensions": "W230mm x D507mm x H510mm",
+      "capacity": "Hot 1.3L, Normal 1.1L, Cold 2.7L",
+      "features": [
+        "Hidden-type replaceable hygiene guard",
+        "Dial control for purified / cold water",
+        "Fully stainless steel water tank (SUS304 food grade)",
+        "Hot water tank heating system",
+        "Reform recond-products certified",
+        "Built-in LG cooling compressor",
+        "Normal tank option"
+      ],
+      "power": "Hot 380W, Cold 100W",
+      "other": {
+        "water_temperature": {
+          "hot": "85–95°C",
+          "cold": "6–10°C"
+        },
+        "filter_stages": [
+          "Step 1: 9\" Sediment",
+          "Step 2: 9\" Pre Carbon",
+          "Step 3: 9\" Silver Carbon",
+          "Step 4: 9\" Post Carbon"
+        ],
+        "country_of_origin": "Korea",
+        "installation": "Pipe-in system, compressor cooling, 4-way filtration"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 22,
+        "position": "hero (centre)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "fyk-335f",
+    "name": "Hot & Cold Floor-Standing Water Purifier",
+    "model": "FYK-335F",
+    "category_candidate": "Water Dispensers — Floor Standing",
+    "specs": {
+      "dimensions": "W230mm x D507mm x H1200mm",
+      "capacity": "Hot 1.8L, Cold 2.7L",
+      "features": [
+        "Hidden-type replaceable hygiene guard",
+        "Dial control for purified / cold water",
+        "Fully stainless steel water tank (SUS304 food grade)",
+        "Hot water tank heating system",
+        "Reform recond-products certified",
+        "Built-in LG cooling compressor"
+      ],
+      "power": "Hot 380W, Cold 100W",
+      "other": {
+        "water_temperature": {
+          "hot": "85–95°C",
+          "cold": "6–10°C"
+        },
+        "filter_stages": [
+          "Step 1: 10\" Sediment",
+          "Step 2: 10\" Pre Carbon",
+          "Step 3: 10\" Silver Carbon",
+          "Step 4: 10\" Post Carbon"
+        ],
+        "country_of_origin": "Korea",
+        "installation": "Pipe-in system, compressor cooling, 4-way filtration"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 23,
+        "position": "hero (top right, white unit in kitchen)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "st-2600h",
+    "name": "Instant Heating Tankless Water Purifier",
+    "model": "ST-2600H",
+    "category_candidate": "Instant Heating Purifiers (Tankless)",
+    "specs": {
+      "dimensions": "W150mm x D410mm x H350mm",
+      "capacity": "Hot (Low/high) & Ambient",
+      "features": [
+        "Instant hot water — no water tank",
+        "Real UF filtering system",
+        "3-stage interlocking filtration",
+        "Water dispensing button and temperature selection button",
+        "Temperature lock button and filter check alarm",
+        "Magnet water tray and grill",
+        "Removeable water outlet",
+        "Colour: White Silver"
+      ],
+      "power": "2400W",
+      "other": {
+        "rated_voltage": "220V–240V",
+        "water_temperature": {
+          "hot_low": "45°C ±3°C (lukewarm)",
+          "hot_high": "85°C ±3°C"
+        },
+        "filter_stages": [
+          "Stage 1: Compound — Sediment + Carbon Block (E.C Filter)",
+          "Stage 2: Real UF (E.C Filter)",
+          "Stage 3: Block Carbon Membrane (E.C Filter)"
+        ],
+        "country_of_origin": "Korea",
+        "installation": "Pipe-in system, 3-way filtration, tankless instant heating"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 24,
+        "position": "hero (centre, white unit)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "pts-100w",
+    "name": "Instant Heating Tankless Water Purifier",
+    "model": "PTS-100W",
+    "category_candidate": "Instant Heating Purifiers (Tankless)",
+    "specs": {
+      "dimensions": "W144mm x D462mm x H355mm",
+      "capacity": "Tankless (instant flow)",
+      "features": [
+        "Instant hot water purifier",
+        "No water tank",
+        "Hot / Tepid / Ambient water",
+        "3 temperature types: purified (ambient), tepid 45°C, hot 85–90°C",
+        "3-step interlocking filtration",
+        "LED touch control panel",
+        "Colours available"
+      ],
+      "power": "2400W",
+      "other": {
+        "rated_voltage": "DC 220V",
+        "net_weight": "4kg",
+        "water_temperature": {
+          "hot": "85–90°C",
+          "tepid": "45°C",
+          "ambient": "purified"
+        },
+        "colours": [
+          "Red",
+          "Silver"
+        ],
+        "filter_stages": [
+          "Compound (Sediment + PRE Carbon)",
+          "Post Carbon",
+          "UF Membrane"
+        ],
+        "country_of_origin": "Korea",
+        "installation": "Pipe-in system, 3-way filtration, tankless instant heating"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 25,
+        "position": "hero (two colours, side by side)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "ohc-500u",
+    "name": "Hot, Normal & Cold Countertop Water Purifier",
+    "model": "OHC-500U",
+    "category_candidate": "Water Dispensers — Tabletop",
+    "specs": {
+      "dimensions": "W260mm x D462mm x H521mm",
+      "capacity": "Hot 1.3L, Cold 3.2L",
+      "features": [
+        "Reform recond-products certified",
+        "Icy Cold Tech reaches as low as 6°C",
+        "Hot water tank wrapping with PU foam to prevent heat loss",
+        "Built-in LG cooling compressor",
+        "Available in White Silver and Black Gold finishes"
+      ],
+      "power": "Hot 350W, Cold 90W",
+      "other": {
+        "water_temperature": {
+          "hot": "80–90°C",
+          "cold": "4–12°C"
+        },
+        "colours": [
+          "White Silver",
+          "Black Gold"
+        ],
+        "filter_stages": [
+          "Step 1: 8\" Sediment",
+          "Step 2: 8\" Pre Carbon",
+          "Step 3: 8\" Silver Carbon",
+          "Step 4: 8\" Post Carbon"
+        ],
+        "country_of_origin": "Korea",
+        "installation": "Pipe-in system, compressor cooling, 4-way filtration"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 26,
+        "position": "hero (both colours, side by side)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "ohf-500u",
+    "name": "Hot & Cold Floor-Standing Water Purifier",
+    "model": "OHF-500U",
+    "category_candidate": "Water Dispensers — Floor Standing",
+    "specs": {
+      "dimensions": "W260mm x D462mm x H1120mm",
+      "capacity": "Hot 1.3L, Cold 3.2L",
+      "features": [
+        "Reform recond-products certified",
+        "Icy Cold Tech reaches as low as 6°C",
+        "Hot water tank wrapping with PU foam to prevent heat loss",
+        "Built-in LG cooling compressor",
+        "Available in White Silver and Black Gold finishes"
+      ],
+      "power": "Hot 350W, Cold 90W",
+      "other": {
+        "water_temperature": {
+          "hot": "80–90°C",
+          "cold": "4–12°C"
+        },
+        "colours": [
+          "White Silver",
+          "Black Gold"
+        ],
+        "filter_stages": [
+          "Step 1: 10\" Sediment",
+          "Step 2: 10\" Pre Carbon",
+          "Step 3: 10\" Silver Carbon",
+          "Step 4: 10\" Post Carbon"
+        ],
+        "country_of_origin": "Korea",
+        "installation": "Pipe-in system, compressor cooling, 4-way filtration"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 27,
+        "position": "hero (both colours, side by side)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "fyk-336c",
+    "name": "Hot, Normal & Cold Countertop Water Purifier (Premium)",
+    "model": "FYK-336C",
+    "category_candidate": "Water Dispensers — Tabletop",
+    "specs": {
+      "dimensions": "W230mm x D507mm x H510mm",
+      "capacity": "Hot 1.3L, Normal 1.1L, Cold 2.7L",
+      "features": [
+        "Reform recond-products certified",
+        "Premium finish design",
+        "Hot water tank heating system",
+        "Fully stainless steel water tank",
+        "Built-in LG cooling compressor",
+        "Available in Luxury Grey Ice Blue, Matt Black Gold, and Gun Metal Gold"
+      ],
+      "power": "Hot 380W, Cold 100W",
+      "other": {
+        "water_temperature": {
+          "hot": "85–95°C",
+          "cold": "6–10°C"
+        },
+        "colours": [
+          "Luxury Grey Ice Blue",
+          "Matt Black Gold",
+          "Gun Metal Gold"
+        ],
+        "filter_stages": [
+          "Step 1: 9\" Sediment",
+          "Step 2: 9\" Pre Carbon",
+          "Step 3: 9\" Silver Carbon",
+          "Step 4: 9\" Post Carbon"
+        ],
+        "country_of_origin": "Korea",
+        "installation": "Pipe-in system, compressor cooling, 4-way filtration"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 28,
+        "position": "hero (main unit centre, alt colours bottom right)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "an-d12",
+    "name": "Hot & Normal Countertop Water Purifier",
+    "model": "AN-D12",
+    "category_candidate": "Water Dispensers — Tabletop",
+    "specs": {
+      "dimensions": "W345mm x D300mm x H525mm",
+      "capacity": "Hot 1.0L, Normal 2.1L",
+      "features": [
+        "Hot and normal water",
+        "Built-in 8\" filters",
+        "Antibacterial stainless steel water storage tank",
+        "Child safety devices",
+        "Hot water tank heating system",
+        "Plastic water storage tank"
+      ],
+      "power": "Hot 500W",
+      "other": {
+        "water_temperature": {
+          "hot": "85–95°C",
+          "normal": "ambient"
+        },
+        "heating_capacity": "5.0L/h",
+        "filter_stages": [
+          "Step 1: 8\" Sediment",
+          "Step 2: 8\" Pre Carbon",
+          "Step 3: 8\" Post Carbon"
+        ],
+        "country_of_origin": "Korea",
+        "installation": "Pipe-in system, 3-way filtration"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 29,
+        "position": "hero (left unit)"
+      }
+    ],
+    "raw_notes": "Shares its catalogue page with AN-D13. Both units are shown with identical spec block; visual differences are in the tap and body design."
+  },
+  {
+    "id": "an-d13",
+    "name": "Hot & Normal Countertop Water Purifier (Alt Design)",
+    "model": "AN-D13",
+    "category_candidate": "Water Dispensers — Tabletop",
+    "specs": {
+      "dimensions": "W345mm x D300mm x H525mm",
+      "capacity": "Hot 1.0L, Normal 2.1L",
+      "features": [
+        "Hot and normal water",
+        "Built-in 8\" filters",
+        "Antibacterial stainless steel water storage tank",
+        "Child safety devices",
+        "Hot water tank heating system",
+        "Plastic water storage tank"
+      ],
+      "power": "Hot 500W",
+      "other": {
+        "water_temperature": {
+          "hot": "85–95°C",
+          "normal": "ambient"
+        },
+        "heating_capacity": "5.0L/h",
+        "filter_stages": [
+          "Step 1: 8\" Sediment",
+          "Step 2: 8\" Pre Carbon",
+          "Step 3: 8\" Post Carbon"
+        ],
+        "country_of_origin": "Korea",
+        "installation": "Pipe-in system, 3-way filtration"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 29,
+        "position": "hero (right unit)"
+      }
+    ],
+    "raw_notes": "Shares its catalogue page with AN-D12. Spec block is shared between both models. Differs from AN-D12 by tap and body design."
+  },
+  {
+    "id": "an-d14",
+    "name": "Hot & Cold Countertop Water Purifier (Electronic Cooling)",
+    "model": "AN-D14",
+    "category_candidate": "Water Dispensers — Tabletop",
+    "specs": {
+      "dimensions": "W345mm x D300mm x H525mm",
+      "capacity": "Hot 1.0L, Cold 0.6L",
+      "features": [
+        "Hot and cold water",
+        "Electronic cooling",
+        "Antibacterial stainless steel water storage tank",
+        "Child safety devices",
+        "Hot water tank heating system",
+        "Safe purified drinking water"
+      ],
+      "power": "Hot 500W, Cold 80W",
+      "other": {
+        "water_temperature": {
+          "hot": "85–95°C",
+          "cold": "4–12°C"
+        },
+        "heating_capacity": "5.0L/h",
+        "cooling_method": "Electronic cooling",
+        "filter_stages": [
+          "Step 1: 8\" Sediment",
+          "Step 2: 8\" Pre Carbon",
+          "Step 3: 8\" Post Carbon"
+        ],
+        "country_of_origin": "Korea",
+        "installation": "Pipe-in system, electronic cooling, 3-way filtration"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 30,
+        "position": "hero (centre)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "w3501-3c",
+    "name": "Hot, Normal & Cold Countertop Water Purifier",
+    "model": "W3501-3C",
+    "category_candidate": "Water Dispensers — Tabletop",
+    "specs": {
+      "dimensions": "W350mm x D460mm x H515mm",
+      "capacity": "Hot 1.5L, Normal 0.7L, Cold 3.0L",
+      "features": [
+        "Hot, normal and cold water",
+        "Compressor cooling",
+        "Food-grade materials",
+        "Antibacterial stainless steel water storage tank",
+        "Child safety devices",
+        "Hot water tank heating system",
+        "Two filter installation options: back of dispenser (10\" Korea) or inside dispenser (8\" Korea)"
+      ],
+      "power": "Hot 430W, Cold 90W",
+      "other": {
+        "water_temperature": {
+          "hot": "85–95°C",
+          "cold": "6–10°C"
+        },
+        "filter_stages": [
+          "Step 1: 10\" Sediment",
+          "Step 2: 10\" Pre Carbon",
+          "Step 3: 10\" Silver Carbon",
+          "Step 4: 10\" Post Carbon"
+        ],
+        "country_of_origin": "Korea",
+        "installation": "Pipe-in system, compressor cooling, 4-way filtration"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 31,
+        "position": "hero (centre)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "w3501-3f-big-tank",
+    "name": "Hot, Normal & Cold Floor-Standing Water Purifier (Big Tank)",
+    "model": "W3501-3F (Big Tank)",
+    "category_candidate": "Water Dispensers — Floor Standing",
+    "specs": {
+      "dimensions": "W350mm x D460mm x H1240mm",
+      "capacity": "Hot 4.0L, Normal 0.7L, Cold 5.0L",
+      "features": [
+        "Huge tank capacity — hot up to 4.0L, cold up to 5.0L",
+        "Compressor cooling",
+        "Food-grade materials",
+        "Antibacterial stainless steel water storage tank",
+        "Child safety devices",
+        "Hot water tank heating system",
+        "Filters install inside the dispenser (8\" Korea)"
+      ],
+      "power": "Hot 430W, Cold 90W",
+      "other": {
+        "water_temperature": {
+          "hot": "85–95°C",
+          "cold": "6–10°C"
+        },
+        "filter_stages": [
+          "Step 1: 10\" Sediment",
+          "Step 2: 10\" Pre Carbon",
+          "Step 3: 10\" Silver Carbon",
+          "Step 4: 10\" Post Carbon"
+        ],
+        "country_of_origin": "Korea",
+        "installation": "Pipe-in system, compressor cooling, 4-way filtration"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 32,
+        "position": "hero (centre, black unit)"
+      }
+    ],
+    "raw_notes": "Big Tank version of W3501-3F. Kept as separate row from the standard W3501-3F because the tank capacities differ significantly."
+  },
+  {
+    "id": "w3501-3f",
+    "name": "Hot, Normal & Cold Floor-Standing Water Purifier",
+    "model": "W3501-3F",
+    "category_candidate": "Water Dispensers — Floor Standing",
+    "specs": {
+      "dimensions": "W350mm x D460mm x H1240mm",
+      "capacity": "Hot 1.5L, Normal 0.7L, Cold 3.0L",
+      "features": [
+        "Hot, normal and cold water",
+        "Compressor cooling",
+        "Food-grade materials",
+        "Antibacterial stainless steel water storage tank",
+        "Child safety devices",
+        "Hot water tank heating system",
+        "Filters install inside the dispenser"
+      ],
+      "power": "Hot 430W, Cold 90W",
+      "other": {
+        "water_temperature": {
+          "hot": "85–95°C",
+          "cold": "6–10°C"
+        },
+        "filter_stages": [
+          "Step 1: 10\" Sediment",
+          "Step 2: 10\" Pre Carbon",
+          "Step 3: 10\" Silver Carbon",
+          "Step 4: 10\" Post Carbon"
+        ],
+        "country_of_origin": "Korea",
+        "installation": "Pipe-in system, compressor cooling, 4-way filtration"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 33,
+        "position": "hero (centre, white & black unit)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "nb-32f-bt",
+    "name": "Bottle-Type Water Dispenser — Top Loading",
+    "model": "NB-32F-BT",
+    "category_candidate": "Water Dispensers — Bottle Type",
+    "specs": {
+      "dimensions": "W310mm x D350mm x H960mm",
+      "capacity": "Hot 0.8L, Cold 2.9L",
+      "features": [
+        "Fits standard 3–5 gallon water bottles",
+        "Top loading",
+        "Consistent piping hot and crisp cold water",
+        "Child safety lock on hot water tap",
+        "Antibacterial stainless steel water storage tank",
+        "0.5mm SUS304 high-quality hot water tank",
+        "Ice-cold tech reaches as low as 6°C"
+      ],
+      "power": "Hot 420W, Cold 100W",
+      "other": {
+        "water_temperature": {
+          "hot": "≥90°C",
+          "cold": "≤10°C"
+        },
+        "net_weight": "13.5kg",
+        "tank_thickness": "Hot tank 0.5mm, Cold tank 0.5mm (SUS304)",
+        "cooling_method": "Compressor cooling",
+        "loading": "Top loading"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 34,
+        "position": "hero (centre)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "nb-32f-bl",
+    "name": "Bottle-Type Water Dispenser — Bottom Loading",
+    "model": "NB-32F-BL",
+    "category_candidate": "Water Dispensers — Bottle Type",
+    "specs": {
+      "dimensions": "W310mm x D350mm x H1040mm",
+      "capacity": "Hot 0.8L, Cold 2.9L",
+      "features": [
+        "Fits standard 3–5 gallon water bottles",
+        "Bottom loading — no lifting bottles onto the top",
+        "Consistent piping hot and crisp cold water",
+        "Child safety lock on hot water tap",
+        "UL Listed",
+        "Antibacterial stainless steel water storage tank",
+        "0.5mm SUS304 high-quality hot water tank",
+        "Ice-cold tech reaches as low as 6°C"
+      ],
+      "power": "Hot 420W, Cold 100W",
+      "other": {
+        "water_temperature": {
+          "hot": "≥90°C",
+          "cold": "≤10°C"
+        },
+        "net_weight": "15.5kg",
+        "cooling_method": "Compressor cooling",
+        "loading": "Bottom loading"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 35,
+        "position": "hero (centre)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "w500-hc",
+    "name": "Stainless Steel Water Cooler — Hot & Cold (2 Faucets)",
+    "model": "W500-HC",
+    "category_candidate": "Commercial Water Coolers",
+    "specs": {
+      "dimensions": "W320mm x D410mm x H1260mm",
+      "capacity": "Hot storage 5.5L, Cold storage 3.5L",
+      "features": [
+        "Pipe-in type — hot & cold",
+        "Water supply: Hot 20L/hr, Cold 10L/hr",
+        "11-grid copper cooling condenser",
+        "Dual temperature control",
+        "Aluminium alloy heater element",
+        "Copper tubing",
+        "Cooling compressor with cooling fan",
+        "ELCB protection",
+        "Hot & Cold water power saving switch",
+        "Optional 1-way filtration (10\" PP + 10\" CTO)",
+        "Taiwan quality"
+      ],
+      "power": "Hot 800W, Cold 250W",
+      "other": {
+        "water_supply": "Hot 20L/hr, Cold 10L/hr",
+        "country_of_origin": "Taiwan",
+        "installation": "Pipe-in type, compressor cooling, optional 1-way filtration"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 37,
+        "position": "hero (centre, dedicated product page)"
+      }
+    ],
+    "raw_notes": "Also shown on cat1 p36 as part of the W500 family overview. Page 37 is the canonical detailed page for this SKU."
+  },
+  {
+    "id": "w500-2c",
+    "name": "Stainless Steel Water Cooler — Cold Water Only (2 Faucets)",
+    "model": "W500-2C",
+    "category_candidate": "Commercial Water Coolers",
+    "specs": {
+      "dimensions": "",
+      "capacity": "",
+      "features": [
+        "Pipe-in type — cold water only",
+        "Stainless steel frame",
+        "Compressor cooling",
+        "2 cold water faucets",
+        "Taiwan quality"
+      ],
+      "power": "",
+      "other": {
+        "country_of_origin": "Taiwan",
+        "installation": "Pipe-in type, compressor cooling",
+        "variants_note": "Cold-only variant of the W500 stainless steel cooler family"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 36,
+        "position": "top row, centre"
+      }
+    ],
+    "raw_notes": "Featured on the W500 family overview page (cat1 p36). Full specs not printed for this variant — page shows form factor only. Enquire via WhatsApp for detailed spec confirmation."
+  },
+  {
+    "id": "w500-normal",
+    "name": "Stainless Steel Water Cooler — Normal Water Body Only",
+    "model": "W500-(Normal)",
+    "category_candidate": "Commercial Water Coolers",
+    "specs": {
+      "dimensions": "",
+      "capacity": "",
+      "features": [
+        "Body-only variant of the W500 family",
+        "Includes 1 housing",
+        "Stainless steel frame",
+        "Taiwan quality"
+      ],
+      "power": "",
+      "other": {
+        "country_of_origin": "Taiwan",
+        "variants_note": "Body-only (with 1 housing) variant of the W500 family"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 36,
+        "position": "top row, right"
+      }
+    ],
+    "raw_notes": "Body-only variant. Full specs not printed. Enquire via WhatsApp for configuration options."
+  },
+  {
+    "id": "w500-4p-hc",
+    "name": "Stainless Steel Water Cooler — Hot & Cold (4 Faucets)",
+    "model": "W500-4P (H&C)",
+    "category_candidate": "Commercial Water Coolers",
+    "specs": {
+      "dimensions": "",
+      "capacity": "",
+      "features": [
+        "Pipe-in type — hot & cold",
+        "4-faucet configuration (2 hot + 2 cold)",
+        "Long stainless steel body suitable for high-traffic public places",
+        "Compressor cooling",
+        "Taiwan quality"
+      ],
+      "power": "",
+      "other": {
+        "country_of_origin": "Taiwan",
+        "installation": "Pipe-in type, compressor cooling",
+        "variants_note": "4-faucet hot & cold variant of the W500 family"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 36,
+        "position": "bottom row, left"
+      }
+    ],
+    "raw_notes": "Featured on the W500 family overview page. Full specs not printed. Enquire via WhatsApp for detailed spec confirmation."
+  },
+  {
+    "id": "w500-4p-cold",
+    "name": "Stainless Steel Water Cooler — Cold Only (4 Faucets)",
+    "model": "W500-4P (Cold)",
+    "category_candidate": "Commercial Water Coolers",
+    "specs": {
+      "dimensions": "",
+      "capacity": "",
+      "features": [
+        "Pipe-in type — cold water only",
+        "4-faucet configuration (all cold)",
+        "Long stainless steel body suitable for high-traffic public places",
+        "Compressor cooling",
+        "Taiwan quality"
+      ],
+      "power": "",
+      "other": {
+        "country_of_origin": "Taiwan",
+        "installation": "Pipe-in type, compressor cooling",
+        "variants_note": "4-faucet cold-only variant of the W500 family"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 36,
+        "position": "bottom row, right"
+      }
+    ],
+    "raw_notes": "Featured on the W500 family overview page. Full specs not printed. Enquire via WhatsApp for detailed spec confirmation."
+  },
+  {
+    "id": "k600-hc",
+    "name": "Stainless Steel Water Cooler — Hot & Cold (Copper Tubing)",
+    "model": "K600-HC",
+    "category_candidate": "Commercial Water Coolers",
+    "specs": {
+      "dimensions": "W428mm x D310mm x H1080mm",
+      "capacity": "Hot storage 5L, Cold storage 3L",
+      "features": [
+        "Pipe-in type — hot & cold",
+        "Water supply: Hot 8L/hr, Cold 8L/hr",
+        "Fully copper hot water inlet and outlet tubing",
+        "Surge protector",
+        "Durable compressor cooling",
+        "Removeable lever and faucet",
+        "360° free-turning faucets, fits any water bottle",
+        "Built-in 10\" filters"
+      ],
+      "power": "Hot 800W, Cold 160W",
+      "other": {
+        "water_supply": "Hot 8L/hr, Cold 8L/hr",
+        "filter_stages": [
+          "Step 1: 10\" PP Sediment",
+          "Step 2: 10\" Activated Carbon Block (CTO)"
+        ],
+        "installation": "Pipe-in type, compressor cooling, 2-way filtration"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 38,
+        "position": "hero (left unit)"
+      }
+    ],
+    "raw_notes": "Shares its catalogue page with K600-2C (cold-cold variant)."
+  },
+  {
+    "id": "k600-2c",
+    "name": "Stainless Steel Water Cooler — Cold & Cold",
+    "model": "K600-2C",
+    "category_candidate": "Commercial Water Coolers",
+    "specs": {
+      "dimensions": "W428mm x D310mm x H1080mm",
+      "capacity": "Cold storage 3L",
+      "features": [
+        "Pipe-in type — cold & cold (dual cold faucets)",
+        "Water supply: Cold 8L/hr",
+        "Durable compressor cooling",
+        "Removeable lever and faucet",
+        "360° free-turning faucets",
+        "Built-in 10\" filters"
+      ],
+      "power": "Cold 160W",
+      "other": {
+        "water_supply": "Cold 8L/hr",
+        "filter_stages": [
+          "Step 1: 10\" PP Sediment (Easy Twist-Off)",
+          "Step 2: 10\" GAC Carbon (Easy Twist-Off)"
+        ],
+        "installation": "Pipe-in type, compressor cooling, 2-way filtration"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 38,
+        "position": "hero (right unit)"
+      }
+    ],
+    "raw_notes": "Shares its catalogue page with K600-HC (hot & cold variant)."
+  },
+  {
+    "id": "k-175-3f",
+    "name": "Stainless Steel Water Cooler — Hot, Normal & Cold Floor Standing",
+    "model": "K-175-3F",
+    "category_candidate": "Commercial Water Coolers",
+    "specs": {
+      "dimensions": "W550mm x D460mm x H1290mm",
+      "capacity": "Hot 5L, Normal 18L, Cold 3L",
+      "features": [
+        "All stainless steel welded frame with removable panels",
+        "20L great volume reserve tank",
+        "Quality float ball for water level control",
+        "R134a compressor refrigerating",
+        "Flat, large top surface — coffee cups and service items",
+        "Waste water from drip tray to drain hose",
+        "2 wheel feet (back) for easy move",
+        "Digital display of hot water temperature",
+        "Anti-hot handle, LED display",
+        "Stainless steel 316L heating pipe"
+      ],
+      "power": "Hot 800W, Cold 180W",
+      "other": {
+        "water_temperature": {
+          "hot": "≥90°C",
+          "cold": "≤8°C"
+        },
+        "net_weight": "39kg",
+        "filter_stages": [
+          "Step 1: 10\" PP Sediment",
+          "Step 2: Granular Activated Carbon (GAC)",
+          "Step 3: 10\" Activated Carbon Block (CTO)"
+        ],
+        "installation": "Pipe-in system, compressor cooling, 3-way filtration",
+        "parts_available": [
+          "Top of Faucet (Hot / Normal / Cold)",
+          "Faucet (Hot / Normal / Cold)",
+          "EGO Temperature Controller",
+          "Temperature Sensor",
+          "Controller",
+          "Radiator",
+          "Fan",
+          "Heat Bucket",
+          "Ice Bucket"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 39,
+        "position": "hero (centre)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "k-195-3f",
+    "name": "Stainless Steel Water Cooler — Hot, Normal & Cold Floor Standing (PVC Cover)",
+    "model": "K-195-3F",
+    "category_candidate": "Commercial Water Coolers",
+    "specs": {
+      "dimensions": "W440mm x D540mm x H1330mm",
+      "capacity": "Reservoir 10L (SS304), Hot 5L, Cold 3L",
+      "features": [
+        "Stainless steel frame and shell, firm and durable",
+        "Hot, cold and room-temperature water",
+        "Hot water temperature indication display",
+        "Top-brand compressor cooling system, fast and great capacity",
+        "Great volume storage tank",
+        "Exclusive drip tray design, never spills water",
+        "Exclusive float control and overflow system in storage tank",
+        "Food-grade stainless steel hot and cold tanks",
+        "All food-grade brass or silicone internal tubing and connector",
+        "PVC top cover, PVC middle covers",
+        "Icy cold tech reaches 6°C for icy cold water",
+        "Suitable for office, school, hospital, supermarket, train station, airport, restaurant"
+      ],
+      "power": "Total 960W (Hot 800W with 8L/h)",
+      "other": {
+        "hot_tank": "5L, SS304, 800W heater, 8L/h",
+        "cold_tank": "3L, SS304, 6L/h",
+        "net_weight": "35kg",
+        "filter_stages": [
+          "Step 1: 10\" PP Sediment",
+          "Step 2: Granular Activated Carbon (GAC)",
+          "Step 3: 10\" Activated Carbon Block (CTO)"
+        ],
+        "installation": "Pipe-in system, compressor cooling, 3-way filtration",
+        "tank_design": "Seamless one-piece stretched cold tank (prevents leaks and incrustation)"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "1-40",
+        "page": 40,
+        "position": "hero (centre)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "hb-800-hc",
+    "name": "Stainless Steel Water Cooler — Hot & Cold (3MAN)",
+    "model": "HB-800-HC",
+    "category_candidate": "Commercial Water Coolers",
+    "specs": {
+      "dimensions": "W428mm x D310mm x H1080mm",
+      "capacity": "Hot storage 5L, Cold storage 5L",
+      "features": [
+        "Pipe-in type — hot & cold",
+        "Water supply: Hot 8L/hr, Cold 8L/hr",
+        "Food-grade stainless steel hot and cold tanks — healthy and safe",
+        "Durable compressor cooling — fast and great capacity",
+        "Hot & cold switches for friendly use",
+        "Removeable lever and faucet",
+        "360° free-turning faucets, fits any water bottle",
+        "Built-in 10\" filters",
+        "3MAN branded",
+        "Premium quality"
+      ],
+      "power": "Hot 800W, Cold 160W",
+      "other": {
+        "water_supply": "Hot 8L/hr, Cold 8L/hr",
+        "filter_stages": [
+          "Step 1: 10\" Activated Carbon Block (CTO)",
+          "Step 2: 10\" PP Sediment"
+        ],
+        "installation": "Pipe-in system, compressor cooling, 2-way filtration"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 1,
+        "position": "hero (centre)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "sh-12bg-hn",
+    "name": "Stainless Steel Water Boiler — Hot & Normal (12L)",
+    "model": "SH-12BG (HN)",
+    "category_candidate": "Commercial Water Boilers",
+    "specs": {
+      "dimensions": "W320mm x D245mm x H590mm",
+      "capacity": "12L (Hot & Normal)",
+      "features": [
+        "Pipe-in, hot + normal",
+        "No reboiling water — step-by-step heating system",
+        "100% true boiling technology",
+        "High-precision filtration",
+        "Stainless steel body stand with 10\" PP & 10\" CTO housing filters (optional)",
+        "80% energy saving vs continuous-boil designs",
+        "Smart self-cleaning cycle",
+        "Whole pipeline sterilisation",
+        "S304 heating pipe, anti-hot handle",
+        "LED display, heat-dissipated vent",
+        "Copper heating tube",
+        "High degree of fire-retardant foam insulation"
+      ],
+      "power": "1.5kW",
+      "other": {
+        "rated_voltage": "240V / 50Hz",
+        "installation_options": [
+          "Table top",
+          "Stand with 10\" PP + 10\" CTO housing filters"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 2,
+        "position": "hero (centre, silver unit)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "ys-bt-10l-a5",
+    "name": "Stainless Steel Water Boiler — Hot (10L)",
+    "model": "YS-BT-10L-A5",
+    "category_candidate": "Commercial Water Boilers",
+    "specs": {
+      "dimensions": "W205mm x D375mm x H550mm",
+      "capacity": "10L (Hot only)",
+      "features": [
+        "Pipe-in, hot only",
+        "No reboiling water — step-by-step heating system",
+        "100% true boiling technology",
+        "High-precision filtration",
+        "Optional stainless steel body stand with 10\" PP & 10\" CTO housing filters",
+        "80% energy saving",
+        "Smart self-cleaning, whole pipeline sterilisation",
+        "S304 heating pipe, anti-hot handle",
+        "LED display",
+        "Copper heating tube",
+        "Comes with high-power 3-pin plug",
+        "Available in silver or black finish"
+      ],
+      "power": "2kW",
+      "other": {
+        "rated_voltage": "220V / 50Hz",
+        "colours": [
+          "Silver",
+          "Black"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 3,
+        "position": "hero (both colours, side by side)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "ys-bt-20l-a5",
+    "name": "Stainless Steel Water Boiler — Hot (20L)",
+    "model": "YS-BT-20L-A5",
+    "category_candidate": "Commercial Water Boilers",
+    "specs": {
+      "dimensions": "W205mm x D490mm x H710mm",
+      "capacity": "20L (Hot only)",
+      "features": [
+        "Pipe-in, hot only",
+        "No reboiling water — step-by-step heating system",
+        "100% true boiling technology",
+        "High-precision filtration",
+        "Optional stainless steel body stand with 10\" PP & 10\" CTO housing filters",
+        "80% energy saving",
+        "Smart self-cleaning, whole pipeline sterilisation",
+        "S304 heating pipe, anti-hot handle",
+        "LED display, copper heating tube",
+        "Comes with high-power 3-pin plug",
+        "Available in silver or black finish"
+      ],
+      "power": "2kW",
+      "other": {
+        "rated_voltage": "220V / 50Hz",
+        "colours": [
+          "Silver",
+          "Black"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 4,
+        "position": "hero (both colours, side by side)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "ys-30bk-20l",
+    "name": "Stainless Steel Water Boiler — Hot (20L Slim)",
+    "model": "YS-30BK (20L)",
+    "category_candidate": "Commercial Water Boilers",
+    "specs": {
+      "dimensions": "W410mm x D180mm x H575mm",
+      "capacity": "20L (Hot only)",
+      "features": [
+        "Pipe-in, hot only",
+        "Slim front-facing design with two spouts",
+        "No reboiling water — step-by-step heating system",
+        "100% true boiling technology",
+        "High-precision filtration",
+        "80% energy saving",
+        "Smart self-cleaning",
+        "Whole pipeline sterilisation",
+        "S304 heating pipe, anti-hot handle",
+        "LED display, copper heating tube",
+        "Available in black or silver finish"
+      ],
+      "power": "2kW",
+      "other": {
+        "rated_voltage": "220V / 50Hz",
+        "colours": [
+          "Black",
+          "Silver"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 5,
+        "position": "hero (both colours, side by side)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "ys-60bk-40l",
+    "name": "Stainless Steel Water Boiler — Hot (40L Dual Faucet)",
+    "model": "YS-60BK (40L)",
+    "category_candidate": "Commercial Water Boilers",
+    "specs": {
+      "dimensions": "W570mm x D260mm x H700mm",
+      "capacity": "40L (Hot only, dual faucet)",
+      "features": [
+        "Pipe-in, hot only",
+        "Dual faucet configuration for high-volume dispensing",
+        "No reboiling water — step-by-step heating system",
+        "100% true boiling technology",
+        "High-precision filtration",
+        "80% energy saving",
+        "Smart self-cleaning, whole pipeline sterilisation",
+        "S304 heating pipe, anti-hot handle",
+        "LED display, copper heating tube",
+        "Comes with high-power 3-pin plug",
+        "Available in black or silver finish"
+      ],
+      "power": "6kW",
+      "other": {
+        "rated_voltage": "380V 3N~ / 50Hz",
+        "colours": [
+          "Black",
+          "Silver"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 6,
+        "position": "hero (both colours, side by side)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "ys-120bk-65l",
+    "name": "Stainless Steel Water Boiler — Hot (65L Dual Faucet)",
+    "model": "YS-120BK (65L)",
+    "category_candidate": "Commercial Water Boilers",
+    "specs": {
+      "dimensions": "W575mm x D260mm x H910mm",
+      "capacity": "65L (Hot only, dual faucet)",
+      "features": [
+        "Pipe-in, hot only",
+        "Dual faucet configuration for high-volume dispensing",
+        "No reboiling water — step-by-step heating system",
+        "100% true boiling technology",
+        "High-precision filtration",
+        "80% energy saving",
+        "Smart self-cleaning, whole pipeline sterilisation",
+        "S304 heating pipe, anti-hot handle",
+        "LED display, copper heating tube",
+        "Comes with anti-leakage switch box",
+        "Available in black or silver finish"
+      ],
+      "power": "12kW",
+      "other": {
+        "rated_voltage": "380V 3N~ / 50Hz",
+        "colours": [
+          "Black",
+          "Silver"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 7,
+        "position": "hero (both colours, side by side)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "ys-22g",
+    "name": "Stainless Steel Water Boiler — Hot & Warm",
+    "model": "YS-22G",
+    "category_candidate": "Commercial Water Boilers",
+    "specs": {
+      "dimensions": "W400mm x D350mm x H560mm",
+      "capacity": "Hot 18L (100°C), Warm 18L (45°C)",
+      "features": [
+        "Pipe-in, hot + warm (100°C boiled and 45°C warm)",
+        "No reboiling water — step-by-step heating",
+        "100% true boiling technology",
+        "High-precision filtration",
+        "80% energy saving vs continuous-boil designs",
+        "Smart self-cleaning cycle",
+        "Whole pipeline sterilisation",
+        "304 stainless steel faucets — no rust, no leaks",
+        "Real-time temperature display",
+        "Heat-dissipated vent for long service life",
+        "Stainless steel flexible hose, copper heating tube"
+      ],
+      "power": "2000W",
+      "other": {
+        "rated_voltage": "220V ~ 50Hz",
+        "feed_water_pressure": "0.1–0.35 MPa",
+        "operating_pressure": "0.4–0.6 MPa"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 8,
+        "position": "hero (top half)"
+      }
+    ],
+    "raw_notes": "Optional stainless steel body stand with 10\" PP + 10\" CTO housing filters is available (shown as 'Option 2' on the page). Treat as an accessory, not a separate SKU."
+  },
+  {
+    "id": "ab-03",
+    "name": "Undersink Energy Water Purifier System",
+    "model": "AB-03",
+    "category_candidate": "Alkaline / Energy Water Systems",
+    "specs": {
+      "dimensions": "W115mm x D345mm x H278mm",
+      "capacity": "Purified water (normal water)",
+      "features": [
+        "Undersink water purifier system",
+        "Non-electric appliance — no electricity bill",
+        "Tankless — fresher, more hygienic water",
+        "Multi-way filtration for clean, safe water",
+        "Modern slim design fits small kitchens and offices",
+        "Food-grade material tubing and stainless steel faucet",
+        "DIY quick-change filter system",
+        "Backwashable filtration",
+        "3 ways installation — undersink, countertop"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "material": "ABS",
+        "colours": [
+          "Black",
+          "White"
+        ],
+        "filter_stages": [
+          "Step 1: 8\" PAC",
+          "Step 2: 8\" UF",
+          "Step 3: 8\" CTO"
+        ],
+        "installation": "Undersink or countertop, purified water pipe-in system"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 9,
+        "position": "hero (centre, black + white units)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "sb-01",
+    "name": "Alkaline / Energy Water System (6-Stage)",
+    "model": "SB-01",
+    "category_candidate": "Alkaline / Energy Water Systems",
+    "specs": {
+      "dimensions": "W320mm x D104mm x H396mm",
+      "capacity": "Purified water (normal water)",
+      "features": [
+        "Purified water (normal water) output",
+        "Non-electric appliance — no electricity bill",
+        "Tankless — fresher, more hygienic water",
+        "6-stage filtration including alkaline ball",
+        "Modern slim design",
+        "Food-grade material tubing and stainless steel faucet",
+        "DIY quick-change filter system, backwashable",
+        "Decorative dandelion pattern on front panel",
+        "Wide range of filter cartridges available on request"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "colours": [
+          "Black",
+          "White"
+        ],
+        "installation": "Undersink / Countertop / Wall Hanging",
+        "filter_stages": [
+          "Step 1: 10\" Ceramic",
+          "Step 2: 10\" Sediment",
+          "Step 3: 10\" Pre Carbon",
+          "Step 4: 10\" Silver Carbon",
+          "Step 5: 10\" Post Carbon",
+          "Step 6: 5\" Alkaline Ball"
+        ],
+        "country_of_origin": "Korea"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 10,
+        "position": "hero (centre, black + white units)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "xxy-4000",
+    "name": "Alkaline / Energy Water System (4-Stage Slim)",
+    "model": "XXY-4000",
+    "category_candidate": "Alkaline / Energy Water Systems",
+    "specs": {
+      "dimensions": "W324mm x D93mm x H338mm",
+      "capacity": "Purified water (normal water)",
+      "features": [
+        "Purified water (normal water) output",
+        "Non-electric appliance — no electricity bill",
+        "Tankless design",
+        "4-stage filtration",
+        "Modern slim design",
+        "Food-grade material tubing and stainless steel faucet",
+        "DIY quick-change filter system, backwashable",
+        "Sole distributor product",
+        "Wide range of filter cartridges available on request"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "installation": "Undersink / Countertop / Wall Hanging",
+        "filter_stages": [
+          "Step 1: 10\" Sediment",
+          "Step 2: 10\" Pre Carbon",
+          "Step 3: 10\" Silver Carbon",
+          "Step 4: 10\" Post Carbon"
+        ],
+        "country_of_origin": "Malaysia"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 11,
+        "position": "hero (centre, white unit)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "ae-007",
+    "name": "Countertop Alkaline / Energy Water System",
+    "model": "AE-007",
+    "category_candidate": "Alkaline / Energy Water Systems",
+    "specs": {
+      "dimensions": "W290mm x D105mm x H290mm",
+      "capacity": "Purified water",
+      "features": [
+        "Countertop installation",
+        "Non-electric appliance — no electricity bill",
+        "Tankless design",
+        "U-Type filter cartridges",
+        "Compact for tight kitchens",
+        "Food-grade material tubing and stainless steel faucet",
+        "Available with or without SY-22 faucet",
+        "Wide range of filter cartridges available on request"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "material": "ABS",
+        "colours": [
+          "White"
+        ],
+        "installation": "Countertop",
+        "filter_stages": [
+          "Step 1: 8.5\" Sediment",
+          "Step 2: 8.5\" Pre Carbon",
+          "Step 3: 8.5\" Silver Carbon",
+          "Step 4: 8.5\" Post Carbon"
+        ],
+        "faucet_option": "With SY-22 faucet or without faucet"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 12,
+        "position": "hero (centre)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "mp-01",
+    "name": "Alkaline / Energy Water System (Patterned)",
+    "model": "MP-01",
+    "category_candidate": "Alkaline / Energy Water Systems",
+    "specs": {
+      "dimensions": "W330mm x D102mm x H415mm",
+      "capacity": "Purified water (normal water)",
+      "features": [
+        "Purified water (normal water) output",
+        "Non-electric appliance",
+        "Tankless design",
+        "Slim panel design with decorative stripe pattern",
+        "Food-grade material tubing and stainless steel faucet",
+        "DIY quick-change filter system, backwashable"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "colours": [
+          "Black",
+          "White Stripe"
+        ],
+        "installation": "Undersink / Countertop / Wall Hanging"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 13,
+        "position": "hero (left unit, patterned front)"
+      }
+    ],
+    "raw_notes": "Shares its catalogue page with MP-02. Filter stage list not printed on this page — enquire on WhatsApp for filter loadout."
+  },
+  {
+    "id": "mp-02",
+    "name": "Alkaline / Energy Water System (Solid)",
+    "model": "MP-02",
+    "category_candidate": "Alkaline / Energy Water Systems",
+    "specs": {
+      "dimensions": "W330mm x D102mm x H415mm",
+      "capacity": "Purified water (normal water)",
+      "features": [
+        "Purified water (normal water) output",
+        "Non-electric appliance",
+        "Tankless design",
+        "Slim panel with solid finish",
+        "Food-grade material tubing and stainless steel faucet",
+        "DIY quick-change filter system, backwashable"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "colours": [
+          "White Black",
+          "White",
+          "Black"
+        ],
+        "installation": "Undersink / Countertop / Wall Hanging"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 13,
+        "position": "hero (right unit, solid front)"
+      }
+    ],
+    "raw_notes": "Shares its catalogue page with MP-01. Filter stage list not printed on this page — enquire on WhatsApp for filter loadout."
+  },
+  {
+    "id": "semtec-frp-935",
+    "name": "Semtec FRP Master Water Filter — 935 (9\" x 35\")",
+    "model": "Semtec 935",
+    "category_candidate": "Master Water Filters",
+    "specs": {
+      "dimensions": "9\" diameter x 35\" height",
+      "capacity": "32 litre flow rate",
+      "features": [
+        "FRP (fibre-reinforced plastic) tank for residential / light commercial water treatment",
+        "Whole-house / point-of-entry installation",
+        "Backwashable multi-media filter",
+        "Max working temperature 110°F (43°C)",
+        "Max working pressure 100 psi",
+        "2.5\" tank connection",
+        "3-step backwash / rinse / filter cycle via MPV (multi-port valve)",
+        "Recommended backwash every 7 to 10 days"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "internal_id": "2160004",
+        "colour_options": [
+          "Grey"
+        ],
+        "requires_control_valve": true,
+        "compatible_valves": [
+          "F56G1 PVC Handle",
+          "F56A1 Steel Handle",
+          "F56A3",
+          "F56AC Side Controller"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 14,
+        "position": "hero (left tank, white)"
+      }
+    ],
+    "raw_notes": "Media loadout: 2.33 (5kg), 816 (5kg), 2.4 (5kg), plus optional Anthracite (1kg) or Zeolite (1kg). Control valve is sold separately — see the semtec-control-valves entry."
+  },
+  {
+    "id": "semtec-frp-942",
+    "name": "Semtec FRP Master Water Filter — 942 (9\" x 42\")",
+    "model": "Semtec 942",
+    "category_candidate": "Master Water Filters",
+    "specs": {
+      "dimensions": "9\" diameter x 42\" height",
+      "capacity": "39 litre flow rate",
+      "features": [
+        "FRP tank for residential / light commercial water treatment",
+        "Whole-house / point-of-entry installation",
+        "Available in Grey, Black, or Green finish",
+        "Backwashable multi-media filter",
+        "Max working temperature 110°F (43°C)",
+        "Max working pressure 100 psi",
+        "2.5\" tank connection",
+        "3-step backwash / rinse / filter cycle via MPV",
+        "Recommended backwash every 7 to 10 days"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "internal_ids": {
+          "grey": "2160002",
+          "black": "2160003",
+          "green": "L13908419504"
+        },
+        "colours": [
+          "Grey",
+          "Black",
+          "Green"
+        ],
+        "requires_control_valve": true,
+        "compatible_valves": [
+          "F56G1 PVC Handle",
+          "F56A1 Steel Handle",
+          "F56A3",
+          "F56AC Side Controller"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 14,
+        "position": "hero (centre + right tanks, black and green)"
+      }
+    ],
+    "raw_notes": "Media loadout follows the 942 column: 2.33 (5kg), 816 (5kg), 2.4 (5kg x 5 bags), plus optional Anthracite (1kg) or Zeolite (1kg). Colour variants kept in a single row per the schema rule."
+  },
+  {
+    "id": "semtec-frp-1044",
+    "name": "Semtec FRP Master Water Filter — 1044 (10\" x 44\")",
+    "model": "Semtec 1044",
+    "category_candidate": "Master Water Filters",
+    "specs": {
+      "dimensions": "10\" diameter x 44\" height",
+      "capacity": "49.5 litre flow rate",
+      "features": [
+        "FRP tank for residential / light commercial water treatment",
+        "Whole-house / point-of-entry installation",
+        "Larger capacity for higher household demand",
+        "Backwashable multi-media filter",
+        "Max working temperature 110°F (43°C)",
+        "Max working pressure 100 psi",
+        "2.5\" tank connection",
+        "3-step backwash / rinse / filter cycle via MPV",
+        "Recommended backwash every 7 to 10 days"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "internal_id": "2160001",
+        "colour_options": [
+          "Grey"
+        ],
+        "requires_control_valve": true,
+        "compatible_valves": [
+          "F56G1 PVC Handle",
+          "F56A1 Steel Handle",
+          "F56A3",
+          "F56AC Side Controller"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 14,
+        "position": "hero row (not pictured individually — see codes list)"
+      }
+    ],
+    "raw_notes": "Listed by code on p14 alongside the 935 and 942 sizes. Media loadout shared with the 1099 chart row."
+  },
+  {
+    "id": "semtec-frp-1054",
+    "name": "Semtec FRP Master Water Filter — 1054",
+    "model": "Semtec 1054",
+    "category_candidate": "Master Water Filters",
+    "specs": {
+      "dimensions": "10\" diameter, tallest of the FRP series",
+      "capacity": "Largest of the Semtec FRP range",
+      "features": [
+        "FRP tank for residential / light commercial water treatment",
+        "Whole-house / point-of-entry installation",
+        "Largest FRP tank in the Semtec range",
+        "Backwashable multi-media filter",
+        "Max working temperature 110°F (43°C)",
+        "Max working pressure 100 psi",
+        "3-step backwash / rinse / filter cycle via MPV"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "internal_id": "2160006",
+        "colour_options": [
+          "Grey"
+        ],
+        "requires_control_valve": true,
+        "compatible_valves": [
+          "F56G1 PVC Handle",
+          "F56A1 Steel Handle",
+          "F56A3",
+          "F56AC Side Controller"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 14,
+        "position": "code list (no individual image)"
+      }
+    ],
+    "raw_notes": "Listed by code only on p14. Flow rate and exact height not printed in the visible spec table — enquire on WhatsApp for full specs."
+  },
+  {
+    "id": "semtec-control-valves",
+    "name": "Semtec FRP Master Filter Control Valves",
+    "model": "F56 Series",
+    "category_candidate": "Master Water Filters",
+    "specs": {
+      "dimensions": "",
+      "capacity": "Compatible with Semtec 935, 942, 1044, 1054 FRP tanks",
+      "features": [
+        "Multi-port control valves (MPV) for FRP master water filter tanks",
+        "3-position control: Backwash / Rinse / Filter",
+        "Choose between PVC handle, steel handle, standard, or side-controller variants",
+        "Sold separately from the FRP tank"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "variants": [
+          "F56G1 (PVC Handle) — ID: 2191700",
+          "F56A1 (Steel Handle) — ID: 2190100",
+          "F56A3 — ID: 2190200",
+          "F56AC (Side Controller) — ID: 1043010"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 14,
+        "position": "bottom row (4 valve variants)"
+      }
+    ],
+    "raw_notes": "Grouped row under Option C. Each variant has a distinct internal ID above — customer picks in the WhatsApp enquiry."
+  },
+  {
+    "id": "ss1034",
+    "name": "Stainless Steel Master Water Filter — SS1034 (10\" x 34\")",
+    "model": "SS1034",
+    "category_candidate": "Master Water Filters",
+    "specs": {
+      "dimensions": "10\" diameter x 34\" height",
+      "capacity": "Flow rate 1900–2200 L/min",
+      "features": [
+        "Stainless steel outdoor filtration system",
+        "Whole-house / point-of-entry installation",
+        "5-stage media loadout (Zeolite Plus, Anthracite, Silica Sand mix)",
+        "Removes heavy metals, sediment, chlorine, ammonium, suspended solids",
+        "Valve size 3/4\", max working pressure 10 bar",
+        "Working temperature range 2°C – 50°C",
+        "Available with F56A1 or SS56A1 control valve"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "valve_options": [
+          "F56A1",
+          "SS56A1"
+        ],
+        "media_stages": [
+          "Stage 1: Zeolite Plus (0.45mm) — Australia",
+          "Stage 2: Anthracite (AN) — USA",
+          "Stage 3: Silica Sand (0.45mm)",
+          "Stage 4: Silica Sand (1.2mm)",
+          "Stage 5: Silica Sand (2.4mm)"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 15,
+        "position": "hero (leftmost pair)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "ss1049",
+    "name": "Stainless Steel Master Water Filter — SS1049 (10\" x 49\")",
+    "model": "SS1049",
+    "category_candidate": "Master Water Filters",
+    "specs": {
+      "dimensions": "10\" diameter x 41\" height (SS1049 body height)",
+      "capacity": "Flow rate 1900–2200 L/min",
+      "features": [
+        "Stainless steel outdoor filtration system",
+        "Whole-house / point-of-entry installation",
+        "5-stage media loadout (Zeolite Plus, Anthracite, Silica Sand mix)",
+        "Removes heavy metals, sediment, chlorine, ammonium, suspended solids",
+        "Valve size 3/4\", max working pressure 10 bar",
+        "Working temperature range 2°C – 50°C",
+        "Available with F56A1 or SS56A1 control valve"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "valve_options": [
+          "F56A1",
+          "SS56A1"
+        ],
+        "media_stages": [
+          "Stage 1: Zeolite Plus (0.45mm) — Australia",
+          "Stage 2: Anthracite (AN) — USA",
+          "Stage 3: Silica Sand (0.45mm)",
+          "Stage 4: Silica Sand (1.2mm)",
+          "Stage 5: Silica Sand (2.4mm)"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 15,
+        "position": "hero (middle pair)"
+      }
+    ],
+    "raw_notes": "Height labelled 41\" on the spec block despite the '1049' code suggesting 49\" — captured as printed."
+  },
+  {
+    "id": "ss1099",
+    "name": "Stainless Steel Master Water Filter — SS1099",
+    "model": "SS1099",
+    "category_candidate": "Master Water Filters",
+    "specs": {
+      "dimensions": "10\" diameter x 43\" height",
+      "capacity": "Flow rate 1900–2200 L/min",
+      "features": [
+        "Stainless steel outdoor filtration system",
+        "Whole-house / point-of-entry installation, larger tank for higher demand",
+        "5-stage media loadout (Zeolite Plus, Anthracite, Silica Sand mix)",
+        "Removes heavy metals, sediment, chlorine, ammonium, suspended solids",
+        "Valve size 3/4\", max working pressure 10 bar",
+        "Working temperature range 2°C – 50°C",
+        "Available with F56A1 or SS56A1 control valve"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "valve_options": [
+          "F56A1",
+          "SS56A1"
+        ],
+        "media_stages": [
+          "Stage 1: Zeolite Plus (0.45mm) — Australia",
+          "Stage 2: Anthracite (AN) — USA",
+          "Stage 3: Silica Sand (0.45mm)",
+          "Stage 4: Silica Sand (1.2mm)",
+          "Stage 5: Silica Sand (2.4mm)"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 15,
+        "position": "hero (rightmost pair)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "e-1000-diy",
+    "name": "Stainless Steel UF System — E-1000 DIY",
+    "model": "E-1000 DIY (CR-E6000)",
+    "category_candidate": "Outdoor Filtration — Stainless Steel UF",
+    "specs": {
+      "dimensions": "114mm diameter x 980mm length",
+      "capacity": "Flow rate 2500 L/hr",
+      "features": [
+        "SUS304 stainless steel outdoor filtration",
+        "Hollow fibre membrane, 0.01 micron ultrafiltration",
+        "Large water flow suitable for whole-house use",
+        "Preserves natural minerals in water",
+        "Bacteria guard — blocks bacteria and viruses",
+        "DIY installation on the water meter pipe",
+        "Tap water inlet, purification outlet, sewage outlet",
+        "Optional precision Tri-Clamp water locking upgrade",
+        "Free Silk Screen / logo (black) on orders of 20+ units"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "connector": "3/4\" (6分)",
+        "filter_type": "Hollow Fibre Membrane",
+        "upgrade_options": [
+          "Hollow Fibre Membrane upgrade",
+          "Precision Tri-Clamp water locking (prevents leaks)"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 16,
+        "position": "hero (horizontal cylinder)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "cr-159-5000",
+    "name": "Stainless Steel UF System — CR-159-5000",
+    "model": "CR-159-5000",
+    "category_candidate": "Outdoor Filtration — Stainless Steel UF",
+    "specs": {
+      "dimensions": "590mm x 218mm x 208mm",
+      "capacity": "Flow rate 5000 L/hr",
+      "features": [
+        "SUS304 stainless steel outdoor filtration",
+        "PVDF-S ultrafiltration membrane",
+        "0.01 micron filtration",
+        "Preserves natural minerals",
+        "Bacteria guard — blocks bacteria and viruses",
+        "IN/OUT 1 inch connector, Backwash 1/2 inch",
+        "PVDF-S high-intensity membrane with silk lining, easy to clean",
+        "Optional precision Tri-Clamp water locking",
+        "Optional pressure gauge (additional charge)"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "filter_type": "PVDF-S Ultrafiltration Membrane",
+        "in_out": "1 inch",
+        "backwash": "1/2 inch"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 17,
+        "position": "left, small vertical cylinder"
+      }
+    ],
+    "raw_notes": "Shares its catalogue page with CR-159-8000."
+  },
+  {
+    "id": "cr-159-8000",
+    "name": "Stainless Steel UF System — CR-159-8000",
+    "model": "CR-159-8000",
+    "category_candidate": "Outdoor Filtration — Stainless Steel UF",
+    "specs": {
+      "dimensions": "930mm x 218mm x 208mm",
+      "capacity": "Flow rate 8000 L/hr",
+      "features": [
+        "SUS304 stainless steel outdoor filtration",
+        "PVDF-S ultrafiltration membrane",
+        "0.01 micron filtration",
+        "Higher flow rate for larger households or light commercial use",
+        "Preserves natural minerals",
+        "Bacteria guard",
+        "Connector 1 inch, Backwash 1/2 inch",
+        "PVDF-S high-intensity membrane with silk lining, easy to clean"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "filter_type": "PVDF-S Ultrafiltration Membrane",
+        "connector": "1 inch",
+        "backwash": "1/2 inch"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 17,
+        "position": "left-lower, taller vertical cylinder"
+      }
+    ],
+    "raw_notes": "Shares its catalogue page with CR-159-5000."
+  },
+  {
+    "id": "cr-159-6000",
+    "name": "Stainless Steel UF System — CR-159-6000",
+    "model": "CR-159-6000",
+    "category_candidate": "Outdoor Filtration — Stainless Steel UF",
+    "specs": {
+      "dimensions": "831mm x 182mm x 201mm",
+      "capacity": "Flow rate 6000 L/hr",
+      "features": [
+        "SUS304 stainless steel outdoor filtration",
+        "PVDF-S outer-pressure hollow fibre membrane",
+        "0.01 micron filtration",
+        "5-year membrane lifespan",
+        "Preserves natural minerals",
+        "Bacteria guard",
+        "3/4\" (6分) connector",
+        "Whole-house installation on the water meter pipe"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "filter_type": "PVDF-S Hollow Fibre Membrane (Outer-Pressure Type)",
+        "connector": "3/4\" (6分)",
+        "membrane_lifespan": "5 years",
+        "membrane_density": "0.01 μ"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 18,
+        "position": "hero (horizontal cylinder)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "cr-159-10000",
+    "name": "Stainless Steel UF System — CR-159-10000",
+    "model": "CR-159-10000",
+    "category_candidate": "Outdoor Filtration — Stainless Steel UF",
+    "specs": {
+      "dimensions": "1231mm x 182mm x 201mm",
+      "capacity": "Flow rate 10000 L/hr",
+      "features": [
+        "SUS304 stainless steel outdoor filtration",
+        "PVDF-S outer-pressure hollow fibre membrane",
+        "0.01 micron filtration",
+        "5-year membrane lifespan",
+        "Highest flow rate in the CR-159 range",
+        "Preserves natural minerals",
+        "Bacteria guard",
+        "3/4\" (6分) connector"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "filter_type": "PVDF-S Hollow Fibre Membrane (Outer-Pressure Type)",
+        "connector": "3/4\" (6分)",
+        "membrane_lifespan": "5 years",
+        "membrane_density": "0.01 μ"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 19,
+        "position": "hero (long horizontal cylinder)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "cr-3500",
+    "name": "Stainless Steel UF System — CR-3500 (Hidden Piping)",
+    "model": "CR-3500",
+    "category_candidate": "Outdoor Filtration — Stainless Steel UF",
+    "specs": {
+      "dimensions": "ø114mm x 1068mm (ø4.5\" x 38.5\")",
+      "capacity": "Flow rate 2500 L/hr",
+      "features": [
+        "SUS304 stainless steel body",
+        "0.01 micron ultrafiltration",
+        "Large water flow suitable for whole-house use",
+        "Preserves natural minerals in water",
+        "Bacteria guard — blocks bacteria and viruses",
+        "Filtered water for drinking",
+        "Backwash water for cooking, washing, laundry, cleaning, watering",
+        "Comes with pressure gauge",
+        "Hidden piping design for tidy installation"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "connector": "3/4\" (6分)",
+        "filter_type": "Hollow Fibre Membrane",
+        "upgrade_options": [
+          "Real-time water pressure monitoring",
+          "Precise Tri-Clamp water locking",
+          "Stainless steel longer bracket"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 20,
+        "position": "hero (horizontal cylinder with pressure gauge)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "cr-3600",
+    "name": "Stainless Steel UF System — CR-3600 (With Pressure Gauge)",
+    "model": "CR-3600",
+    "category_candidate": "Outdoor Filtration — Stainless Steel UF",
+    "specs": {
+      "dimensions": "ø114mm x 1068mm (ø4.5\" x 38.5\")",
+      "capacity": "Flow rate 2500 L/hr",
+      "features": [
+        "SUS304 stainless steel body",
+        "0.01 micron ultrafiltration",
+        "Large water flow suitable for whole-house use",
+        "Preserves natural minerals in water",
+        "Bacteria guard",
+        "Filtered water for drinking",
+        "Backwash water for cooking, washing, laundry, cleaning, watering",
+        "Comes with pressure gauge",
+        "Slim horizontal-mount design"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "connector": "3/4\" (6分)",
+        "filter_type": "Hollow Fibre Membrane",
+        "upgrade_options": [
+          "Real-time water pressure monitoring",
+          "Precise Tri-Clamp water locking",
+          "Stainless steel longer bracket"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 21,
+        "position": "hero (horizontal cylinder with pressure gauge)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "cr-ultra-l5",
+    "name": "Stainless Steel UF System — CR-Ultra L5",
+    "model": "CR-ULTRA L5",
+    "category_candidate": "Outdoor Filtration — Stainless Steel UF",
+    "specs": {
+      "dimensions": "ø114mm x 978mm (ø4.5\" x 38.5\")",
+      "capacity": "Flow rate 2500 L/hr",
+      "features": [
+        "SUS304 stainless steel body",
+        "0.01 micron ultrafiltration",
+        "Vertical or horizontal installation",
+        "Water pressure meter on top",
+        "Preserves natural minerals",
+        "Bacteria guard",
+        "Optional stainless steel bracket",
+        "Accessory: 2-way faucet available"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "connector": "3/4\" (6分)",
+        "filter_type": "Hollow Fibre Membrane",
+        "upgrade_options": [
+          "Real-time water pressure monitoring",
+          "Precise Tri-Clamp water locking",
+          "Stainless steel bracket"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 22,
+        "position": "hero (vertical cylinder, water meter on top)"
+      }
+    ],
+    "raw_notes": "Page also shows a horizontal installation option and a 2-way faucet accessory."
+  },
+  {
+    "id": "cr-gb2500-plus",
+    "name": "Stainless Steel UF System — CR-GB2500 Plus (With Pressure Gauge)",
+    "model": "CR-GB2500 Plus",
+    "category_candidate": "Outdoor Filtration — Stainless Steel UF",
+    "specs": {
+      "dimensions": "ø114mm x 1028mm (ø4.5\" x 40.5\")",
+      "capacity": "Flow rate 2500 L/hr",
+      "features": [
+        "SUS304 stainless steel body",
+        "0.01 micron ultrafiltration",
+        "Hollow Fibre Membrane",
+        "Comes with pressure gauge",
+        "Preserves natural minerals",
+        "Bacteria guard",
+        "Whole-house installation on the water meter pipe"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "connector": "3/4\" (6分)",
+        "filter_type": "Hollow Fibre Membrane",
+        "upgrade_options": [
+          "Real-time water pressure monitoring",
+          "Precise Tri-Clamp water locking"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 23,
+        "position": "hero (horizontal cylinder with pressure gauge)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "uf-3000d",
+    "name": "Stainless Steel UF System — UF-3000D",
+    "model": "UF-3000D",
+    "category_candidate": "Outdoor Filtration — Stainless Steel UF",
+    "specs": {
+      "dimensions": "ø127mm x 740mm (ø5\" x 19.1\")",
+      "capacity": "Flow rate 3000 L/hr",
+      "features": [
+        "Stainless steel household UF system",
+        "0.01 micron ultrafiltration",
+        "Work pressure 1–3 MPa",
+        "Water temperature 5–45°C",
+        "1\" connector",
+        "Filtered water for drinking, backwash water for cooking/washing/cleaning",
+        "Replaceable UF filter cartridge"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "connector": "1 inch",
+        "filter_type": "UF Membrane",
+        "work_pressure": "1–3 MPa",
+        "water_temperature": "5–45°C",
+        "internal_id": "3259013",
+        "filter_cartridge_id": "1217214"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 24,
+        "position": "hero (upper cylinder)"
+      }
+    ],
+    "raw_notes": "Shares its catalogue page with UF-4000D."
+  },
+  {
+    "id": "uf-4000d",
+    "name": "Stainless Steel UF System — UF-4000D",
+    "model": "UF-4000D",
+    "category_candidate": "Outdoor Filtration — Stainless Steel UF",
+    "specs": {
+      "dimensions": "ø127mm x 1000mm (ø5\" x 39.3\")",
+      "capacity": "Flow rate 4000 L/hr",
+      "features": [
+        "Stainless steel household UF system",
+        "0.01 micron ultrafiltration",
+        "Work pressure 1–3 MPa",
+        "Water temperature 5–45°C",
+        "1\" connector",
+        "Higher capacity than UF-3000D — suits larger households",
+        "Replaceable UF filter cartridge"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "connector": "1 inch",
+        "filter_type": "UF Membrane",
+        "work_pressure": "1–3 MPa",
+        "water_temperature": "5–45°C",
+        "internal_id": "3259014",
+        "filter_cartridge_id": "1217215"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 24,
+        "position": "hero (lower cylinder)"
+      }
+    ],
+    "raw_notes": "Shares its catalogue page with UF-3000D."
+  },
+  {
+    "id": "cr-gb1000-new",
+    "name": "Stainless Steel UF System — CR-GB1000-NEW",
+    "model": "CR-GB1000-NEW",
+    "category_candidate": "Outdoor Filtration — Stainless Steel UF",
+    "specs": {
+      "dimensions": "ø114mm x 1028mm (ø4.5\" x 40.5\")",
+      "capacity": "Flow rate 2500 L/hr",
+      "features": [
+        "SUS304 stainless steel body",
+        "Hollow fibre membrane, PAN material",
+        "0.01 micron ultrafiltration",
+        "Preserves natural minerals",
+        "Bacteria guard",
+        "3/4\" connector",
+        "MA / ilac / CNAS certified quality"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "connector": "3/4\"",
+        "filter_type": "Hollow Fibre Membrane (PAN material)",
+        "internal_id": "3259045",
+        "compatible_filters": [
+          "UF Filter Only for GB1000 New — ID: 1217208",
+          "CF UF MEMB. CR-GB 1000/1000 NEW — ID: 1217234"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 25,
+        "position": "hero (horizontal cylinder)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "p5-f50",
+    "name": "Stainless Steel UF System — P5-F50 (5 Ton Flow)",
+    "model": "P5-F50",
+    "category_candidate": "Outdoor Filtration — Stainless Steel UF",
+    "specs": {
+      "dimensions": "ø168mm x 610mm (ø6.6\" x 24\")",
+      "capacity": "Flow rate 5000 L/hr (5 Ton)",
+      "features": [
+        "SUS304 stainless steel body",
+        "Hollow fibre membrane, 0.01 micron",
+        "System operates at low pressure",
+        "Removes bacteria, sediment, rust, colloid, heavy metals and other harmful substances",
+        "Keeps essential minerals in water",
+        "Installs quickly and easily",
+        "Does not generate waste water",
+        "1\" connector"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "connector": "1 inch",
+        "filter_type": "Food-Grade Hollow Fibre Membrane",
+        "internal_id": "3259011"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 26,
+        "position": "hero (large horizontal cylinder, mirrored finish)"
+      }
+    ],
+    "raw_notes": ""
+  },
+  {
+    "id": "5000jk",
+    "name": "Stainless Steel UF System — 5000JK (Round Edge)",
+    "model": "5000JK",
+    "category_candidate": "Outdoor Filtration — Stainless Steel UF",
+    "specs": {
+      "dimensions": "ø141mm x 835mm (ø6.5\" x 32.8\")",
+      "capacity": "Flow rate 5000 L/hr",
+      "features": [
+        "Clear finished design, new round edge design",
+        "SUS304 stainless steel body",
+        "Tri Clamp locking system — tool-free DIY disassembly for cleaning or filter change",
+        "Washable cartridges",
+        "PVDF (outer-pressure) UF membrane",
+        "Modified PVDF for greater hydrophilicity, smoother, less fouling",
+        "Intercepts bacteria and viruses",
+        "High chemical resistance",
+        "5-year membrane lifespan",
+        "1\" connector"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "connector": "1 inch",
+        "filter_type": "PVDF-UF (Outer-Pressure Type)",
+        "membrane_lifespan": "5 years",
+        "membrane_density": "0.01 μ",
+        "internal_id": "3259015"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 27,
+        "position": "hero (upper cylinder)"
+      }
+    ],
+    "raw_notes": "Shares its catalogue page with 6000JK."
+  },
+  {
+    "id": "6000jk",
+    "name": "Stainless Steel UF System — 6000JK (Round Edge)",
+    "model": "6000JK",
+    "category_candidate": "Outdoor Filtration — Stainless Steel UF",
+    "specs": {
+      "dimensions": "ø141mm x 915mm (ø5.5\" x 36\")",
+      "capacity": "Flow rate 6000 L/hr",
+      "features": [
+        "Clear finished design, new round edge design",
+        "SUS304 stainless steel body",
+        "Tri Clamp locking system — tool-free DIY disassembly for cleaning or filter change",
+        "Washable cartridges",
+        "PVDF (outer-pressure) UF membrane",
+        "High-flow variant of the JK series",
+        "Modified PVDF for greater hydrophilicity",
+        "5-year membrane lifespan",
+        "1\" connector"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "connector": "1 inch",
+        "filter_type": "PVDF-UF (Outer-Pressure Type)",
+        "membrane_lifespan": "5 years",
+        "membrane_density": "0.01 μ",
+        "internal_id": "3259016"
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 27,
+        "position": "hero (lower cylinder)"
+      }
+    ],
+    "raw_notes": "Shares its catalogue page with 5000JK."
+  },
+  {
+    "id": "filter-housings-imported",
+    "name": "Filter Housings — Imported (10\" and 20\")",
+    "model": "Various",
+    "category_candidate": "Filter Housings",
+    "specs": {
+      "dimensions": "10\" and 20\" configurations",
+      "capacity": "Standard cartridge housings",
+      "features": [
+        "Single, double, and triple O-Ring configurations",
+        "Clear and blue casing options",
+        "Available in 1/2\" and 3/4\" ports",
+        "Includes SP rack for 100–400s RO white housings",
+        "Wrench included, applicable to all 10\" and 20\" housings shown"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "variants": [
+          "20\" Double O-Ring — Clear or Blue (1/2\" or 3/4\")",
+          "LC 10\" Duke O-Ring — Clear or White (1/4\")",
+          "10\" LC Double Housing — White or Clear (1/2\" or 1/4\")",
+          "10\" LC Triple Housing — White or Clear (1/2\" or 1/4\")",
+          "20\" LC Double Housing — Blue or Clear (1/2\" or 3/4\")",
+          "LC Triple Housing (Double O-Ring) — Blue or Clear (1/2\" or 3/4\")"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 28,
+        "position": "full page grid"
+      }
+    ],
+    "raw_notes": "Grouped row under Option C. Customer specifies size, colour, port size, and O-Ring config in the WhatsApp enquiry."
+  },
+  {
+    "id": "filter-housings-local",
+    "name": "Filter Housings — Local (Jumbo, Slim, and Specialty)",
+    "model": "Various",
+    "category_candidate": "Filter Housings",
+    "specs": {
+      "dimensions": "10\" and 20\" configurations",
+      "capacity": "Locally sourced housings",
+      "features": [
+        "Jumbo 10\" and 20\" housings (Blue) with cartridge options",
+        "10\" single and double O-Ring housings (Clear, PVDF-S)",
+        "10\" R.O membrane housings",
+        "AP-Easy Duplex clear housing set",
+        "10\" ROC ceramic housing (white)",
+        "Kits include bracket, opener, and cartridge options where noted"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "variants": [
+          "Jumbo 118002105003 — Blue, In/Out 1\"/1.5\"",
+          "L180142300315 — 20\" HF Blue Jumbo, In/Out 1/5\", Double O-Ring Set",
+          "L18014230031 — 20\" HF Clear Jumbo, In/Out 1\", Double O-Ring Set",
+          "L106626 — FG10\" Housing without Copper (Clear), In/Out 3/4\"",
+          "L10162 — HF 10\" SS Single, In/Out 3/4\", A1-Black Head",
+          "L106593 — HF 10\" Housing Clear (LC), In/Out 1/4\", Double O-Ring",
+          "CR-22FH — Clear Housing Filter PVDF-S, In/Out 1/2\"",
+          "L1310017 — HF 10\" DEMA Housing Clear (LC), In/Out 1/2\", Double O-Ring",
+          "L1238007 — FG 10\" ATLAS Italy Mono Copper, In/Out 3/4\", Clear Housing Set (AP-Easy Duplex)",
+          "L10231 — HF 10\" R.O Membrane Housing, In/Out 1/4\"",
+          "ROC — 10\" ROC Ceramic, White"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 29,
+        "position": "full page grid"
+      }
+    ],
+    "raw_notes": "Grouped row under Option C. Each variant carries its own code — customer specifies the code in the WhatsApp enquiry."
+  },
+  {
+    "id": "countertop-cartridge-filters",
+    "name": "Countertop Cartridge Filter Housings",
+    "model": "Various",
+    "category_candidate": "Filter Housings",
+    "specs": {
+      "dimensions": "Countertop tabletop units",
+      "capacity": "Single or double cartridge configurations",
+      "features": [
+        "Countertop installation, connects via faucet diverter",
+        "Single or double cartridge configurations",
+        "Available with CTO or ceramic + CTO cartridge sets",
+        "Includes hose, diverter, and wrench in full sets"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "variants": [
+          "L109360 — FG 10\" Single Filtration, W/CTO-Set (D. O-Ring)",
+          "L109356 — FG Double Fil. Hous., D. O-Ring 1/4\", W/10\" XPP + CTO (Full Set)",
+          "XXY-TS02 — FG Double Fil. Hous. Single O-Ring, W/Ceramic + CTO (Full Set)",
+          "XXY-DRD4 — 10\" SS Ceramic Filter Single Tabletop",
+          "CTC 5000 (Grey) — 10\" CTC 5000 Grey Single Tabletop"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 30,
+        "position": "top half"
+      }
+    ],
+    "raw_notes": "Grouped row under Option C."
+  },
+  {
+    "id": "digital-water-timers",
+    "name": "Digital Water Timers (Irrigation / Hose-End Controllers)",
+    "model": "Various",
+    "category_candidate": "Water Timers & Float Valves",
+    "specs": {
+      "dimensions": "Handheld hose-end units",
+      "capacity": "Programmable watering schedules",
+      "features": [
+        "Hose-end irrigation controllers (timers)",
+        "Programmable start times and duration",
+        "Battery-operated, weather-resistant",
+        "Digital or dial-based automatic setting options"
+      ],
+      "power": "Battery-operated",
+      "other": {
+        "variants": [
+          "BX-6606 — Digital Water Timer",
+          "6605 (Green) — SP Auto Timer",
+          "(Unlabelled model) — Digital Water Timer with dual-time display",
+          "BX-6636 — Digital Water Timer with automatic setting button"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 30,
+        "position": "bottom half"
+      }
+    ],
+    "raw_notes": "Grouped row under Option C. Customer names the model code in the WhatsApp enquiry."
+  },
+  {
+    "id": "goose-neck-faucets",
+    "name": "Goose Neck Faucets (RO / Filter Faucets)",
+    "model": "Various",
+    "category_candidate": "Faucets & Pressure Tanks",
+    "specs": {
+      "dimensions": "Countertop mount, various heights",
+      "capacity": "For RO / undersink filter systems",
+      "features": [
+        "Stainless steel construction",
+        "Smooth-turning single lever",
+        "2-point straight connector installation",
+        "360° rotatable spout on select models",
+        "For RO systems and undersink water purifiers"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "variants": [
+          "TP-080 SS — Stainless Steel, 128mm reach, 260mm/145mm heights (ID: 109214)",
+          "QK-014 SS + Base (Alloy SS304) — ID: 110493",
+          "QK-013 — ID: 110577",
+          "DKS-01 — ID: 108323",
+          "Z-A-35 — ID: 100511",
+          "PJ-01 Faucet — ID: 109927"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 31,
+        "position": "top half"
+      }
+    ],
+    "raw_notes": "Grouped row under Option C. Customer names the model / ID in the WhatsApp enquiry."
+  },
+  {
+    "id": "pressure-tanks",
+    "name": "RO Pressure Tanks",
+    "model": "Various",
+    "category_candidate": "Faucets & Pressure Tanks",
+    "specs": {
+      "dimensions": "Various capacities (3.2G to 20G)",
+      "capacity": "3.2 gallons up to 20 gallons",
+      "features": [
+        "Pressure tanks for RO water purification systems",
+        "Plastic and stainless steel body options",
+        "White finish"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "variants": [
+          "RO-132 (Plastic) TVN-3.2G — ID: 109327",
+          "RO-132 (SS) 3.2G, White — ID: 109329",
+          "TP-35 (35L SS) 10.7G, White — ID: 109328",
+          "TP-100 20G, White — ID: 109329"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 31,
+        "position": "bottom half"
+      }
+    ],
+    "raw_notes": "Grouped row under Option C. Customer specifies capacity in the WhatsApp enquiry."
+  },
+  {
+    "id": "ceramic-filter-cartridges",
+    "name": "Ceramic Filter Cartridges (Multi-Brand)",
+    "model": "Various",
+    "category_candidate": "Filter Cartridges",
+    "specs": {
+      "dimensions": "10\" standard cartridges (Short and Long variants)",
+      "capacity": "2\" x 10\" replacement ceramic candles",
+      "features": [
+        "Ceramic filter candles for undersink and countertop filter housings",
+        "Multiple brand and origin options",
+        "Sub-micron filtration for bacteria and sediment removal",
+        "Compatible with standard 10\" housings"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "variants": [
+          "Remington (Malaysia) — 10\" Ceramic Candle Standard, 2\" x 10\" BSPT Short",
+          "JutaSH (European Technology) — 10\" Ceramic Filter Diatomite (HALAL), 2\" x 10\"",
+          "Doulton CF CRM Ultra Carb (Britain) — 2\" x 10\"",
+          "Doulton CF CRM Standard Short (England) — 10\"",
+          "Water Filter Cartridge (Thailand) — 10\" Ceramic Candle Standard, 2\" x 10\" (Short/Long)",
+          "3MAN (China) — 10\" Ceramic Candle Standard, 2\" x 10\"",
+          "Thailand — 10\" Short, Long, OBE",
+          "Osia — 10\" Short",
+          "Nano Aura — 10\" Short",
+          "Daiwaki — 10\" Short",
+          "Nesh — 10\" Short",
+          "Doulton — 10\" Short"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 32,
+        "position": "full page grid"
+      }
+    ],
+    "raw_notes": "Grouped row under Option C. Customer names the brand and size in the WhatsApp enquiry."
+  },
+  {
+    "id": "fittings-china",
+    "name": "Water System Fittings — Made in China",
+    "model": "Various",
+    "category_candidate": "Fittings",
+    "specs": {
+      "dimensions": "1/4\" and 3/8\" quick-connect fittings",
+      "capacity": "For RO / undersink water systems",
+      "features": [
+        "Quick-connect push-fit fittings",
+        "Pressure-reducing valves, high and low pressure switches",
+        "Elbow, tee, straight, Y-type, ball valve, and check valve variants",
+        "1/4\", 3/8\" OD and NPT connections",
+        "Bulk stock available"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "variants": [
+          "1830-C Pressure Reducing Valve 1/4\" x 1/4\" (Grey) — 103404",
+          "Fitting PLF-0204 1/4\" — 1770025",
+          "Fitting PLF-0304 3/8\" x 1/2\" — 109347",
+          "Fitting PLF-0202 (Y-type) — 1/4\" OD x 1/4\" OD",
+          "Fitting PLF-0203 (Y-type) — 3/8\" OD x 3/8\" OD",
+          "Fitting PY 020202 (4TWD44) — 1770026",
+          "Fitting PCF-0304 (6FC8) — 106132",
+          "Fitting PCF-0204 (4FC8) — 1770023",
+          "Fitting PCF-0202 (4FC4) — 1770024",
+          "Fitting PU 0202 (4U4) — 1770020",
+          "Fitting PC-0304 (6MC8) — 1770031",
+          "Fitting ST016-A (4BU4) 1/4\" x 1/4\" (RD) — 110749",
+          "Fitting PC 0202 (4MC4) — 1770021",
+          "Fitting PU-0203 (4U6) — 1770044",
+          "Fitting PM 0202 (4BU4) — 1770018",
+          "Fitting PLF 0304 3/8\" x 1/2\" — 109347",
+          "Fitting PL-0203 (4ME6) — 1770042",
+          "Fitting 1818-A (4UE4) White (LC) — 177003",
+          "Fitting PLF 0204 — 1770025",
+          "Fitting PLT-0202 (4SE4) — 1770027",
+          "Fitting PL-0202 (4ME4) — 1770019",
+          "Fitting PL-0304 (6ME8) — 1770036",
+          "Fitting SRT-0404 1/4\" x 1/4\" — 110173",
+          "Fitting 4SE6 — 110480",
+          "Fitting PL-0302 (6ME4) — 1770034",
+          "Fitting PLT-0303 (6SE6) 3/8\" x 3/8\" — 109827",
+          "Flow Restrictor FR 300 (300cc) — 2790079",
+          "1/4\" R.O Insert — 134247417019",
+          "Fitting HP001 (High Pressure) — 1770029",
+          "Pressure Reducing Valve 1/4\" RD (Square) — 110876",
+          "Fitting LP001 (Low Pressure) — 1770030",
+          "1828-A Low Pressure Switch CN — 1770006",
+          "Fitting 4UT44 (LC) — 109334",
+          "Fitting 1818-A 4UE4 White (LC) — 109883",
+          "Fitting 4ME4 with O-Ring (LC) — 110146",
+          "Ball Valve PA-0303 (BV107) — 2750012",
+          "Fitting Past-02 — 1770014",
+          "Ball Valve PA-0202 (BV101) — 1770028",
+          "Fitting Past-03 — 109704",
+          "Fitting Pan-0202 (BV102) — 1770015",
+          "Fitting ST050-A (M22) 1/4\" x 1/4\" (RD) — 110874",
+          "Fitting ST019-A (4MC4) 1/4\" x 1/4\" (RD) — 110752",
+          "Fitting ST009-A (4UE4) 1/4\" x 1/4\" (RD) — 1770016",
+          "Fitting ST065-A (4ME4) 1/4\" x 1/4\" (RD) — 110875",
+          "Fitting ST018-A (4U4) 1/4\" x 1/4\" (RD) — 110751",
+          "Fitting ST015-A (4FC4) 1/4\" x 1/4\" (RD) — 110872",
+          "Fitting ST014-A (PLF0204) 1/4\" x 1/4\" (RD) — 110873",
+          "Fitting ST009-C (4UE6) 1/4\" x 3/8\" (RD) — 1105533",
+          "Fitting ST013-A (4SE4) 1/4\" x 1/4\" (RD) — 110750",
+          "Ball Valve ST002-A (BV101) 1/4\" x 1/4\" (RD) — 110748"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 33,
+        "position": "full page grid"
+      },
+      {
+        "pdf": "41-79",
+        "page": 34,
+        "position": "full page grid"
+      },
+      {
+        "pdf": "41-79",
+        "page": 35,
+        "position": "top half"
+      }
+    ],
+    "raw_notes": "Grouped row under Option C — spans three catalogue pages. Customer specifies the fitting code in the WhatsApp enquiry."
+  },
+  {
+    "id": "fittings-taiwan",
+    "name": "Water System Fittings — Made in Taiwan",
+    "model": "Various",
+    "category_candidate": "Fittings",
+    "specs": {
+      "dimensions": "1/4\", 3/8\", and 1/2\" quick-connect fittings",
+      "capacity": "For RO / undersink water systems",
+      "features": [
+        "Higher-quality Taiwan-made push-fit fittings",
+        "Straight, elbow, tee, Y-type, ball valve, check valve variants",
+        "For RO and undersink water purification systems"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "variants": [
+          "Fitting 4MC6-TW — 1745004",
+          "Fitting 4FC7-TW — 316236242285",
+          "Fitting 6MC4-TW — 17640006",
+          "Fitting 6UT44-TW — 1767004",
+          "Fitting 4U4 — 109816",
+          "Fitting 4FC12 — 1744001",
+          "Fitting 4U6/6U4 — 1748005",
+          "Fitting 6FC4 — 1763002",
+          "Fitting 6FC12 — 1162362420211",
+          "Fitting 4FC4 — 1744003",
+          "Fitting 6FC6 — 3162362420213",
+          "Fitting 4ME6 — 1745005",
+          "Fitting 4ME6 — 1745010",
+          "Fitting 4ME2 — 1745012",
+          "Fitting 6ME8 — 1764001",
+          "Fitting 6UE6 — 1767002",
+          "Fitting 8ME8 — 3162362900182",
+          "Fitting 6ME4 — 1764003",
+          "Fitting 6ME6 — L1764002",
+          "Fitting 6SE4 — 1765001",
+          "Fitting 4ME2 (CN) — 1162362900191",
+          "Fitting 4MC8 — 1745001",
+          "Fitting 4MC4 — 1745006",
+          "Fitting 4MC4 — 1745007",
+          "Fitting 6MC8 — 1764004",
+          "Fitting 6MC6 — 1764005",
+          "Fitting 4BU4 — 1741001",
+          "Fitting 4MC4 — 1745008",
+          "Fitting 6BU6 — 1761001",
+          "Fitting 4BU4 K1000 (KR) — 2162362060191",
+          "Fitting 4TWD44 — 1747002",
+          "Fitting 4UT66 — 1748003",
+          "Fitting 4UT44 (4J4J) — 1770010",
+          "Fitting 6UT44 — 1767004",
+          "Fitting 6TWD66 — 1766001",
+          "Fitting 6TWD44 — 1766002",
+          "Fitting 4TWD44 (4J4J) — 1770009",
+          "Fitting 4SA2 — 1746004",
+          "Fitting 4SA4 — 1746006",
+          "Fitting 4U4 Check Valve — 1748006",
+          "Ball Valve BV107 3/8\" x 3/8\" — 1791001"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 35,
+        "position": "bottom half"
+      },
+      {
+        "pdf": "41-79",
+        "page": 36,
+        "position": "full page grid"
+      },
+      {
+        "pdf": "41-79",
+        "page": 37,
+        "position": "full page grid"
+      }
+    ],
+    "raw_notes": "Grouped row under Option C — spans three catalogue pages. Customer specifies the fitting code in the WhatsApp enquiry."
+  },
+  {
+    "id": "fittings-grey-high-quality",
+    "name": "Water System Fittings — Grey (High Quality)",
+    "model": "Various",
+    "category_candidate": "Fittings",
+    "specs": {
+      "dimensions": "1/4\" quick-connect fittings",
+      "capacity": "For RO / undersink water systems",
+      "features": [
+        "Grey premium-quality push-fit fittings",
+        "Pressure reducing valve, straight, elbow, tee, check valve variants",
+        "High-pressure and low-pressure switches",
+        "O-Ring sealed"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "variants": [
+          "1830-C Pressure Reducing Valve — Grey 1/4\" — 103404",
+          "Fitting 4MC4 (1813-A) with O-Ring — Grey — 103527",
+          "Fitting 4ME4 (1817-A) with O-Ring — Grey — 103528",
+          "Fitting 4UT44 (1803-A) — Grey — 1770002",
+          "Fitting 1770003 — Grey",
+          "Fitting 1818-A (4UE4) — Grey — 1770004",
+          "Fitting 1813-A (4MC4) — Grey — 1770047",
+          "1827-A High Pressure Switch — Grey — 1770005",
+          "1828-A High Pressure Switch — Grey — 1770006",
+          "Fitting 4SE4 (1814-A) — Grey — 1770048",
+          "Fitting 1817-A (4ME4) — Grey — 1770049",
+          "Flow Restrictor (300cc) — 27790079",
+          "Fitting 4U4 (1811-A) Check Valve — Grey — 1770046"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 38,
+        "position": "top half"
+      }
+    ],
+    "raw_notes": "Grouped row under Option C. Grey high-quality subset. Customer specifies the fitting code in the WhatsApp enquiry."
+  },
+  {
+    "id": "fittings-korea",
+    "name": "Water System Fittings — Made in Korea",
+    "model": "Various",
+    "category_candidate": "Fittings",
+    "specs": {
+      "dimensions": "1/4\" and 3/8\" quick-connect fittings",
+      "capacity": "For RO / undersink water systems",
+      "features": [
+        "Korean-made push-fit fittings",
+        "Straight, tee, elbow, check valve, ball valve variants",
+        "1/4\" and 3/8\" connections"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "variants": [
+          "Fitting 4FC7 (KR) — 1770052",
+          "Fitting 4UT44 (KR) — 107703",
+          "Fitting 4U6 (KR) — 107704",
+          "1/4\" x 1/4\" Check Valve Fitting (KR) — 107705",
+          "Fitting 4SE6 (KR) — 107708",
+          "Ball Valve BV103 3/8\" x 3/8\" (KR) — 107707",
+          "Ball Valve BV101 1/4\" x 1/4\" (KR) — 107706"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 38,
+        "position": "bottom half"
+      }
+    ],
+    "raw_notes": "Grouped row under Option C. Customer specifies the fitting code in the WhatsApp enquiry."
+  },
+  {
+    "id": "float-valves",
+    "name": "Float Valves (Round and Square)",
+    "model": "Various",
+    "category_candidate": "Water Timers & Float Valves",
+    "specs": {
+      "dimensions": "2cm–5cm float sizes",
+      "capacity": "For water tanks and reservoirs",
+      "features": [
+        "Automatic water level control for tanks and reservoirs",
+        "Round and square float body shapes",
+        "Point-to-Side and Point-to-Up nozzle orientations",
+        "China and Korea origin options"
+      ],
+      "power": "N/A (non-electric)",
+      "other": {
+        "variants": [
+          "Round Float Valve Point To Side 2cm (China) — 2740018",
+          "Round Float Valve Point To Side 3cm (China) — 2740006",
+          "Round Float Valve Point To Side 4cm (China) — 2740007",
+          "Round Float Valve Point To Up 2cm (China) — 2740008",
+          "Round Float Valve Point To Up 3cm (China) — 2740009",
+          "Round Float Valve Point To Up 4cm (China) — 2740010",
+          "Round Float Valve Point To Up 5cm (China) — 2740011",
+          "Round Float Valve Point to Side 3cm (Korea) — 2740001",
+          "Round Float Valve Point to Up 3cm (Korea) — 2740003",
+          "Round Float Valve Point to Up 4cm (Korea) — 2740013",
+          "Square Float Valve Point to Up 2cm (Korea) — 2740004"
+        ]
+      }
+    },
+    "price_myr": null,
+    "image_refs": [
+      {
+        "pdf": "41-79",
+        "page": 39,
+        "position": "full page grid (China top, Korea bottom)"
+      }
+    ],
+    "raw_notes": "Grouped row under Option C. Customer specifies float shape, size, orientation, and origin in the WhatsApp enquiry."
+  }
+]

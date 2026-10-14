@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RIA Pure Water — About mockup</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --brand-green: #1F6F3A;
+  --brand-green-hover: #175A2E;
+  --brand-blue: #3AA9E0;
+  --brand-blue-hover: #2691CB;
+  --text-primary: #2D3748;
+  --text-muted: #6B7280;
+  --surface: #F5F7F8;
+  --background: #FFFFFF;
+  --border: #E5E7EB;
+  --shadow-card: 0 1px 2px rgba(16,24,40,.04), 0 1px 3px rgba(16,24,40,.06);
+  box-sizing: border-box;
+}
+*, *::before, *::after { box-sizing: inherit; }
+
+body { margin: 0; font-family: 'Inter', system-ui, sans-serif; background: #EEF1F3; color: var(--text-primary); padding: 32px 16px 96px; }
+
+.doc-wrap { max-width: 1480px; margin: 0 auto; }
+.doc-head { padding: 8px 0 32px; }
+.doc-head h1 { font-size: 24px; margin: 0 0 6px; color: var(--brand-green); font-weight: 700; }
+.doc-head p { margin: 0; color: var(--text-muted); font-size: 14px; }
+
+.frame-label { display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin: 32px 0 12px; }
+.frame-label .pill { background: var(--brand-green); color: #fff; padding: 3px 10px; border-radius: 999px; letter-spacing: 0.04em; }
+
+.desktop-frame { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,.08); border: 1px solid #d9dde0; }
+.desktop-chrome { background: #e9edef; padding: 10px 14px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #d0d5d9; }
+.desktop-chrome .dot { width: 11px; height: 11px; border-radius: 50%; background: #cfd3d6; }
+.desktop-chrome .url { flex: 1; background: #fff; border-radius: 6px; padding: 4px 10px; font-size: 12px; color: var(--text-muted); margin-left: 12px; font-family: ui-monospace, monospace; }
+.desktop-scroll { overflow-x: auto; }
+.desktop-content { width: 1280px; }
+
+.mobile-wrap { max-width: 420px; margin: 0 auto; }
+.mobile-frame { background: #111; border-radius: 36px; padding: 10px; box-shadow: 0 20px 60px rgba(0,0,0,.18); }
+.mobile-screen { background: #fff; border-radius: 28px; overflow: hidden; width: 390px; max-height: 1500px; overflow-y: auto; }
+.mobile-notch { height: 24px; background: #111; display: flex; justify-content: center; align-items: flex-end; }
+.mobile-notch::after { content: ""; width: 120px; height: 18px; background: #111; border-radius: 0 0 14px 14px; }
+
+/* ========= SITE ========= */
+.site { font-family: 'Inter', sans-serif; color: var(--text-primary); background: #fff; }
+
+.site-header { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; border-bottom: 1px solid var(--border); background: #fff; }
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--brand-green); }
+.logo-mark { width: 32px; height: 32px; background: var(--brand-green); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; }
+.logo-mark svg { width: 18px; height: 18px; fill: #fff; }
+.logo-text { font-size: 18px; font-weight: 700; }
+.nav { display: flex; align-items: center; gap: 24px; }
+.nav a { color: var(--text-primary); font-size: 15px; font-weight: 500; text-decoration: none; }
+.nav a:hover { color: var(--brand-green); }
+.nav a.current { color: var(--brand-green); font-weight: 600; }
+
+.btn { font: inherit; font-weight: 600; cursor: pointer; padding: 10px 18px; border-radius: 8px; border: 1px solid transparent; display: inline-flex; align-items: center; gap: 8px; text-decoration: none; white-space: nowrap; font-size: 15px; }
+.btn-wa { background: var(--brand-blue); color: #fff; }
+.btn-wa:hover { background: var(--brand-blue-hover); }
+.btn-outline { background: #fff; color: var(--brand-green); border-color: var(--brand-green); }
+.btn-outline:hover { background: var(--surface); }
+.btn-lg { padding: 14px 26px; font-size: 16px; }
+.wa-icon { width: 16px; height: 16px; fill: currentColor; }
+
+.hamburger { display: none; background: none; border: 0; padding: 4px; cursor: pointer; }
+.hamburger svg { width: 24px; height: 24px; stroke: var(--text-primary); fill: none; stroke-width: 2; }
+
+/* ========= ABOUT PAGE ========= */
+.container { max-width: 1120px; margin: 0 auto; padding: 0 32px; }
+
+.breadcrumbs { padding: 20px 0; font-size: 13px; color: var(--text-muted); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.breadcrumbs a { color: var(--text-muted); text-decoration: none; }
+.breadcrumbs .sep { color: #c3c7cc; }
+.breadcrumbs .here { color: var(--text-primary); font-weight: 500; }
+
+.overline { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; color: var(--brand-green); margin: 0 0 8px; }
+
+.page-header { padding: 8px 0 40px; max-width: 820px; }
+.page-title { font-size: 44px; line-height: 52px; font-weight: 700; margin: 0 0 14px; }
+.page-sub { font-size: 18px; line-height: 28px; color: var(--text-muted); margin: 0; }
+
+/* Our story */
+.story-section { padding: 48px 0; border-top: 1px solid var(--border); }
+.story-section h2 { font-size: 32px; line-height: 40px; font-weight: 700; margin: 0 0 20px; }
+.story-body { max-width: 760px; }
+.story-body p { font-size: 17px; line-height: 28px; color: var(--text-primary); margin: 0 0 16px; }
+.story-body p:last-child { margin-bottom: 0; }
+.story-draft-tag {
+  display: inline-block; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+  background: #FEF4E8; color: #946a1a; border: 1px solid #F3D9B0;
+  padding: 3px 10px; border-radius: 999px; margin-bottom: 14px; font-weight: 600;
+}
+
+/* What we sell — small category cards */
+.sell-section { padding: 48px 0; background: var(--surface); margin: 0 -32px; padding-left: 32px; padding-right: 32px; }
+.sell-inner { max-width: 1120px; margin: 0 auto; }
+.sell-section h2 { font-size: 28px; line-height: 36px; font-weight: 700; margin: 0 0 24px; }
+.sell-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.sell-card {
+  background: #fff; border: 1px solid var(--border); border-radius: 12px;
+  padding: 18px; text-decoration: none; color: var(--text-primary);
+  display: flex; gap: 14px; align-items: flex-start;
+}
+.sell-card:hover { border-color: var(--brand-green); }
+.sell-icon {
+  width: 40px; height: 40px; flex-shrink: 0;
+  background: #EAF4EC; border-radius: 10px; color: var(--brand-green);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.sell-icon svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.75; }
+.sell-card h3 { font-size: 15px; font-weight: 600; margin: 0 0 4px; }
+.sell-card p { font-size: 13px; line-height: 18px; color: var(--text-muted); margin: 0; }
+
+/* Why RIA */
+.why-section { padding: 56px 0; }
+.why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.why-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 24px; }
+.why-card .wi {
+  width: 40px; height: 40px; border-radius: 10px; background: #EAF4EC;
+  color: var(--brand-green); display: inline-flex; align-items: center; justify-content: center;
+  margin-bottom: 14px;
+}
+.why-card .wi svg { width: 22px; height: 22px; stroke: currentColor; fill: none; stroke-width: 1.75; }
+.why-card h3 { font-size: 18px; margin: 0 0 6px; font-weight: 600; }
+.why-card p { font-size: 15px; line-height: 22px; color: var(--text-muted); margin: 0; }
+
+/* Service area */
+.service-section { padding: 48px 0; border-top: 1px solid var(--border); }
+.service-section h2 { font-size: 28px; line-height: 36px; font-weight: 700; margin: 0 0 14px; }
+.service-section p { font-size: 17px; line-height: 26px; color: var(--text-muted); max-width: 760px; margin: 0; }
+.service-tag {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #EAF4EC; color: var(--brand-green);
+  padding: 10px 16px; border-radius: 999px; font-weight: 600; font-size: 15px;
+  margin-top: 20px;
+}
+.service-tag svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; }
+
+/* Contact strip */
+.contact-strip { background: var(--surface); padding: 56px 24px; text-align: center; margin-top: 48px; }
+.contact-strip h2 { font-size: 28px; margin: 0 0 10px; }
+.contact-strip p { font-size: 16px; color: var(--text-muted); margin: 0 0 24px; max-width: 580px; margin-left: auto; margin-right: auto; }
+.contact-ctas { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+/* Footer */
+.site-footer { background: var(--brand-green); color: #fff; padding: 48px 24px 24px; }
+.footer-grid { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 32px; }
+.footer-brand .logo-text { color: #fff; }
+.footer-brand .logo-mark { background: #fff; }
+.footer-brand .logo-mark svg { fill: var(--brand-green); }
+.footer-brand p { font-size: 14px; line-height: 22px; color: rgba(255,255,255,.78); margin: 12px 0 0; }
+.footer-col h4 { font-size: 14px; margin: 0 0 14px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: rgba(255,255,255,.72); }
+.footer-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.footer-col a { color: #fff; text-decoration: none; font-size: 14px; }
+.footer-contact .wa-row { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; font-size: 14px; }
+.footer-contact .wa-row svg { width: 16px; height: 16px; fill: #fff; flex-shrink: 0; }
+.footer-bar { max-width: 1120px; margin: 32px auto 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.15); font-size: 13px; color: rgba(255,255,255,.6); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+
+/* ========= MOBILE OVERRIDES ========= */
+.mobile-screen .site-header { padding: 14px 16px; }
+.mobile-screen .nav { display: none; }
+.mobile-screen .site-header .btn-wa { display: none; }
+.mobile-screen .hamburger { display: inline-flex; }
+.mobile-screen .logo-text { font-size: 16px; }
+.mobile-screen .container { padding: 0 16px; }
+.mobile-screen .breadcrumbs { font-size: 12px; padding: 12px 0; }
+.mobile-screen .page-title { font-size: 28px; line-height: 36px; }
+.mobile-screen .page-sub { font-size: 15px; line-height: 22px; }
+.mobile-screen .page-header { padding-bottom: 24px; }
+.mobile-screen .story-section { padding: 32px 0; }
+.mobile-screen .story-section h2 { font-size: 24px; line-height: 32px; }
+.mobile-screen .story-body p { font-size: 16px; line-height: 24px; }
+.mobile-screen .sell-section { margin: 0 -16px; padding: 32px 16px; }
+.mobile-screen .sell-section h2 { font-size: 22px; }
+.mobile-screen .sell-grid { grid-template-columns: 1fr; gap: 10px; }
+.mobile-screen .why-section { padding: 32px 0; }
+.mobile-screen .why-grid { grid-template-columns: 1fr; gap: 14px; }
+.mobile-screen .service-section { padding: 32px 0; }
+.mobile-screen .service-section h2 { font-size: 22px; }
+.mobile-screen .service-section p { font-size: 15px; line-height: 22px; }
+.mobile-screen .contact-strip { padding: 32px 16px; }
+.mobile-screen .contact-strip h2 { font-size: 22px; }
+.mobile-screen .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+.mobile-screen .footer-bar { flex-direction: column; align-items: flex-start; }
+
+@media (min-width: 1540px) {
+  .frames { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: start; }
+  .mobile-wrap { position: sticky; top: 20px; }
+}
+</style>
+</head>
+<body>
+
+<div class="doc-wrap">
+
+<header class="doc-head">
+  <h1>About page mockup</h1>
+  <p>Simple story page using Home-page components. The "Our story" copy is the placeholder from <code>page-specs.md</code> — you'll rewrite it in your own voice when ready.</p>
+</header>
+
+<div class="frames">
+
+<!-- ================= DESKTOP ================= -->
+<div>
+<div class="frame-label"><span class="pill">Desktop</span> 1280 × scroll</div>
+<div class="desktop-frame">
+  <div class="desktop-chrome">
+    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    <span class="url">riapurewater.com/about</span>
+  </div>
+  <div class="desktop-scroll">
+  <div class="desktop-content">
+  <div class="site">
+
+    <header class="site-header">
+      <a class="logo" href="#">
+        <span class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2c-3.5 5-6 8.5-6 12a6 6 0 0 0 12 0c0-3.5-2.5-7-6-12z"/></svg></span>
+        <span class="logo-text">RIA Pure Water</span>
+      </a>
+      <nav class="nav">
+        <a href="#">Products</a>
+        <a href="#">Categories</a>
+        <a href="#" class="current">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      <a class="btn btn-wa" href="#">
+        <svg class="wa-icon" viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.2L2.5 21.5l4.4-1.1a11 11 0 0 0 13.6-16.9zM12 20a8 8 0 0 1-4.1-1.1l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 1 1 12 20z"/></svg>
+        Enquire on WhatsApp
+      </a>
+    </header>
+
+    <div class="container">
+      <nav class="breadcrumbs">
+        <a href="#">Home</a>
+        <span class="sep">›</span>
+        <span class="here">About</span>
+      </nav>
+
+      <header class="page-header">
+        <div class="overline">About us</div>
+        <h1 class="page-title">Clean water, delivered simply</h1>
+        <p class="page-sub">RIA Pure Water supplies water dispensers, filtration systems, and commercial water equipment to homes, offices, and businesses across Malaysia.</p>
+      </header>
+
+      <!-- Our story -->
+      <section class="story-section">
+        <h2>Who we are</h2>
+        <div class="story-body">
+          <span class="story-draft-tag">Draft — rewrite in your own voice</span>
+          <p>RIA Pure Water is the public brand of RIA Home Sdn Bhd, a Malaysian business built around one straightforward idea — everyone deserves clean, reliable drinking water without the fuss.</p>
+          <p>We stock a full range: countertop and floor-standing dispensers for the home, undersink and smart-faucet systems for the kitchen, whole-house filtration for the whole family, and commercial equipment for offices, restaurants, and hospitality.</p>
+          <p>We handle delivery and installation across Malaysia, and we're always a WhatsApp message away if you need advice picking the right unit.</p>
+        </div>
+      </section>
+
+      <!-- What we sell -->
+      <section class="sell-section">
+        <div class="sell-inner">
+          <h2>What we sell</h2>
+          <div class="sell-grid">
+            <a class="sell-card" href="#">
+              <span class="sell-icon"><svg viewBox="0 0 24 24"><path d="M6 3h12v18H6z"/><path d="M9 7h6"/><path d="M9 11h6"/><circle cx="12" cy="16" r="1.5"/></svg></span>
+              <div><h3>Home Water Dispensers</h3><p>Countertop, floor-standing, bottle-type, portable</p></div>
+            </a>
+            <a class="sell-card" href="#">
+              <span class="sell-icon"><svg viewBox="0 0 24 24"><path d="M4 10h16v10H4z"/><path d="M8 10V6a4 4 0 0 1 8 0v4"/></svg></span>
+              <div><h3>Undersink &amp; Smart Faucets</h3><p>Undersink systems, smart touch faucets, alkaline</p></div>
+            </a>
+            <a class="sell-card" href="#">
+              <span class="sell-icon"><svg viewBox="0 0 24 24"><path d="M3 7h18v14H3z"/><path d="M3 7l3-4h12l3 4"/><path d="M9 13h6"/></svg></span>
+              <div><h3>Commercial Equipment</h3><p>Water boilers, coolers, hospitality appliances</p></div>
+            </a>
+            <a class="sell-card" href="#">
+              <span class="sell-icon"><svg viewBox="0 0 24 24"><path d="M3 10l9-7 9 7v11H3z"/><path d="M9 21v-6h6v6"/></svg></span>
+              <div><h3>Whole-House Filtration</h3><p>Master filters (FRP + SS), outdoor UF systems</p></div>
+            </a>
+            <a class="sell-card" href="#">
+              <span class="sell-icon"><svg viewBox="0 0 24 24"><rect x="7" y="4" width="10" height="16" rx="2"/><path d="M10 8h4"/><path d="M10 12h4"/></svg></span>
+              <div><h3>Filters &amp; Cartridges</h3><p>Replacement ceramic cartridges, filter housings</p></div>
+            </a>
+            <a class="sell-card" href="#">
+              <span class="sell-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></span>
+              <div><h3>Parts &amp; Fittings</h3><p>Fittings, faucets, pressure tanks, valves, timers</p></div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why RIA -->
+      <section class="why-section">
+        <div class="overline">Why RIA</div>
+        <div class="why-grid">
+          <div class="why-card">
+            <span class="wi"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M8 10h8M8 14h5"/></svg></span>
+            <h3>A full range in one place</h3>
+            <p>From portable dispensers to whole-house filtration, we cover every setup.</p>
+          </div>
+          <div class="why-card">
+            <span class="wi"><svg viewBox="0 0 24 24"><path d="M3 7h13l3 4v6h-4"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></span>
+            <h3>Delivery nationwide</h3>
+            <p>Serving households and businesses across Malaysia.</p>
+          </div>
+          <div class="why-card">
+            <span class="wi"><svg viewBox="0 0 24 24"><path d="M4 5h16v12H8l-4 4z"/></svg></span>
+            <h3>Talk to us before you buy</h3>
+            <p>WhatsApp us your situation, we'll recommend the right fit.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service area -->
+      <section class="service-section">
+        <h2>Where we serve</h2>
+        <p>We deliver and install across Malaysia. Message us with your town or postcode and we'll confirm coverage and lead time.</p>
+        <span class="service-tag">
+          <svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8c0 6 8 12 8 12s8-6 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+          All of Malaysia
+        </span>
+      </section>
+    </div>
+
+    <!-- Contact strip -->
+    <section class="contact-strip">
+      <h2>Ready to talk?</h2>
+      <p>We reply on WhatsApp within business hours. Tell us your product, location, and setup — we'll come back with stock, price, and installation.</p>
+      <div class="contact-ctas">
+        <a class="btn btn-wa btn-lg" href="#">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.2L2.5 21.5l4.4-1.1a11 11 0 0 0 13.6-16.9zM12 20a8 8 0 0 1-4.1-1.1l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 1 1 12 20z"/></svg>
+          Enquire on WhatsApp
+        </a>
+        <a class="btn btn-outline btn-lg" href="#">Or visit Contact</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="#">
+            <span class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2c-3.5 5-6 8.5-6 12a6 6 0 0 0 12 0c0-3.5-2.5-7-6-12z"/></svg></span>
+            <span class="logo-text">RIA Pure Water</span>
+          </a>
+          <p>Pure water for every home, office, and business. Delivered across Malaysia.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#">Home Dispensers</a></li>
+            <li><a href="#">Undersink Systems</a></li>
+            <li><a href="#">Commercial</a></li>
+            <li><a href="#">Whole-House</a></li>
+            <li><a href="#">Filters</a></li>
+            <li><a href="#">Parts</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">All products</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h4>Reach us</h4>
+          <div class="wa-row">
+            <svg viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.2L2.5 21.5l4.4-1.1a11 11 0 0 0 13.6-16.9z"/></svg>
+            013-368 1349
+          </div>
+          <div class="wa-row">
+            <svg viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.2L2.5 21.5l4.4-1.1a11 11 0 0 0 13.6-16.9z"/></svg>
+            012-657 6870
+          </div>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <span>© 2026 RIA Home Sdn Bhd. All rights reserved.</span>
+        <span>Pure Water for Every Home</span>
+      </div>
+    </footer>
+
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+
+<!-- ================= MOBILE ================= -->
+<div class="mobile-wrap">
+<div class="frame-label"><span class="pill">Mobile</span> 390 × scroll</div>
+<div class="mobile-frame">
+  <div class="mobile-notch"></div>
+  <div class="mobile-screen">
+  <div class="site">
+
+    <header class="site-header">
+      <a class="logo" href="#">
+        <span class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2c-3.5 5-6 8.5-6 12a6 6 0 0 0 12 0c0-3.5-2.5-7-6-12z"/></svg></span>
+        <span class="logo-text">RIA Pure Water</span>
+      </a>
+      <button class="hamburger" aria-label="Menu">
+        <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round"/></svg>
+      </button>
+    </header>
+
+    <div class="container">
+      <nav class="breadcrumbs">
+        <a href="#">Home</a>
+        <span class="sep">›</span>
+        <span class="here">About</span>
+      </nav>
+
+      <header class="page-header">
+        <div class="overline">About us</div>
+        <h1 class="page-title">Clean water, delivered simply</h1>
+        <p class="page-sub">RIA Pure Water supplies water dispensers, filtration systems, and commercial water equipment to homes, offices, and businesses across Malaysia.</p>
+      </header>
+
+      <section class="story-section">
+        <h2>Who we are</h2>
+        <div class="story-body">
+          <span class="story-draft-tag">Draft — rewrite in your voice</span>
+          <p>RIA Pure Water is the public brand of RIA Home Sdn Bhd, a Malaysian business built around one straightforward idea — everyone deserves clean, reliable drinking water without the fuss.</p>
+          <p>We stock a full range: countertop and floor-standing dispensers for the home, undersink and smart-faucet systems for the kitchen, whole-house filtration for the whole family, and commercial equipment for offices and restaurants.</p>
+          <p>We handle delivery and installation across Malaysia, and we're always a WhatsApp message away if you need advice picking the right unit.</p>
+        </div>
+      </section>
+
+      <section class="sell-section">
+        <div class="sell-inner">
+          <h2>What we sell</h2>
+          <div class="sell-grid">
+            <a class="sell-card" href="#">
+              <span class="sell-icon"><svg viewBox="0 0 24 24"><path d="M6 3h12v18H6z"/><path d="M9 7h6"/><path d="M9 11h6"/></svg></span>
+              <div><h3>Home Dispensers</h3><p>Countertop, floor-standing, portable</p></div>
+            </a>
+            <a class="sell-card" href="#">
+              <span class="sell-icon"><svg viewBox="0 0 24 24"><path d="M4 10h16v10H4z"/><path d="M8 10V6a4 4 0 0 1 8 0v4"/></svg></span>
+              <div><h3>Undersink &amp; Smart Faucets</h3><p>Undersink, smart faucets, alkaline</p></div>
+            </a>
+            <a class="sell-card" href="#">
+              <span class="sell-icon"><svg viewBox="0 0 24 24"><path d="M3 7h18v14H3z"/><path d="M3 7l3-4h12l3 4"/></svg></span>
+              <div><h3>Commercial Equipment</h3><p>Boilers, coolers, hospitality</p></div>
+            </a>
+            <a class="sell-card" href="#">
+              <span class="sell-icon"><svg viewBox="0 0 24 24"><path d="M3 10l9-7 9 7v11H3z"/></svg></span>
+              <div><h3>Whole-House</h3><p>Master filters, outdoor UF</p></div>
+            </a>
+            <a class="sell-card" href="#">
+              <span class="sell-icon"><svg viewBox="0 0 24 24"><rect x="7" y="4" width="10" height="16" rx="2"/></svg></span>
+              <div><h3>Filters</h3><p>Ceramic cartridges, housings</p></div>
+            </a>
+            <a class="sell-card" href="#">
+              <span class="sell-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/></svg></span>
+              <div><h3>Parts</h3><p>Fittings, valves, timers</p></div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-section">
+        <div class="overline">Why RIA</div>
+        <div class="why-grid">
+          <div class="why-card">
+            <span class="wi"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/></svg></span>
+            <h3>A full range in one place</h3>
+            <p>From portable dispensers to whole-house filtration, we cover every setup.</p>
+          </div>
+          <div class="why-card">
+            <span class="wi"><svg viewBox="0 0 24 24"><path d="M3 7h13l3 4v6h-4"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></span>
+            <h3>Delivery nationwide</h3>
+            <p>Serving households and businesses across Malaysia.</p>
+          </div>
+          <div class="why-card">
+            <span class="wi"><svg viewBox="0 0 24 24"><path d="M4 5h16v12H8l-4 4z"/></svg></span>
+            <h3>Talk to us before you buy</h3>
+            <p>WhatsApp us your situation, we'll recommend the right fit.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="service-section">
+        <h2>Where we serve</h2>
+        <p>We deliver and install across Malaysia. Message us with your town or postcode and we'll confirm coverage and lead time.</p>
+        <span class="service-tag">
+          <svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8c0 6 8 12 8 12s8-6 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+          All of Malaysia
+        </span>
+      </section>
+    </div>
+
+    <section class="contact-strip">
+      <h2>Ready to talk?</h2>
+      <p>We reply on WhatsApp within business hours. Tell us your product and location.</p>
+      <div class="contact-ctas">
+        <a class="btn btn-wa btn-lg" href="#">
+          <svg class="wa-icon" viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 0 0 3.6 17.2L2.5 21.5l4.4-1.1a11 11 0 0 0 13.6-16.9z"/></svg>
+          WhatsApp
+        </a>
+        <a class="btn btn-outline btn-lg" href="#">Contact page</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="#">
+            <span class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2c-3.5 5-6 8.5-6 12a6 6 0 0 0 12 0c0-3.5-2.5-7-6-12z"/></svg></span>
+            <span class="logo-text">RIA Pure Water</span>
+          </a>
+          <p>Pure water for every home, office, and business.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#">Home Dispensers</a></li>
+            <li><a href="#">Undersink</a></li>
+            <li><a href="#">Commercial</a></li>
+            <li><a href="#">Whole-House</a></li>
+            <li><a href="#">Filters</a></li>
+            <li><a href="#">Parts</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">All products</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <span>© 2026 RIA Home Sdn Bhd</span>
+      </div>
+    </footer>
+
+  </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+</div>
+</body>
+</html>
