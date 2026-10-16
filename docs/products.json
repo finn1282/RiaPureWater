@@ -161,7 +161,8 @@
         "position": "hero (right half)"
       }
     ],
-    "raw_notes": "JX-1S also appears on cat1 page 4 with an alternate filter set (Sediment/Pre/Silver/Post Carbon with optional Alka Bio or Hydrogen upgrade). Both filter loadouts captured — page 5 is canonical."
+    "raw_notes": "JX-1S also appears on cat1 page 4 with an alternate filter set (Sediment/Pre/Silver/Post Carbon with optional Alka Bio or Hydrogen upgrade). Both filter loadouts captured — page 5 is canonical.",
+    "featured": true
   },
   {
     "id": "os-l002",
@@ -829,7 +830,8 @@
         "position": "hero (top half, both colours shown)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "featured": true
   },
   {
     "id": "fyk-333f",
@@ -1558,7 +1560,8 @@
         "position": "hero (centre, dedicated product page)"
       }
     ],
-    "raw_notes": "Also shown on cat1 p36 as part of the W500 family overview. Page 37 is the canonical detailed page for this SKU."
+    "raw_notes": "Also shown on cat1 p36 as part of the W500 family overview. Page 37 is the canonical detailed page for this SKU.",
+    "featured": true
   },
   {
     "id": "w500-2c",
@@ -2180,7 +2183,8 @@
         "position": "hero (top half)"
       }
     ],
-    "raw_notes": "Optional stainless steel body stand with 10\" PP + 10\" CTO housing filters is available (shown as 'Option 2' on the page). Treat as an accessory, not a separate SKU."
+    "raw_notes": "Optional stainless steel body stand with 10\" PP + 10\" CTO housing filters is available (shown as 'Option 2' on the page). Treat as an accessory, not a separate SKU.",
+    "featured": true
   },
   {
     "id": "ab-03",
@@ -2470,7 +2474,8 @@
         "position": "hero (left tank, white)"
       }
     ],
-    "raw_notes": "Media loadout: 2.33 (5kg), 816 (5kg), 2.4 (5kg), plus optional Anthracite (1kg) or Zeolite (1kg). Control valve is sold separately — see the semtec-control-valves entry."
+    "raw_notes": "Media loadout: 2.33 (5kg), 816 (5kg), 2.4 (5kg), plus optional Anthracite (1kg) or Zeolite (1kg). Control valve is sold separately — see the semtec-control-valves entry.",
+    "featured": true
   },
   {
     "id": "semtec-frp-942",
