@@ -12,7 +12,7 @@ const chips = [water_type, install_type, best_for.length ? best_for.join(', ') :
 ---
 
 <a href={`/product/${product.id}`} class:list={['card flex h-full flex-col no-underline', className]}>
-  <div class="flex aspect-square items-center justify-center bg-surface">
+  <div class="flex aspect-square items-center justify-center overflow-hidden rounded-[8px] bg-surface">
     {
       images[0] ? (
         <img
@@ -20,7 +20,7 @@ const chips = [water_type, install_type, best_for.length ? best_for.join(', ') :
           alt={name}
           loading="lazy"
           decoding="async"
-          class="h-full w-full object-contain"
+          class="h-full w-full object-contain p-3"
         />
       ) : (
         <span class="text-body-sm text-text-muted">Photo coming soon</span>

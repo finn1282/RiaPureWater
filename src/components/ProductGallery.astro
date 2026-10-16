@@ -7,7 +7,7 @@ const { images, name } = Astro.props;
 ---
 
 <div data-gallery>
-  <div class="relative flex aspect-square items-center justify-center overflow-hidden rounded-xl bg-surface">
+  <div class="relative flex aspect-square items-center justify-center overflow-hidden rounded-[12px] bg-surface md:aspect-[4/3]">
     {
       images.length > 0 ? (
         <img
@@ -15,7 +15,7 @@ const { images, name } = Astro.props;
           alt={name}
           fetchpriority="high"
           decoding="async"
-          class="h-full w-full object-contain"
+          class="h-full w-full object-contain p-4"
           data-gallery-main
         />
       ) : (
@@ -26,17 +26,17 @@ const { images, name } = Astro.props;
 
   {
     images.length > 1 && (
-      <ul class="mt-3 grid grid-cols-5 gap-2.5 md:grid-cols-4">
+      <ul class="mt-3 flex flex-wrap gap-2.5">
         {images.map((src, i) => (
           <li>
             <button
               type="button"
-              class="block aspect-square w-full overflow-hidden rounded-md border border-border bg-surface aria-[current=true]:border-2 aria-[current=true]:border-brand-green"
+              class="block aspect-square w-16 overflow-hidden rounded-[6px] bg-surface ring-1 ring-border md:w-20 aria-[current=true]:ring-2 aria-[current=true]:ring-brand-green"
               aria-label={`Show photo ${i + 1} of ${images.length}`}
               aria-current={i === 0 ? 'true' : 'false'}
               data-gallery-thumb={src}
             >
-              <img src={src} alt="" loading="lazy" decoding="async" class="h-full w-full object-contain" />
+              <img src={src} alt="" loading="lazy" decoding="async" class="h-full w-full object-contain p-1" />
             </button>
           </li>
         ))}

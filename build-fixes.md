@@ -52,6 +52,10 @@ Tick each item when it works. If it doesn't, add a row to the log below.
 |---|------|------------------|--------------|--------|
 | | | | | |
 
+## Fixes after sign-off
+
+- Normalised product image containers with object-contain + fixed aspect ratios.
+
 ## Known items from the build (not phone findings)
 
 | # | Item | Notes | Status |
