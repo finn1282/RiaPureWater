@@ -1,6 +1,6 @@
 # Build fixes
 
-Checkpoint 9 log. Walk each page type on a real phone and write down anything that looks or behaves wrong. Claude fixes the list after sign-off.
+Checkpoint 9 log. **Signed off by Zhen after the real-phone walk; no phone issues were logged.** Walk each page type on a real phone and write down anything that looks or behaves wrong. Claude fixes the list after sign-off.
 
 **Test on:** Android + iPhone if possible. Note the device and browser.
 **Live site:** https://ria-pure-water.vercel.app (public; the long per-deployment links ask for a Vercel login)
@@ -59,7 +59,7 @@ Tick each item when it works. If it doesn't, add a row to the log below.
 | K1 | No product photos | Every card and page shows "Photo coming soon". Add `public/images/products/{id}/01.jpg` (and 02, 03…) and rebuild. | Waiting on photos |
 | K2 | No hero photo on Home | Add `public/images/hero.jpg` (4:3). Hero is text only until then. | Waiting on photo |
 | K3 | Site URL is the Vercel address | Canonical links, share cards and sitemap use `ria-pure-water.vercel.app`. Set `SITE_URL` in Vercel when the real domain is ready. | Phase 6 |
-| K4 | Review-only pages are live | `/design-system` and `/content-check` are served because `SHOW_DESIGN_SYSTEM=1` is set in Vercel. Removed at Checkpoint 10. | Checkpoint 10 |
+| K4 | Review-only pages | `/design-system` and `/content-check` deleted, and `SHOW_DESIGN_SYSTEM` removed from Vercel. | Done (Checkpoint 10) |
 | K5 | Logo file size | `logo-primary-trimmed.svg` is 104 KB (about 38 KB compressed). Lighthouse scores are fine; shrink only if needed. | Watch |
 | K6 | WhatsApp icon | Uses the glyph from the mockups, which reads as a plain chat bubble at small sizes. | Your call |
 | K7 | "Who we are" text | Placeholder from the page spec. Replace with your own wording. | Waiting on you |

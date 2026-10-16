@@ -8,12 +8,7 @@ const site = process.env.SITE_URL ?? 'https://ria-pure-water.vercel.app';
 
 export default defineConfig({
   site,
-  integrations: [
-    sitemap({
-      // Review-only pages are never meant to be indexed
-      filter: (page) => !/\/(design-system|content-check)\/?$/.test(page),
-    }),
-  ],
+  integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()],
   },
