@@ -1,0 +1,201 @@
+---
+import { getCollection, getEntry, type CollectionEntry } from 'astro:content';
+import { Check, Clock } from '@lucide/astro';
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ProductGallery from '../../components/ProductGallery.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import WhatsAppButton from '../../components/WhatsAppButton.astro';
+import { buildSpecRows } from '../../lib/specs';
+import { WHATSAPP_LINES, telLink } from '../../lib/whatsapp';
+
+export async function getStaticPaths() {
+  const products = await getCollection('products');
+  return products.map((product) => ({ params: { id: product.id }, props: { product } }));
+}
+
+interface Props {
+  product: CollectionEntry<'products'>;
+}
+
+const { product } = Astro.props;
+const { name, model, intro, ksps, specs, images, notes, water_type, install_type, best_for, water_source } =
+  product.data;
+
+const category = (await getEntry('categories', product.data.category))!;
+const specRows = buildSpecRows(specs);
+
+// Same category, not this product, first four by name
+const related = (await getCollection('products'))
+  .filter((p) => p.data.category === product.data.category && p.id !== product.id)
+  .sort((a, b) => a.data.name.localeCompare(b.data.name))
+  .slice(0, 4);
+
+const chips = [
+  best_for.length ? { text: `Best for: ${best_for.join(', ')}`, best: true } : null,
+  water_type ? { text: water_type } : null,
+  install_type ? { text: install_type } : null,
+  water_source ? { text: water_source } : null,
+].filter((c): c is { text: string; best?: boolean } => c !== null);
+
+const waProduct = { name, model };
+const phone = WHATSAPP_LINES.primary.display;
+---
+
+<Base title={`${name} (${model}) | RIA Pure Water`} description={intro} footer="slim" stickyBar>
+  <div class="container-content">
+    <Breadcrumbs
+      items={[
+        { label: 'Home', href: '/' },
+        { label: category.data.name, href: `/category/${category.id}` },
+        { label: name },
+      ]}
+    />
+
+    <section class="grid gap-5 pb-6 pt-2 md:grid-cols-2 md:gap-12 md:pb-14 md:pt-4">
+      <ProductGallery images={images} name={name} />
+
+      <div>
+        <p class="text-overline uppercase">
+          <a href={`/category/${category.id}`} class="text-brand-green no-underline hover:underline">
+            {category.data.name}
+          </a>
+        </p>
+        <h1 class="mb-1.5 mt-2 text-h2 md:text-h2-lg text-text-primary">{name}</h1>
+        <p class="mb-5 text-body-sm text-text-muted">Model: {model}</p>
+        <p class="mb-5 text-body md:text-body-lg">{intro}</p>
+
+        {
+          chips.length > 0 && (
+            <ul class="mb-6 flex flex-wrap gap-1.5">
+              {chips.map((chip) => (
+                <li
+                  class:list={[
+                    'rounded-full border px-2.5 py-1.5 text-[12px]',
+                    chip.best
+                      ? 'border-[#cfe4d4] bg-tint-green font-medium text-brand-green'
+                      : 'border-border bg-surface text-text-muted',
+                  ]}
+                >
+                  {chip.text}
+                </li>
+              ))}
+            </ul>
+          )
+        }
+
+        <div class="flex max-w-[360px] flex-col gap-2.5 md:max-w-[360px]">
+          <WhatsAppButton product={waProduct} size="xl" />
+          <a href={telLink()} class="btn btn-lg btn-secondary">Or call {phone}</a>
+          <p class="mt-1 flex items-center gap-1.5 text-[13px] text-text-muted">
+            <Clock size={14} aria-hidden="true" />
+            We reply on WhatsApp within business hours.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    {
+      ksps.length > 0 && (
+        <section class="border-t border-border py-8 md:py-12" aria-labelledby="highlights">
+          <h2 id="highlights" class="mb-4 text-h3 md:mb-5 md:text-h2 text-text-primary">Highlights</h2>
+          <ul class="grid gap-3 md:grid-cols-2 md:gap-x-8 md:gap-y-3.5">
+            {ksps.map((ksp) => (
+              <li class="flex items-start gap-3 text-[15px] leading-[22px]">
+                <span class="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-tint-green text-brand-green">
+                  <Check size={18} stroke-width={1.75} aria-hidden="true" />
+                </span>
+                <span class="pt-1">{ksp}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    {
+      specRows.length > 0 && (
+        <section class="border-t border-border py-8 md:py-12" aria-labelledby="specs">
+          <h2 id="specs" class="mb-4 text-h3 md:mb-5 md:text-h2 text-text-primary">Specifications</h2>
+          <dl class="overflow-hidden rounded-lg border border-border">
+            {specRows.map((row) => (
+              <div class="grid gap-0.5 border-b border-border px-4 py-3 text-[15px] last:border-b-0 odd:bg-surface md:grid-cols-[220px_1fr] md:px-5 md:py-3.5">
+                <dt class="text-[12px] font-medium uppercase tracking-[0.04em] text-text-muted md:text-[15px] md:normal-case md:tracking-normal">
+                  {row.label}
+                </dt>
+                <dd>
+                  {row.values.length === 1 ? (
+                    row.values[0]
+                  ) : (
+                    <ul class="space-y-1">
+                      {row.values.map((value) => <li>{value}</li>)}
+                    </ul>
+                  )}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      )
+    }
+
+    {
+      specs.features.length > 0 && (
+        <section class="border-t border-border py-8 md:py-12" aria-labelledby="features">
+          <h2 id="features" class="mb-4 text-h3 md:mb-5 md:text-h2 text-text-primary">Features</h2>
+          <ul class="space-y-2.5">
+            {specs.features.map((feature) => (
+              <li class="flex items-start gap-2.5 text-[15px] leading-[22px]">
+                <span class="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-brand-green" aria-hidden="true" />
+                {feature}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    {
+      notes && (
+        <section class="border-t border-border py-8 md:py-12" aria-labelledby="good-to-know">
+          <h2 id="good-to-know" class="mb-4 text-h3 md:mb-5 md:text-h2 text-text-primary">Good to know</h2>
+          <p class="text-[15px] leading-[22px]">{notes}</p>
+        </section>
+      )
+    }
+
+    {
+      related.length > 0 && (
+        <section class="border-t border-border py-8 md:py-12" aria-labelledby="related">
+          <h2 id="related" class="mb-4 text-h3 md:mb-5 md:text-h2 text-text-primary">You might also consider</h2>
+          <ul class="-mx-4 grid auto-cols-[65%] grid-flow-col snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 md:mx-0 md:auto-cols-auto md:grid-flow-row md:grid-cols-4 md:gap-5 md:overflow-visible md:px-0">
+            {related.map((p) => (
+              <li class="snap-start">
+                <ProductCard product={p} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+  </div>
+
+  <section class="bg-surface px-4 py-8 text-center md:px-6 md:py-12">
+    <h2 class="mb-2.5 text-h3 md:text-h2 text-text-primary">Ready to order {name}?</h2>
+    <p class="mx-auto mb-6 max-w-[580px] text-text-muted">
+      Message us on WhatsApp with your delivery location and we'll confirm stock, price, and installation.
+    </p>
+    <div class="flex flex-wrap justify-center gap-3">
+      <WhatsAppButton product={waProduct} size="xl" />
+      <a href={telLink()} class="btn btn-lg btn-secondary">Or call {phone}</a>
+    </div>
+  </section>
+
+  <div
+    slot="sticky-bar"
+    class="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-white px-4 pt-2.5 md:hidden"
+    style="padding-bottom: calc(0.625rem + env(safe-area-inset-bottom, 0px))"
+  >
+    <WhatsAppButton product={waProduct} label={`Enquire about ${model}`} class="w-full" />
+  </div>
+</Base>
