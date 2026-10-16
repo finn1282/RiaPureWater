@@ -1,0 +1,252 @@
+---
+// Product grid with client-side filtering. Shared by category pages and All products.
+// Cards are all rendered at build time; the script only hides and shows them.
+import type { CollectionEntry } from 'astro:content';
+import { Funnel, X } from '@lucide/astro';
+import ProductCard from './ProductCard.astro';
+import WhatsAppButton from './WhatsAppButton.astro';
+import { buildFilterGroups, productFilterValues } from '../lib/filters';
+
+interface Props {
+  products: CollectionEntry<'products'>[];
+  /** Adds the Category group first (All products page) */
+  includeCategory?: boolean;
+  /** false for categories whose taxonomy sets show_filters: false */
+  showFilters?: boolean;
+  /** Fills the empty-state WhatsApp message */
+  whatsappContext: string;
+}
+
+const { products, includeCategory = false, showFilters = true, whatsappContext } = Astro.props;
+const sorted = [...products].sort((a, b) => a.data.name.localeCompare(b.data.name));
+const groups = showFilters ? buildFilterGroups(sorted, { includeCategory }) : [];
+const hasFilters = groups.length > 0;
+---
+
+<div data-browser data-total={sorted.length}>
+  {
+    hasFilters && (
+      <>
+        {/* Desktop filter bar */}
+        <div class="hidden rounded-lg border border-border bg-surface md:block">
+          {groups.map((group) => (
+            <div class="grid grid-cols-[140px_1fr] items-start gap-4 border-b border-dashed border-border px-6 py-4 first:pt-5 last:border-b-0 last:pb-5">
+              <p class="pt-1.5 text-body-sm font-semibold text-text-primary">{group.label}</p>
+              <div class="flex flex-wrap gap-2" role="group" aria-label={group.label}>
+                {group.options.map((o) => (
+                  <button type="button" class="filter-chip" aria-pressed="false" data-group={group.key} data-value={o.value}>
+                    {o.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Mobile trigger */}
+        <div class="flex items-center justify-between pb-4 md:hidden">
+          <button
+            type="button"
+            class="inline-flex items-center gap-2 rounded-md border border-border bg-white px-3.5 py-2.5 text-body-sm font-semibold text-text-primary"
+            data-sheet-open
+            aria-haspopup="dialog"
+          >
+            <Funnel size={16} aria-hidden="true" />
+            Filters
+            <span
+              class="hidden min-w-[18px] rounded-full bg-brand-green px-1.5 text-center text-[12px] leading-[18px] text-white"
+              data-badge
+            />
+          </button>
+        </div>
+
+        {/* Mobile bottom sheet */}
+        <dialog
+          class="fixed inset-x-0 bottom-0 top-auto m-0 hidden max-h-[85dvh] w-full max-w-none flex-col rounded-t-[20px] border-0 bg-white p-0 text-text-primary open:flex backdrop:bg-black/40"
+          aria-labelledby="sheet-title"
+          data-sheet
+        >
+          <div class="mx-auto mt-2.5 h-1 w-11 rounded-full bg-[#d0d5d9]" aria-hidden="true" />
+          <div class="flex items-center justify-between border-b border-border px-5 py-3">
+            <h2 id="sheet-title" class="text-[18px] font-bold">Filters</h2>
+            <button type="button" class="rounded-md p-2 text-text-muted" aria-label="Close filters" data-sheet-close>
+              <X size={22} aria-hidden="true" />
+            </button>
+          </div>
+          <div class="flex-1 space-y-5 overflow-y-auto px-5 py-4">
+            {groups.map((group) => (
+              <div role="group" aria-label={group.label}>
+                <p class="mb-2.5 text-[13px] font-semibold uppercase tracking-[0.04em]">{group.label}</p>
+                <div class="flex flex-wrap gap-2">
+                  {group.options.map((o) => (
+                    <button type="button" class="filter-chip" aria-pressed="false" data-group={group.key} data-value={o.value}>
+                      {o.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+          <div
+            class="flex gap-3 border-t border-border px-5 pt-3"
+            style="padding-bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px))"
+          >
+            <button type="button" class="btn flex-1 border-border bg-white px-3 text-text-primary hover:bg-surface md:px-3" data-clear>
+              Clear
+            </button>
+            <button type="button" class="btn btn-primary flex-1 whitespace-nowrap px-3 md:px-3" data-sheet-close data-show-results>
+              Show results
+            </button>
+          </div>
+        </dialog>
+
+        {/* Applied filters */}
+        <div class="hidden flex-wrap items-center gap-2 pb-4 pt-4 text-body-sm md:pb-2" data-applied>
+          <span class="text-text-muted">Showing:</span>
+          <span class="contents" data-applied-tags />
+          <button type="button" class="font-semibold text-brand-green underline underline-offset-[3px]" data-clear>
+            Clear all
+          </button>
+        </div>
+      </>
+    )
+  }
+
+  <p class="pb-4 pt-4 text-body-sm text-text-muted md:pt-3" role="status" aria-live="polite" data-count>
+    {sorted.length} products
+  </p>
+
+  <ul class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4" data-grid>
+    {
+      sorted.map((product) => (
+        <li data-card data-filters={JSON.stringify(productFilterValues(product))}>
+          <ProductCard product={product} />
+        </li>
+      ))
+    }
+  </ul>
+
+  <div
+    class="mt-2 hidden rounded-lg border border-dashed border-border bg-surface px-6 py-12 text-center"
+    data-empty
+  >
+    <h3 class="mb-2 text-h3 text-text-primary">No products match those filters</h3>
+    <p class="mx-auto mb-5 max-w-[420px] text-text-muted">
+      Try removing a filter, or ask us on WhatsApp — we can recommend one for your setup.
+    </p>
+    <div class="flex flex-wrap justify-center gap-3">
+      <WhatsAppButton context={whatsappContext} />
+      <button type="button" class="btn btn-secondary" data-clear>Clear filters</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  type Selection = Record<string, Set<string>>;
+
+  function init(root: HTMLElement) {
+    const cards = [...root.querySelectorAll<HTMLElement>('[data-card]')];
+    const chips = [...root.querySelectorAll<HTMLButtonElement>('[data-group][data-value]')];
+    const count = root.querySelector<HTMLElement>('[data-count]')!;
+    const empty = root.querySelector<HTMLElement>('[data-empty]')!;
+    const grid = root.querySelector<HTMLElement>('[data-grid]')!;
+    const applied = root.querySelector<HTMLElement>('[data-applied]');
+    const appliedTags = root.querySelector<HTMLElement>('[data-applied-tags]');
+    const badge = root.querySelector<HTMLElement>('[data-badge]');
+    const sheet = root.querySelector<HTMLDialogElement>('[data-sheet]');
+    const showResults = root.querySelector<HTMLElement>('[data-show-results]');
+    const total = cards.length;
+    const filters = cards.map((c) => JSON.parse(c.dataset.filters!) as Record<string, string[]>);
+    const selected: Selection = {};
+
+    // Labels for applied tags, taken from the chips themselves
+    const labels = new Map(chips.map((c) => [`${c.dataset.group}|${c.dataset.value}`, c.textContent!.trim()]));
+    const groupKeys = [...new Set(chips.map((c) => c.dataset.group!))];
+
+    // OR within a group, AND across groups. A product without a value for an
+    // active group (e.g. no Water Type) is left out.
+    const matches = (f: Record<string, string[]>) =>
+      groupKeys.every((g) => !selected[g]?.size || f[g]?.some((v) => selected[g].has(v)));
+
+    function syncUrl() {
+      const params = new URLSearchParams();
+      for (const g of groupKeys) selected[g]?.forEach((v) => params.append(g, v));
+      const qs = params.toString();
+      history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+    }
+
+    function render() {
+      let shown = 0;
+      cards.forEach((card, i) => {
+        const ok = matches(filters[i]);
+        card.hidden = !ok;
+        if (ok) shown++;
+      });
+
+      const active = groupKeys.flatMap((g) => [...(selected[g] ?? [])].map((v) => [g, v] as const));
+      chips.forEach((c) =>
+        c.setAttribute('aria-pressed', String(!!selected[c.dataset.group!]?.has(c.dataset.value!))),
+      );
+
+      count.textContent = active.length ? `${shown} of ${total} products` : `${total} products`;
+      grid.hidden = shown === 0;
+      empty.classList.toggle('hidden', shown !== 0);
+
+      if (applied && appliedTags) {
+        applied.classList.toggle('hidden', active.length === 0);
+        applied.classList.toggle('flex', active.length > 0);
+        appliedTags.replaceChildren(
+          ...active.map(([g, v]) => {
+            const tag = document.createElement('span');
+            tag.className =
+              'inline-flex items-center gap-1.5 rounded-full bg-brand-green px-2.5 py-[5px] text-white';
+            tag.append(labels.get(`${g}|${v}`) ?? v);
+            const remove = document.createElement('button');
+            remove.type = 'button';
+            remove.textContent = '×';
+            remove.setAttribute('aria-label', `Remove filter ${labels.get(`${g}|${v}`) ?? v}`);
+            remove.addEventListener('click', () => toggle(g, v));
+            tag.append(remove);
+            return tag;
+          }),
+        );
+      }
+      if (badge) {
+        badge.textContent = String(active.length);
+        badge.classList.toggle('hidden', active.length === 0);
+      }
+      if (showResults) showResults.textContent = `Show ${shown} result${shown === 1 ? '' : 's'}`;
+      syncUrl();
+    }
+
+    function toggle(group: string, value: string) {
+      const set = (selected[group] ??= new Set());
+      if (!set.delete(value)) set.add(value);
+      render();
+    }
+
+    chips.forEach((c) => c.addEventListener('click', () => toggle(c.dataset.group!, c.dataset.value!)));
+    root.querySelectorAll('[data-clear]').forEach((b) =>
+      b.addEventListener('click', () => {
+        groupKeys.forEach((g) => selected[g]?.clear());
+        render();
+      }),
+    );
+
+    root.querySelector('[data-sheet-open]')?.addEventListener('click', () => {
+      sheet?.showModal();
+      document.documentElement.classList.add('overflow-hidden');
+    });
+    sheet?.addEventListener('close', () => document.documentElement.classList.remove('overflow-hidden'));
+    root.querySelectorAll('[data-sheet-close]').forEach((b) => b.addEventListener('click', () => sheet?.close()));
+    // Tap on the dimmed area closes the sheet
+    sheet?.addEventListener('click', (e) => e.target === sheet && sheet.close());
+
+    // Restore filters from the URL, ignoring values this page doesn't offer
+    const params = new URLSearchParams(location.search);
+    for (const [g, v] of params) if (labels.has(`${g}|${v}`)) (selected[g] ??= new Set()).add(v);
+    render();
+  }
+
+  document.querySelectorAll<HTMLElement>('[data-browser]').forEach(init);
+</script>
