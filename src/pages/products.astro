@@ -1,0 +1,61 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ProductBrowser from '../components/ProductBrowser.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import { WHATSAPP_LINES, telLink } from '../lib/whatsapp';
+
+const products = await getCollection('products');
+const categories = (await getCollection('categories')).sort((a, b) => a.data.sort_order - b.data.sort_order);
+---
+
+<Base
+  title="All products | RIA Pure Water"
+  description="Every water dispenser, undersink system, filter and part in the RIA Pure Water range. Filter by what you need, then enquire on WhatsApp."
+>
+  <div class="container-content">
+    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'All products' }]} />
+
+    <header class="pb-5 pt-2">
+      <p class="text-overline uppercase text-brand-green">Catalogue</p>
+      <h1 class="mt-2 text-[28px] font-bold leading-9 text-brand-green md:text-h1-lg">All products</h1>
+      <p class="mt-2 text-body-lg text-text-muted">
+        Every water product we sell, one page. Filter by what you need or browse by category below.
+      </p>
+    </header>
+
+    <nav aria-label="Categories" class="-mx-4 mb-6 overflow-x-auto px-4 md:mx-0 md:px-0">
+      <ul class="flex gap-2 md:flex-wrap">
+        {
+          categories.map((c) => (
+            <li class="shrink-0">
+              <a
+                href={`/category/${c.id}`}
+                class="inline-flex items-center gap-1.5 rounded-full border border-border bg-white px-3.5 py-[7px] text-body-sm font-medium text-text-primary no-underline transition-colors hover:border-brand-green"
+              >
+                {c.data.name}
+                <span class="text-text-muted">{c.data.product_count}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <div class="pb-12 md:pb-16">
+      <ProductBrowser products={products} includeCategory whatsappContext="RIA Pure Water" />
+    </div>
+  </div>
+
+  <section class="bg-surface px-4 py-12 text-center md:px-6 md:py-14">
+    <h2 class="mb-2.5 text-h3 md:text-h2 text-text-primary">Overwhelmed by choice?</h2>
+    <p class="mx-auto mb-6 max-w-[580px] text-text-muted">
+      Tell us your setup — home, office, or business — and how much water you use in a day. We'll narrow it down.
+    </p>
+    <div class="flex flex-wrap justify-center gap-3">
+      <WhatsAppButton context="RIA Pure Water" size="lg" />
+      <a href={telLink()} class="btn btn-lg btn-secondary">Or call {WHATSAPP_LINES.primary.display}</a>
+    </div>
+  </section>
+</Base>
