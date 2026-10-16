@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+---
+
+<Base title="Page not found | RIA Pure Water" description="This page could not be found." noindex>
+  <section class="container-content py-16 text-center md:py-24">
+    <p class="text-overline uppercase text-brand-green">Error 404</p>
+    <h1 class="mt-2 text-h1 md:text-h1-lg text-text-primary">We couldn't find that page</h1>
+    <p class="mx-auto mt-3 max-w-[480px] text-body-lg text-text-muted">
+      The link may be old or mistyped. You can browse the range or message us.
+    </p>
+    <div class="mt-6 flex flex-wrap justify-center gap-3">
+      <a href="/products" class="btn btn-lg btn-primary">Browse products</a>
+      <a href="/contact" class="btn btn-lg btn-secondary">Contact us</a>
+      <WhatsAppButton context="RIA Pure Water" size="lg" />
+    </div>
+  </section>
+</Base>
