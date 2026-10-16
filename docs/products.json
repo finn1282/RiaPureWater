@@ -35,7 +35,8 @@
         "position": "hero (right half)"
       }
     ],
-    "raw_notes": "Not a water product. Included per project decision to keep the full catalogue on-site under 'Other Commercial Appliances'."
+    "raw_notes": "Not a water product. Included per project decision to keep the full catalogue on-site under 'Other Commercial Appliances'.",
+    "notes": ""
   },
   {
     "id": "qk-4zi",
@@ -68,7 +69,8 @@
         "position": "hero (top half, main unit)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "lk-17",
@@ -110,7 +112,8 @@
         "position": "hero (top right)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": "Cold water comes out at about 15°C or above, so it's cool rather than ice-cold. If you want chilled drinking water, ask us about our hot and cold purifiers."
   },
   {
     "id": "jx-1s",
@@ -162,6 +165,7 @@
       }
     ],
     "raw_notes": "JX-1S also appears on cat1 page 4 with an alternate filter set (Sediment/Pre/Silver/Post Carbon with optional Alka Bio or Hydrogen upgrade). Both filter loadouts captured — page 5 is canonical.",
+    "notes": "Comes with a choice of two filter sets: the standard 4-stage set (PP + CTO, UF membrane, CTO, micro pre-filter) or a 9\" Purisys set (Sediment, Pre Carbon, Silver Carbon, Post Carbon) with an optional Alka Bio or Hydrogen upgrade. Tell us which you prefer when you enquire.",
     "featured": true
   },
   {
@@ -207,7 +211,8 @@
         "position": "hero (top half)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "nf-5100",
@@ -251,7 +256,8 @@
         "position": "hero (centre-right)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "jx-l006",
@@ -295,7 +301,8 @@
         "position": "hero (top half)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "nf-5300",
@@ -340,7 +347,8 @@
         "position": "hero (right half)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "jx-q2",
@@ -389,7 +397,8 @@
         "position": "hero (right half)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "nf-5200",
@@ -430,7 +439,8 @@
         "position": "hero (right, spout unit)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "nf-5800",
@@ -473,7 +483,8 @@
         "position": "hero (right half, black faucet)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "mao-16-ab",
@@ -500,7 +511,7 @@
           "normal": "25–45°C"
         },
         "tap_drilling_hole": "23–28mm",
-        "filter_stages": [
+        "compatible_filters": [
           "Step 1: 8\" PAC",
           "Step 2: 8\" UF",
           "Step 3: 8\" CTO"
@@ -515,7 +526,8 @@
         "position": "hero (centre)"
       }
     ],
-    "raw_notes": "Same faucet as MAO-16 (AE) on cat1 p14, but with 3-stage PAC/UF/CTO filter instead of 4-stage Purisys set. Kept as separate SKU per the different filter loadout."
+    "raw_notes": "Same faucet as MAO-16 (AE) on cat1 p14, but with 3-stage PAC/UF/CTO filter instead of 4-stage Purisys set. Kept as separate SKU per the different filter loadout.",
+    "notes": "This is the non-filter version. It's supplied without filter cartridges. The 3-stage set listed under Specifications (8\" PAC, UF, CTO) fits this unit if you want to add filtration, or choose the MAO-16 (AE), which comes with a 4-stage filter set."
   },
   {
     "id": "mao-16-ae",
@@ -563,7 +575,8 @@
         "position": "hero (centre)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": "Uses the same faucet as the MAO-16 (AB). The difference is filtration: this version comes with a 4-stage filter set, while the AB is the non-filter version."
   },
   {
     "id": "mao-12-ae",
@@ -610,7 +623,8 @@
         "position": "hero (right half, spout unit)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "whp-2300",
@@ -654,7 +668,8 @@
         "position": "hero (right half)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": "The first-stage Micro Carbon filter is rated for about 4 months. The filter check alarm lets you know when it's time to change it."
   },
   {
     "id": "whp-2000s",
@@ -695,7 +710,8 @@
         "position": "hero (centre)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "k-1800s",
@@ -735,7 +751,8 @@
         "position": "hero (centre, black unit)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "k-850s",
@@ -780,7 +797,8 @@
         "position": "hero (both colours, side by side)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "k-2200",
@@ -831,6 +849,7 @@
       }
     ],
     "raw_notes": "",
+    "notes": "",
     "featured": true
   },
   {
@@ -846,7 +865,6 @@
         "Dial control for convenient use of purified / cold water",
         "Fully stainless steel water tank (SUS304 food grade)",
         "Hot water tank heating system",
-        "Reform recond-products certified",
         "Built-in LG cooling compressor"
       ],
       "power": "Hot 350W, Cold 90W",
@@ -873,7 +891,8 @@
         "position": "hero (top right, white unit in kitchen)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "fyk-335c",
@@ -888,7 +907,6 @@
         "Dial control for purified / cold water",
         "Fully stainless steel water tank (SUS304 food grade)",
         "Hot water tank heating system",
-        "Reform recond-products certified",
         "Built-in LG cooling compressor",
         "Normal tank option"
       ],
@@ -916,7 +934,8 @@
         "position": "hero (centre)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "fyk-335f",
@@ -931,7 +950,6 @@
         "Dial control for purified / cold water",
         "Fully stainless steel water tank (SUS304 food grade)",
         "Hot water tank heating system",
-        "Reform recond-products certified",
         "Built-in LG cooling compressor"
       ],
       "power": "Hot 380W, Cold 100W",
@@ -958,7 +976,8 @@
         "position": "hero (top right, white unit in kitchen)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "st-2600h",
@@ -1002,7 +1021,8 @@
         "position": "hero (centre, white unit)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "pts-100w",
@@ -1051,18 +1071,18 @@
         "position": "hero (two colours, side by side)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "ohc-500u",
-    "name": "Hot, Normal & Cold Countertop Water Purifier",
+    "name": "Hot & Cold Countertop Water Purifier",
     "model": "OHC-500U",
     "category_candidate": "Water Dispensers — Tabletop",
     "specs": {
       "dimensions": "W260mm x D462mm x H521mm",
       "capacity": "Hot 1.3L, Cold 3.2L",
       "features": [
-        "Reform recond-products certified",
         "Icy Cold Tech reaches as low as 6°C",
         "Hot water tank wrapping with PU foam to prevent heat loss",
         "Built-in LG cooling compressor",
@@ -1096,7 +1116,8 @@
         "position": "hero (both colours, side by side)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "ohf-500u",
@@ -1107,7 +1128,6 @@
       "dimensions": "W260mm x D462mm x H1120mm",
       "capacity": "Hot 1.3L, Cold 3.2L",
       "features": [
-        "Reform recond-products certified",
         "Icy Cold Tech reaches as low as 6°C",
         "Hot water tank wrapping with PU foam to prevent heat loss",
         "Built-in LG cooling compressor",
@@ -1141,7 +1161,8 @@
         "position": "hero (both colours, side by side)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "fyk-336c",
@@ -1152,7 +1173,6 @@
       "dimensions": "W230mm x D507mm x H510mm",
       "capacity": "Hot 1.3L, Normal 1.1L, Cold 2.7L",
       "features": [
-        "Reform recond-products certified",
         "Premium finish design",
         "Hot water tank heating system",
         "Fully stainless steel water tank",
@@ -1188,7 +1208,8 @@
         "position": "hero (main unit centre, alt colours bottom right)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "an-d12",
@@ -1201,7 +1222,6 @@
       "features": [
         "Hot and normal water",
         "Built-in 8\" filters",
-        "Antibacterial stainless steel water storage tank",
         "Child safety devices",
         "Hot water tank heating system",
         "Plastic water storage tank"
@@ -1230,7 +1250,8 @@
         "position": "hero (left unit)"
       }
     ],
-    "raw_notes": "Shares its catalogue page with AN-D13. Both units are shown with identical spec block; visual differences are in the tap and body design."
+    "raw_notes": "Shares its catalogue page with AN-D13. Both units are shown with identical spec block; visual differences are in the tap and body design.",
+    "notes": "Same specs and filter set as the AN-D13. The two differ only in tap and body design, so compare the photos and pick the style that suits your space."
   },
   {
     "id": "an-d13",
@@ -1243,7 +1264,6 @@
       "features": [
         "Hot and normal water",
         "Built-in 8\" filters",
-        "Antibacterial stainless steel water storage tank",
         "Child safety devices",
         "Hot water tank heating system",
         "Plastic water storage tank"
@@ -1272,7 +1292,8 @@
         "position": "hero (right unit)"
       }
     ],
-    "raw_notes": "Shares its catalogue page with AN-D12. Spec block is shared between both models. Differs from AN-D12 by tap and body design."
+    "raw_notes": "Shares its catalogue page with AN-D12. Spec block is shared between both models. Differs from AN-D12 by tap and body design.",
+    "notes": ""
   },
   {
     "id": "an-d14",
@@ -1315,7 +1336,8 @@
         "position": "hero (centre)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "w3501-3c",
@@ -1358,7 +1380,8 @@
         "position": "hero (centre)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "w3501-3f-big-tank",
@@ -1375,7 +1398,7 @@
         "Antibacterial stainless steel water storage tank",
         "Child safety devices",
         "Hot water tank heating system",
-        "Filters install inside the dispenser (8\" Korea)"
+        "Filters install inside the dispenser (10\" Korea)"
       ],
       "power": "Hot 430W, Cold 90W",
       "other": {
@@ -1401,7 +1424,8 @@
         "position": "hero (centre, black unit)"
       }
     ],
-    "raw_notes": "Big Tank version of W3501-3F. Kept as separate row from the standard W3501-3F because the tank capacities differ significantly."
+    "raw_notes": "Big Tank version of W3501-3F. Kept as separate row from the standard W3501-3F because the tank capacities differ significantly.",
+    "notes": "Same body and filters as the standard W3501-3F, with bigger tanks: 4L hot and 5L cold instead of 1.5L and 3L. Choose this one for busy offices or shared spaces where the standard tanks would run low."
   },
   {
     "id": "w3501-3f",
@@ -1444,7 +1468,8 @@
         "position": "hero (centre, white & black unit)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": "Need more hot and cold water at once? The W3501-3F (Big Tank) has the same body and filters, with 4L hot and 5L cold tanks instead of 1.5L and 3L."
   },
   {
     "id": "nb-32f-bt",
@@ -1483,7 +1508,8 @@
         "position": "hero (centre)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "nb-32f-bl",
@@ -1522,7 +1548,8 @@
         "position": "hero (centre)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "w500-hc",
@@ -1561,6 +1588,7 @@
       }
     ],
     "raw_notes": "Also shown on cat1 p36 as part of the W500 family overview. Page 37 is the canonical detailed page for this SKU.",
+    "notes": "",
     "featured": true
   },
   {
@@ -1593,7 +1621,8 @@
         "position": "top row, centre"
       }
     ],
-    "raw_notes": "Featured on the W500 family overview page (cat1 p36). Full specs not printed for this variant — page shows form factor only. Enquire via WhatsApp for detailed spec confirmation."
+    "raw_notes": "Featured on the W500 family overview page (cat1 p36). Full specs not printed for this variant — page shows form factor only. Enquire via WhatsApp for detailed spec confirmation.",
+    "notes": ""
   },
   {
     "id": "w500-normal",
@@ -1623,7 +1652,8 @@
         "position": "top row, right"
       }
     ],
-    "raw_notes": "Body-only variant. Full specs not printed. Enquire via WhatsApp for configuration options."
+    "raw_notes": "Body-only variant. Full specs not printed. Enquire via WhatsApp for configuration options.",
+    "notes": ""
   },
   {
     "id": "w500-4p-hc",
@@ -1655,7 +1685,8 @@
         "position": "bottom row, left"
       }
     ],
-    "raw_notes": "Featured on the W500 family overview page. Full specs not printed. Enquire via WhatsApp for detailed spec confirmation."
+    "raw_notes": "Featured on the W500 family overview page. Full specs not printed. Enquire via WhatsApp for detailed spec confirmation.",
+    "notes": "Full specifications for this model aren't published. Message us and we'll confirm the size, tank capacity, and power before you order."
   },
   {
     "id": "w500-4p-cold",
@@ -1687,7 +1718,8 @@
         "position": "bottom row, right"
       }
     ],
-    "raw_notes": "Featured on the W500 family overview page. Full specs not printed. Enquire via WhatsApp for detailed spec confirmation."
+    "raw_notes": "Featured on the W500 family overview page. Full specs not printed. Enquire via WhatsApp for detailed spec confirmation.",
+    "notes": "Full specifications for this model aren't published. Message us and we'll confirm the size, tank capacity, and power before you order."
   },
   {
     "id": "k600-hc",
@@ -1725,7 +1757,8 @@
         "position": "hero (left unit)"
       }
     ],
-    "raw_notes": "Shares its catalogue page with K600-2C (cold-cold variant)."
+    "raw_notes": "Shares its catalogue page with K600-2C (cold-cold variant).",
+    "notes": ""
   },
   {
     "id": "k600-2c",
@@ -1761,7 +1794,8 @@
         "position": "hero (right unit)"
       }
     ],
-    "raw_notes": "Shares its catalogue page with K600-HC (hot & cold variant)."
+    "raw_notes": "Shares its catalogue page with K600-HC (hot & cold variant).",
+    "notes": ""
   },
   {
     "id": "k-175-3f",
@@ -1817,7 +1851,8 @@
         "position": "hero (centre)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": "Waste water from the drip tray runs out through a drain hose, so plan to place the cooler near a floor drain. Spare parts for this model, including faucets, temperature controller, fan, and hot and cold tanks, are available. Ask us if you need one."
   },
   {
     "id": "k-195-3f",
@@ -1863,7 +1898,8 @@
         "position": "hero (centre)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "hb-800-hc",
@@ -1903,7 +1939,8 @@
         "position": "hero (centre)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "sh-12bg-hn",
@@ -1944,7 +1981,8 @@
         "position": "hero (centre, silver unit)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "ys-bt-10l-a5",
@@ -1985,7 +2023,8 @@
         "position": "hero (both colours, side by side)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "ys-bt-20l-a5",
@@ -2025,7 +2064,8 @@
         "position": "hero (both colours, side by side)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "ys-30bk-20l",
@@ -2065,7 +2105,8 @@
         "position": "hero (both colours, side by side)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "ys-60bk-40l",
@@ -2105,7 +2146,8 @@
         "position": "hero (both colours, side by side)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": "This boiler is rated for 380V three-phase power (6kW). Many premises only have a single-phase supply, so check with your electrician or message us before ordering."
   },
   {
     "id": "ys-120bk-65l",
@@ -2145,7 +2187,8 @@
         "position": "hero (both colours, side by side)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": "This boiler is rated for 380V three-phase power (12kW). Many premises only have a single-phase supply, so check with your electrician or message us before ordering."
   },
   {
     "id": "ys-22g",
@@ -2184,6 +2227,7 @@
       }
     ],
     "raw_notes": "Optional stainless steel body stand with 10\" PP + 10\" CTO housing filters is available (shown as 'Option 2' on the page). Treat as an accessory, not a separate SKU.",
+    "notes": "An optional stainless steel stand with 10\" PP and 10\" CTO filter housings is available for this boiler. Ask for it when you enquire if you want filtration added.",
     "featured": true
   },
   {
@@ -2228,7 +2272,8 @@
         "position": "hero (centre, black + white units)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "sb-01",
@@ -2275,7 +2320,8 @@
         "position": "hero (centre, black + white units)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "xxy-4000",
@@ -2316,7 +2362,8 @@
         "position": "hero (centre, white unit)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "ae-007",
@@ -2360,7 +2407,8 @@
         "position": "hero (centre)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "mp-01",
@@ -2395,7 +2443,8 @@
         "position": "hero (left unit, patterned front)"
       }
     ],
-    "raw_notes": "Shares its catalogue page with MP-02. Filter stage list not printed on this page — enquire on WhatsApp for filter loadout."
+    "raw_notes": "Shares its catalogue page with MP-02. Filter stage list not printed on this page — enquire on WhatsApp for filter loadout.",
+    "notes": ""
   },
   {
     "id": "mp-02",
@@ -2431,7 +2480,8 @@
         "position": "hero (right unit, solid front)"
       }
     ],
-    "raw_notes": "Shares its catalogue page with MP-01. Filter stage list not printed on this page — enquire on WhatsApp for filter loadout."
+    "raw_notes": "Shares its catalogue page with MP-01. Filter stage list not printed on this page — enquire on WhatsApp for filter loadout.",
+    "notes": ""
   },
   {
     "id": "semtec-frp-935",
@@ -2475,6 +2525,7 @@
       }
     ],
     "raw_notes": "Media loadout: 2.33 (5kg), 816 (5kg), 2.4 (5kg), plus optional Anthracite (1kg) or Zeolite (1kg). Control valve is sold separately — see the semtec-control-valves entry.",
+    "notes": "The control valve is sold separately, and the tank needs one to work. Choose from the F56 range (PVC handle, steel handle, F56A3 or side controller) and tell us which one when you enquire.",
     "featured": true
   },
   {
@@ -2525,7 +2576,8 @@
         "position": "hero (centre + right tanks, black and green)"
       }
     ],
-    "raw_notes": "Media loadout follows the 942 column: 2.33 (5kg), 816 (5kg), 2.4 (5kg x 5 bags), plus optional Anthracite (1kg) or Zeolite (1kg). Colour variants kept in a single row per the schema rule."
+    "raw_notes": "Media loadout follows the 942 column: 2.33 (5kg), 816 (5kg), 2.4 (5kg x 5 bags), plus optional Anthracite (1kg) or Zeolite (1kg). Colour variants kept in a single row per the schema rule.",
+    "notes": "The control valve is sold separately, and the tank needs one to work. Choose from the F56 range (PVC handle, steel handle, F56A3 or side controller) and tell us which one when you enquire."
   },
   {
     "id": "semtec-frp-1044",
@@ -2569,7 +2621,8 @@
         "position": "hero row (not pictured individually — see codes list)"
       }
     ],
-    "raw_notes": "Listed by code on p14 alongside the 935 and 942 sizes. Media loadout shared with the 1099 chart row."
+    "raw_notes": "Listed by code on p14 alongside the 935 and 942 sizes. Media loadout shared with the 1099 chart row.",
+    "notes": "The control valve is sold separately, and the tank needs one to work. Choose from the F56 range (PVC handle, steel handle, F56A3 or side controller) and tell us which one when you enquire."
   },
   {
     "id": "semtec-frp-1054",
@@ -2611,7 +2664,8 @@
         "position": "code list (no individual image)"
       }
     ],
-    "raw_notes": "Listed by code only on p14. Flow rate and exact height not printed in the visible spec table — enquire on WhatsApp for full specs."
+    "raw_notes": "Listed by code only on p14. Flow rate and exact height not printed in the visible spec table — enquire on WhatsApp for full specs.",
+    "notes": "The control valve is sold separately, and the tank needs one to work. Choose from the F56 range (PVC handle, steel handle, F56A3 or side controller) and tell us which one when you enquire."
   },
   {
     "id": "semtec-control-valves",
@@ -2645,7 +2699,8 @@
         "position": "bottom row (4 valve variants)"
       }
     ],
-    "raw_notes": "Grouped row under Option C. Each variant has a distinct internal ID above — customer picks in the WhatsApp enquiry."
+    "raw_notes": "Grouped row under Option C. Each variant has a distinct internal ID above — customer picks in the WhatsApp enquiry.",
+    "notes": "When you enquire, tell us which Semtec tank you have (or are buying) and which valve you want, by name or ID."
   },
   {
     "id": "ss1034",
@@ -2687,11 +2742,12 @@
         "position": "hero (leftmost pair)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "ss1049",
-    "name": "Stainless Steel Master Water Filter — SS1049 (10\" x 49\")",
+    "name": "Stainless Steel Master Water Filter — SS1049 (10\" x 41\")",
     "model": "SS1049",
     "category_candidate": "Master Water Filters",
     "specs": {
@@ -2729,7 +2785,8 @@
         "position": "hero (middle pair)"
       }
     ],
-    "raw_notes": "Height labelled 41\" on the spec block despite the '1049' code suggesting 49\" — captured as printed."
+    "raw_notes": "Height labelled 41\" on the spec block despite the '1049' code suggesting 49\" — captured as printed.",
+    "notes": ""
   },
   {
     "id": "ss1099",
@@ -2771,7 +2828,8 @@
         "position": "hero (rightmost pair)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "e-1000-diy",
@@ -2810,7 +2868,8 @@
         "position": "hero (horizontal cylinder)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "cr-159-5000",
@@ -2846,7 +2905,8 @@
         "position": "left, small vertical cylinder"
       }
     ],
-    "raw_notes": "Shares its catalogue page with CR-159-8000."
+    "raw_notes": "Shares its catalogue page with CR-159-8000.",
+    "notes": ""
   },
   {
     "id": "cr-159-8000",
@@ -2881,7 +2941,8 @@
         "position": "left-lower, taller vertical cylinder"
       }
     ],
-    "raw_notes": "Shares its catalogue page with CR-159-5000."
+    "raw_notes": "Shares its catalogue page with CR-159-5000.",
+    "notes": ""
   },
   {
     "id": "cr-159-6000",
@@ -2917,7 +2978,8 @@
         "position": "hero (horizontal cylinder)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "cr-159-10000",
@@ -2953,7 +3015,8 @@
         "position": "hero (long horizontal cylinder)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "cr-3500",
@@ -2993,7 +3056,8 @@
         "position": "hero (horizontal cylinder with pressure gauge)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "cr-3600",
@@ -3033,7 +3097,8 @@
         "position": "hero (horizontal cylinder with pressure gauge)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "cr-ultra-l5",
@@ -3072,7 +3137,8 @@
         "position": "hero (vertical cylinder, water meter on top)"
       }
     ],
-    "raw_notes": "Page also shows a horizontal installation option and a 2-way faucet accessory."
+    "raw_notes": "Page also shows a horizontal installation option and a 2-way faucet accessory.",
+    "notes": ""
   },
   {
     "id": "cr-gb2500-plus",
@@ -3109,7 +3175,8 @@
         "position": "hero (horizontal cylinder with pressure gauge)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "uf-3000d",
@@ -3146,7 +3213,8 @@
         "position": "hero (upper cylinder)"
       }
     ],
-    "raw_notes": "Shares its catalogue page with UF-4000D."
+    "raw_notes": "Shares its catalogue page with UF-4000D.",
+    "notes": ""
   },
   {
     "id": "uf-4000d",
@@ -3183,7 +3251,8 @@
         "position": "hero (lower cylinder)"
       }
     ],
-    "raw_notes": "Shares its catalogue page with UF-3000D."
+    "raw_notes": "Shares its catalogue page with UF-3000D.",
+    "notes": ""
   },
   {
     "id": "cr-gb1000-new",
@@ -3221,7 +3290,8 @@
         "position": "hero (horizontal cylinder)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "p5-f50",
@@ -3256,7 +3326,8 @@
         "position": "hero (large horizontal cylinder, mirrored finish)"
       }
     ],
-    "raw_notes": ""
+    "raw_notes": "",
+    "notes": ""
   },
   {
     "id": "5000jk",
@@ -3295,7 +3366,8 @@
         "position": "hero (upper cylinder)"
       }
     ],
-    "raw_notes": "Shares its catalogue page with 6000JK."
+    "raw_notes": "Shares its catalogue page with 6000JK.",
+    "notes": ""
   },
   {
     "id": "6000jk",
@@ -3333,7 +3405,8 @@
         "position": "hero (lower cylinder)"
       }
     ],
-    "raw_notes": "Shares its catalogue page with 5000JK."
+    "raw_notes": "Shares its catalogue page with 5000JK.",
+    "notes": ""
   },
   {
     "id": "filter-housings-imported",
@@ -3370,7 +3443,8 @@
         "position": "full page grid"
       }
     ],
-    "raw_notes": "Grouped row under Option C. Customer specifies size, colour, port size, and O-Ring config in the WhatsApp enquiry."
+    "raw_notes": "Grouped row under Option C. Customer specifies size, colour, port size, and O-Ring config in the WhatsApp enquiry.",
+    "notes": "To order, tell us the housing type, size (10\" or 20\"), colour, and port size you need. All options are listed under Specifications."
   },
   {
     "id": "filter-housings-local",
@@ -3413,7 +3487,8 @@
         "position": "full page grid"
       }
     ],
-    "raw_notes": "Grouped row under Option C. Each variant carries its own code — customer specifies the code in the WhatsApp enquiry."
+    "raw_notes": "Grouped row under Option C. Each variant carries its own code — customer specifies the code in the WhatsApp enquiry.",
+    "notes": "Each housing has its own code, listed under Specifications. Send us the code and quantity you need when you enquire."
   },
   {
     "id": "countertop-cartridge-filters",
@@ -3448,7 +3523,8 @@
         "position": "top half"
       }
     ],
-    "raw_notes": "Grouped row under Option C."
+    "raw_notes": "Grouped row under Option C.",
+    "notes": "Each set has its own code, listed under Specifications. Send us the code and quantity you need when you enquire."
   },
   {
     "id": "digital-water-timers",
@@ -3482,7 +3558,8 @@
         "position": "bottom half"
       }
     ],
-    "raw_notes": "Grouped row under Option C. Customer names the model code in the WhatsApp enquiry."
+    "raw_notes": "Grouped row under Option C. Customer names the model code in the WhatsApp enquiry.",
+    "notes": "To order, send us the model code and quantity. All models are listed under Specifications. For the model without a code, describe it as the timer with the dual-time display."
   },
   {
     "id": "goose-neck-faucets",
@@ -3519,7 +3596,8 @@
         "position": "top half"
       }
     ],
-    "raw_notes": "Grouped row under Option C. Customer names the model / ID in the WhatsApp enquiry."
+    "raw_notes": "Grouped row under Option C. Customer names the model / ID in the WhatsApp enquiry.",
+    "notes": "To order, send us the model name or ID and quantity. All six models are listed under Specifications."
   },
   {
     "id": "pressure-tanks",
@@ -3552,7 +3630,8 @@
         "position": "bottom half"
       }
     ],
-    "raw_notes": "Grouped row under Option C. Customer specifies capacity in the WhatsApp enquiry."
+    "raw_notes": "Grouped row under Option C. Customer specifies capacity in the WhatsApp enquiry.",
+    "notes": "To order, send us the model name and capacity you need. All four tanks are listed under Specifications."
   },
   {
     "id": "ceramic-filter-cartridges",
@@ -3594,7 +3673,8 @@
         "position": "full page grid"
       }
     ],
-    "raw_notes": "Grouped row under Option C. Customer names the brand and size in the WhatsApp enquiry."
+    "raw_notes": "Grouped row under Option C. Customer names the brand and size in the WhatsApp enquiry.",
+    "notes": "To order, tell us the brand and length (short or long) you need. All options are listed under Specifications."
   },
   {
     "id": "fittings-china",
@@ -3685,7 +3765,8 @@
         "position": "top half"
       }
     ],
-    "raw_notes": "Grouped row under Option C — spans three catalogue pages. Customer specifies the fitting code in the WhatsApp enquiry."
+    "raw_notes": "Grouped row under Option C — spans three catalogue pages. Customer specifies the fitting code in the WhatsApp enquiry.",
+    "notes": "To order, send us the code and quantity for each fitting you need. You'll find every code under Specifications."
   },
   {
     "id": "fittings-taiwan",
@@ -3765,7 +3846,8 @@
         "position": "full page grid"
       }
     ],
-    "raw_notes": "Grouped row under Option C — spans three catalogue pages. Customer specifies the fitting code in the WhatsApp enquiry."
+    "raw_notes": "Grouped row under Option C — spans three catalogue pages. Customer specifies the fitting code in the WhatsApp enquiry.",
+    "notes": "To order, send us the code and quantity for each fitting you need. You'll find every code under Specifications."
   },
   {
     "id": "fittings-grey-high-quality",
@@ -3808,7 +3890,8 @@
         "position": "top half"
       }
     ],
-    "raw_notes": "Grouped row under Option C. Grey high-quality subset. Customer specifies the fitting code in the WhatsApp enquiry."
+    "raw_notes": "Grouped row under Option C. Grey high-quality subset. Customer specifies the fitting code in the WhatsApp enquiry.",
+    "notes": "To order, send us the code and quantity for each fitting you need. You'll find every code under Specifications."
   },
   {
     "id": "fittings-korea",
@@ -3844,7 +3927,8 @@
         "position": "bottom half"
       }
     ],
-    "raw_notes": "Grouped row under Option C. Customer specifies the fitting code in the WhatsApp enquiry."
+    "raw_notes": "Grouped row under Option C. Customer specifies the fitting code in the WhatsApp enquiry.",
+    "notes": "To order, send us the code and quantity for each fitting you need. You'll find every code under Specifications."
   },
   {
     "id": "float-valves",
@@ -3885,6 +3969,7 @@
         "position": "full page grid (China top, Korea bottom)"
       }
     ],
-    "raw_notes": "Grouped row under Option C. Customer specifies float shape, size, orientation, and origin in the WhatsApp enquiry."
+    "raw_notes": "Grouped row under Option C. Customer specifies float shape, size, orientation, and origin in the WhatsApp enquiry.",
+    "notes": "To order, tell us the float shape (round or square), size, nozzle direction (side or up), and origin (China or Korea). All options and codes are listed under Specifications."
   }
 ]

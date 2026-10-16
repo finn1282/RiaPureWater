@@ -40,7 +40,7 @@ Compact countertop unit that makes ice, hot water, and cold water all from one 3
 ## Portable Instant Heating & Cooling Water Dispenser
 **Best for:** multi (household, office)
  
-Portable unit with instant heating and compressor-based cooling. 12 temperature settings and 8 volume presets — good for pantries and small offices where you need flexibility without plumbing in.
+Portable unit with instant heating and compressor-based cooling. 12 temperature settings and 8 volume presets — good for pantries and small offices where you need flexibility.
  
 **Why choose it:**
 - 12 water temperatures, 8 volume presets
@@ -334,13 +334,13 @@ Tankless instant-heating unit in red or silver. Three temperature types — hot,
 - Made in Korea
 ---
  
-## Hot, Normal & Cold Countertop Water Purifier (OHC-500U)
+## Hot & Cold Countertop Water Purifier (OHC-500U)
 **Best for:** multi (household, office)
  
-Countertop three-tank purifier in white silver or black gold. Hot tank wrapped in PU foam to hold heat longer and cut standby energy.
+Countertop hot and cold purifier in white silver or black gold. Hot tank wrapped in PU foam to hold heat longer and cut standby energy.
  
 **Why choose it:**
-- Hot, normal, and cold on tap
+- Hot and cold on tap
 - Available in white silver or black gold
 - Hot tank PU foam insulation reduces heat loss
 - LG cooling compressor
@@ -383,7 +383,6 @@ Countertop dispenser for hot and ambient water — no cooling. Practical option 
 **Why choose it:**
 - Hot and normal water (no cooling)
 - 8-inch built-in Purisys filters
-- Antibacterial stainless steel storage tank
 - Child safety devices
 - Made in Korea
 ---
@@ -396,7 +395,6 @@ Same specs and filter set as the AN-D12, in a slightly different tap and body de
 **Why choose it:**
 - Hot and normal water (no cooling)
 - 8-inch built-in Purisys filters
-- Antibacterial stainless steel storage tank
 - Child safety devices
 - Made in Korea
 ---
@@ -880,7 +878,7 @@ Stainless steel outdoor filter tank with a 5-stage media loadout. Zeolite Plus, 
 - 3/4" valve
 ---
  
-## Stainless Steel Master Water Filter — SS1049
+## Stainless Steel Master Water Filter — SS1049 (10" x 41")
 **Best for:** multi (household, commercial)
  
 Taller SS1049 tank for households needing more media contact time. Same 5-stage loadout as the SS1034, in a bigger body.
