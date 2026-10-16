@@ -1,35 +1,131 @@
 ---
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
 import { getCollection } from 'astro:content';
+import { LayoutGrid, MessageCircle, Truck } from '@lucide/astro';
 import Base from '../layouts/Base.astro';
-import WhatsAppButton from '../components/WhatsAppButton.astro';
 import CategoryIcon from '../components/CategoryIcon.astro';
+import ProductCard from '../components/ProductCard.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import { WHATSAPP_LINES, telLink } from '../lib/whatsapp';
 
-// Placeholder until the Home page is built at Checkpoint 7.
 const categories = (await getCollection('categories')).sort((a, b) => a.data.sort_order - b.data.sort_order);
-const sample = (await getCollection('products')).find((p) => p.id === 'jx-1s')!;
+const featured = (await getCollection('products'))
+  .filter((p) => p.data.featured)
+  .sort((a, b) => a.data.name.localeCompare(b.data.name))
+  .slice(0, 6);
+
+// Hero photo is optional: drop public/images/hero.jpg (or .webp / .png) in and it appears.
+const heroFile = ['jpg', 'jpeg', 'webp', 'png'].find((ext) =>
+  existsSync(join(process.cwd(), 'public', 'images', `hero.${ext}`)),
+);
+const hero = heroFile ? `/images/hero.${heroFile}` : null;
+
+const reasons = [
+  { icon: Truck, title: 'Nationwide delivery', text: 'Serving households and businesses across Malaysia.' },
+  { icon: LayoutGrid, title: 'Every setup covered', text: 'Countertop to whole-house, we fit your space.' },
+  { icon: MessageCircle, title: 'Real support on WhatsApp', text: 'Ask before you buy, get help after.' },
+];
 ---
 
-<Base title="RIA Pure Water">
-  <div class="container-content space-y-8 py-12">
-    <h1 class="text-h1 md:text-h1-lg text-brand-green">RIA Pure Water</h1>
-    <p class="text-body-lg text-text-muted">Home page coming at Checkpoint 7.</p>
-
-    <ul class="grid grid-cols-2 gap-4 md:grid-cols-3">
-      {categories.map((c) => (
-        <li>
-          <a href={`/category/${c.id}`} class="card flex h-full flex-col gap-3 p-6 no-underline">
-            <CategoryIcon name={c.data.icon} size={24} tile />
-            <span class="text-[18px] font-semibold text-text-primary">{c.data.name}</span>
-            <span class="text-body-sm text-text-muted">{c.data.product_count} products</span>
-          </a>
-        </li>
-      ))}
-    </ul>
-
-    <div class="flex flex-wrap items-center gap-4">
-      <WhatsAppButton context="RIA Pure Water" />
-      <WhatsAppButton product={{ name: sample.data.name, model: sample.data.model }} label={`Enquire about ${sample.data.model}`} />
-      <WhatsAppButton line="secondary" size="lg" />
+<Base
+  title="RIA Pure Water | Water dispensers, undersink systems and whole-house filtration"
+  description="Water dispensers, undersink systems, and whole-house filtration, delivered across Malaysia. Browse the range and enquire on WhatsApp."
+>
+  <section class="container-content grid items-center gap-8 py-8 md:gap-12 md:py-14 md:grid-cols-[1.1fr_1fr]">
+    <div class:list={[!hero && 'md:col-span-2 md:max-w-[640px]']}>
+      <h1 class="text-h1 md:text-h1-lg text-text-primary">
+        Clean water for your <span class="text-brand-green">home, office, or business</span>
+      </h1>
+      <p class="mt-4 text-body-lg text-text-muted">
+        Water dispensers, undersink systems, and whole-house filtration — delivered across Malaysia.
+      </p>
+      <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+        <a href="/products" class="btn btn-lg btn-primary">Browse products</a>
+        <WhatsAppButton context="RIA Pure Water" size="lg" />
+      </div>
     </div>
-  </div>
+    {
+      hero && (
+        <img
+          src={hero}
+          alt="RIA Pure Water product"
+          width="1200"
+          height="900"
+          fetchpriority="high"
+          class="aspect-[4/3] w-full rounded-xl bg-surface object-cover"
+        />
+      )
+    }
+  </section>
+
+  <section class="bg-surface py-12 md:py-16" aria-labelledby="categories">
+    <div class="container-content">
+      <p class="text-overline uppercase text-brand-green">Shop by category</p>
+      <h2 id="categories" class="mb-6 mt-2 text-h2 md:text-h2-lg text-text-primary">Find what fits your space</h2>
+      <ul class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6">
+        {
+          categories.map((c) => (
+            <li>
+              <a
+                href={`/category/${c.id}`}
+                class="card flex h-full flex-col gap-3 p-4 no-underline hover:-translate-y-0.5 md:p-6"
+              >
+                <CategoryIcon name={c.data.icon} size={24} tile />
+                <span class="text-[18px] font-semibold leading-6 text-text-primary">{c.data.name}</span>
+                <span class="text-body-sm text-text-muted">{c.data.product_count} products</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="container-content py-12 md:py-16" aria-labelledby="why">
+    <p class="text-overline uppercase text-brand-green">Why RIA</p>
+    <h2 id="why" class="sr-only">Why choose RIA Pure Water</h2>
+    <ul class="mt-4 grid gap-4 md:grid-cols-3 md:gap-6">
+      {
+        reasons.map(({ icon: Icon, title, text }) => (
+          <li class="rounded-lg border border-border bg-white p-6">
+            <span class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-[10px] bg-tint-green text-brand-green">
+              <Icon size={20} stroke-width={1.75} aria-hidden="true" />
+            </span>
+            <h3 class="text-[18px] font-semibold leading-6 text-text-primary">{title}</h3>
+            <p class="mt-1.5 text-[15px] leading-[22px] text-text-muted">{text}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  {
+    featured.length > 0 && (
+      <section class="bg-surface py-12 md:py-16" aria-labelledby="popular">
+        <div class="container-content">
+          <p class="text-overline uppercase text-brand-green">Popular picks</p>
+          <h2 id="popular" class="mb-6 mt-2 text-h2 md:text-h2-lg text-text-primary">Customer favourites</h2>
+          <ul class="-mx-4 grid auto-cols-[70%] grid-flow-col snap-x snap-mandatory scroll-px-4 gap-4 overflow-x-auto px-4 pb-2 md:mx-0 md:auto-cols-auto md:grid-flow-row md:grid-cols-4 md:gap-6 md:overflow-visible md:px-0">
+            {featured.map((p) => (
+              <li class="snap-start">
+                <ProductCard product={p} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    )
+  }
+
+  <section class:list={['px-4 py-12 text-center md:px-6 md:py-14', featured.length > 0 ? 'bg-white' : 'bg-surface']}>
+    <h2 class="mb-2.5 text-h2 md:text-h2-lg text-text-primary">Not sure which one to pick?</h2>
+    <p class="mx-auto mb-6 max-w-[580px] text-text-muted">
+      Tell us your space and daily water needs. We'll recommend the right unit and quote installation.
+    </p>
+    <div class="flex flex-wrap justify-center gap-3">
+      <WhatsAppButton context="RIA Pure Water" size="lg" />
+      <a href={telLink()} class="btn btn-lg btn-secondary">Or call {WHATSAPP_LINES.primary.display}</a>
+    </div>
+  </section>
 </Base>

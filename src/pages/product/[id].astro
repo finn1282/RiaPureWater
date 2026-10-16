@@ -168,7 +168,7 @@ const phone = WHATSAPP_LINES.primary.display;
       related.length > 0 && (
         <section class="border-t border-border py-8 md:py-12" aria-labelledby="related">
           <h2 id="related" class="mb-4 text-h3 md:mb-5 md:text-h2 text-text-primary">You might also consider</h2>
-          <ul class="-mx-4 grid auto-cols-[65%] grid-flow-col snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 md:mx-0 md:auto-cols-auto md:grid-flow-row md:grid-cols-4 md:gap-5 md:overflow-visible md:px-0">
+          <ul class="-mx-4 grid auto-cols-[65%] grid-flow-col snap-x snap-mandatory scroll-px-4 gap-4 overflow-x-auto px-4 pb-2 md:mx-0 md:auto-cols-auto md:grid-flow-row md:grid-cols-4 md:gap-5 md:overflow-visible md:px-0">
             {related.map((p) => (
               <li class="snap-start">
                 <ProductCard product={p} />
