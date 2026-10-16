@@ -1,0 +1,52 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ProductBrowser from '../../components/ProductBrowser.astro';
+import WhatsAppButton from '../../components/WhatsAppButton.astro';
+import { WHATSAPP_LINES, telLink } from '../../lib/whatsapp';
+
+export async function getStaticPaths() {
+  const categories = await getCollection('categories');
+  const products = await getCollection('products');
+  return categories.map((category) => ({
+    params: { slug: category.id },
+    props: { category, products: products.filter((p) => p.data.category === category.id) },
+  }));
+}
+
+interface Props {
+  category: CollectionEntry<'categories'>;
+  products: CollectionEntry<'products'>[];
+}
+
+const { category, products } = Astro.props;
+const { name, description, contact_prompt_noun, show_filters } = category.data;
+---
+
+<Base title={`${name} | RIA Pure Water`} description={description}>
+  <div class="container-content">
+    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: name }]} />
+
+    <header class="pb-6 pt-2 md:pb-8">
+      <p class="text-overline uppercase text-brand-green">Category</p>
+      <h1 class="mt-2 text-[28px] font-bold leading-9 text-brand-green md:text-h1-lg">{name}</h1>
+      <p class="mt-2 text-body-lg text-text-muted">{description}</p>
+    </header>
+
+    <div class="pb-12 md:pb-16">
+      <ProductBrowser products={products} showFilters={show_filters} whatsappContext={name} />
+    </div>
+  </div>
+
+  <section class="bg-surface px-4 py-12 text-center md:px-6 md:py-14">
+    <h2 class="mb-2.5 text-h3 md:text-h2 text-text-primary">Not sure which {contact_prompt_noun} fits your space?</h2>
+    <p class="mx-auto mb-6 max-w-[580px] text-text-muted">
+      Tell us your setup and daily water needs. We'll recommend the right one and quote installation.
+    </p>
+    <div class="flex flex-wrap justify-center gap-3">
+      <WhatsAppButton context={name} size="lg" />
+      <a href={telLink()} class="btn btn-lg btn-secondary">Or call {WHATSAPP_LINES.primary.display}</a>
+    </div>
+  </section>
+</Base>
