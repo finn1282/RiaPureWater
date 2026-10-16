@@ -1,0 +1,111 @@
+---
+import { Phone } from '@lucide/astro';
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+import { WHATSAPP_LINES, telLink, type WhatsAppLine } from '../lib/whatsapp';
+
+const lines: { line: WhatsAppLine; title: string; qr: string }[] = [
+  { line: 'primary', title: 'Line 1', qr: '/images/qr/wa_qr_013.png' },
+  { line: 'secondary', title: 'Line 2', qr: '/images/qr/wa_qr_012.png' },
+];
+
+const tips = [
+  "The product you're interested in (or your setup if you're not sure yet)",
+  'Your delivery address or town',
+  'Whether you need installation',
+  'Household, office, or commercial use',
+];
+---
+
+<Base
+  title="Contact | RIA Pure Water"
+  description="Message or call RIA Pure Water on WhatsApp. We reply within business hours with stock, price, and installation."
+>
+  <div class="container-content">
+    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Contact' }]} />
+
+    <header class="max-w-[760px] pb-8 pt-2 md:pb-10">
+      <p class="text-overline uppercase text-brand-green">Get in touch</p>
+      <h1 class="mt-2 text-[28px] font-bold leading-9 text-brand-green md:text-h1-lg">Talk to us</h1>
+      <p class="mt-2 text-body-lg text-text-muted">
+        We reply on WhatsApp within business hours. Message us with your product, location, and setup — we'll come
+        back with stock, price, and installation.
+      </p>
+    </header>
+
+    <section aria-labelledby="whatsapp" class="pb-10 md:pb-14">
+      <h2 id="whatsapp" class="sr-only">WhatsApp</h2>
+      <ul class="grid gap-4 md:grid-cols-2 md:gap-6">
+        {
+          lines.map(({ line, title, qr }) => (
+            <li class="rounded-xl border border-border bg-white p-6 text-center shadow-card md:p-8">
+              <p class="text-overline uppercase text-text-muted">{title}</p>
+              <img
+                src={qr}
+                alt={`WhatsApp QR code for ${WHATSAPP_LINES[line].display}`}
+                width="200"
+                height="200"
+                loading="lazy"
+                class="mx-auto my-4 h-[200px] w-[200px]"
+              />
+              <p class="mb-4 text-h3 text-text-primary">{WHATSAPP_LINES[line].display}</p>
+              <WhatsAppButton line={line} context="RIA Pure Water" label="Open WhatsApp" size="lg" />
+            </li>
+          ))
+        }
+      </ul>
+      <p class="mt-4 text-center text-body-sm text-text-muted">
+        Scan the QR from your phone camera, or tap "Open WhatsApp" if you're already on your phone.
+      </p>
+    </section>
+
+    <div class="grid gap-10 border-t border-border py-10 md:grid-cols-2 md:gap-12 md:py-14">
+      <section aria-labelledby="call">
+        <h2 id="call" class="mb-2 text-h3 md:text-h2 text-text-primary">Prefer to call?</h2>
+        <p class="mb-4 text-text-muted">We're happy to talk. Call either line during business hours.</p>
+        <ul class="space-y-2">
+          {
+            (['primary', 'secondary'] as const).map((line) => (
+              <li>
+                <a
+                  href={telLink(line)}
+                  class="inline-flex items-center gap-3 rounded-lg border border-border px-4 py-3 text-[18px] font-semibold text-brand-green no-underline transition-colors hover:border-brand-green"
+                >
+                  <Phone size={20} stroke-width={1.75} aria-hidden="true" />
+                  {WHATSAPP_LINES[line].display}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <section aria-labelledby="company">
+        <h2 id="company" class="mb-2 text-h3 md:text-h2 text-text-primary">RIA Home Sdn Bhd</h2>
+        <dl class="text-body">
+          <div class="flex gap-2">
+            <dt class="font-semibold">Serving:</dt>
+            <dd>All of Malaysia</dd>
+          </div>
+        </dl>
+      </section>
+    </div>
+  </div>
+
+  <section class="bg-surface px-4 py-10 md:px-6 md:py-14" aria-labelledby="tips">
+    <div class="container-content">
+      <h3 id="tips" class="mb-3 text-h3 text-text-primary">To speed things up, tell us:</h3>
+      <ul class="space-y-2.5">
+        {
+          tips.map((tip) => (
+            <li class="flex items-start gap-2.5 text-[15px] leading-[22px]">
+              <span class="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-brand-green" aria-hidden="true" />
+              {tip}
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+</Base>
