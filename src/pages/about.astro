@@ -1,0 +1,122 @@
+---
+import { getCollection } from 'astro:content';
+import { LayoutGrid, MessageCircle, Truck } from '@lucide/astro';
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import CategoryIcon from '../components/CategoryIcon.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+
+const categories = (await getCollection('categories')).sort((a, b) => a.data.sort_order - b.data.sort_order);
+
+const reasons = [
+  {
+    icon: LayoutGrid,
+    title: 'A full range in one place',
+    text: 'From portable dispensers to whole-house filtration, we cover every setup.',
+  },
+  { icon: Truck, title: 'Delivery nationwide', text: 'Serving households and businesses across Malaysia.' },
+  {
+    icon: MessageCircle,
+    title: 'Talk to us before you buy',
+    text: "WhatsApp us your situation, we'll recommend the right fit.",
+  },
+];
+---
+
+<Base
+  title="About us | RIA Pure Water"
+  description="RIA Pure Water supplies water dispensers, filtration systems, and commercial water equipment to homes, offices, and businesses across Malaysia."
+>
+  <div class="container-content">
+    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'About' }]} />
+
+    <header class="max-w-[760px] pb-10 pt-2 md:pb-14">
+      <p class="text-overline uppercase text-brand-green">About us</p>
+      <h1 class="mt-2 text-[28px] font-bold leading-9 text-brand-green md:text-h1-lg">Clean water, delivered simply</h1>
+      <p class="mt-2 text-body-lg text-text-muted">
+        RIA Pure Water supplies water dispensers, filtration systems, and commercial water equipment to homes,
+        offices, and businesses across Malaysia.
+      </p>
+    </header>
+
+    <section class="max-w-[760px] border-t border-border py-10 md:py-14" aria-labelledby="story">
+      <h2 id="story" class="mb-4 text-h2 md:text-h2-lg text-text-primary">Who we are</h2>
+      <div class="space-y-4 text-body-lg">
+        <p>
+          RIA Pure Water is the public brand of RIA Home Sdn Bhd, a Malaysian business built around one
+          straightforward idea — everyone deserves clean, reliable drinking water without the fuss.
+        </p>
+        <p>
+          We stock a full range: countertop and floor-standing dispensers for the home, undersink and smart-faucet
+          systems for the kitchen, whole-house filtration for the whole family, and commercial equipment for
+          offices, restaurants, and hospitality.
+        </p>
+        <p>
+          We handle delivery and installation across Malaysia, and we're always a WhatsApp message away if you need
+          advice picking the right unit.
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <section class="bg-surface py-10 md:py-14" aria-labelledby="sell">
+    <div class="container-content">
+      <h2 id="sell" class="mb-6 text-h2 md:text-h2-lg text-text-primary">What we sell</h2>
+      <ul class="grid gap-4 md:grid-cols-3 md:gap-6">
+        {
+          categories.map((c) => (
+            <li>
+              <a href={`/category/${c.id}`} class="card flex h-full items-start gap-4 p-5 no-underline">
+                <CategoryIcon name={c.data.icon} size={22} tile />
+                <span>
+                  <span class="block text-[18px] font-semibold leading-6 text-text-primary">{c.data.name}</span>
+                  <span class="mt-1 block text-body-sm text-text-muted">{c.data.description}</span>
+                </span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="container-content py-10 md:py-14" aria-labelledby="why">
+    <p class="text-overline uppercase text-brand-green">Why RIA</p>
+    <h2 id="why" class="sr-only">Why choose RIA Pure Water</h2>
+    <ul class="mt-4 grid gap-4 md:grid-cols-3 md:gap-6">
+      {
+        reasons.map(({ icon: Icon, title, text }) => (
+          <li class="rounded-lg border border-border bg-white p-6">
+            <span class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-[10px] bg-tint-green text-brand-green">
+              <Icon size={20} stroke-width={1.75} aria-hidden="true" />
+            </span>
+            <h3 class="text-[18px] font-semibold leading-6 text-text-primary">{title}</h3>
+            <p class="mt-1.5 text-[15px] leading-[22px] text-text-muted">{text}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <div class="container-content">
+    <section class="max-w-[760px] border-t border-border py-10 md:py-14" aria-labelledby="area">
+      <h2 id="area" class="mb-3 text-h2 md:text-h2-lg text-text-primary">Where we serve</h2>
+      <p class="text-body-lg">
+        We deliver and install across Malaysia. Message us with your town or postcode and we'll confirm coverage and
+        lead time.
+      </p>
+    </section>
+  </div>
+
+  <section class="bg-surface px-4 py-12 text-center md:px-6 md:py-14">
+    <h2 class="mb-2.5 text-h2 md:text-h2-lg text-text-primary">Ready to talk?</h2>
+    <p class="mx-auto mb-6 max-w-[580px] text-text-muted">
+      We reply on WhatsApp within business hours. Tell us your product, location, and setup — we'll come back with
+      stock, price, and installation.
+    </p>
+    <div class="flex flex-wrap justify-center gap-3">
+      <WhatsAppButton context="RIA Pure Water" size="lg" />
+      <a href="/contact" class="btn btn-lg btn-secondary">Or visit Contact</a>
+    </div>
+  </section>
+</Base>
