@@ -30,3 +30,6 @@ pnpm-debug.log*
 ria-image-staging/
 .vercel
 .env*
+
+# crop script error log
+crop-errors.log
